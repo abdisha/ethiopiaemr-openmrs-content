@@ -277,9 +277,9 @@
             "address": {
                 "useAddressHierarchy": {
                     "useAddressHierarchyLabel": {
-                        "countyDistrict": "County",
-                        "address4": "Ward",
-                        "stateProvince": "Sub county"
+                        "countyDistrict": "Region",
+                        "address4": "Woreda",
+                        "stateProvince": "Zone"
                     },
                     "searchAddressByLevel": true
                 }
