@@ -2,20 +2,20 @@
     <addressComponents>
          <addressComponent>
             <field>COUNTY_DISTRICT</field>
-            <nameMapping>County</nameMapping>
+            <nameMapping>Region</nameMapping>
             <sizeMapping>40</sizeMapping>
             <elementDefault>addresshierarchy.ethiopia</elementDefault>
             <requiredInHierarchy>true</requiredInHierarchy>
         </addressComponent>
         <addressComponent>
             <field>STATE_PROVINCE</field>
-            <nameMapping>Sub County</nameMapping>
+            <nameMapping>Zone</nameMapping>
             <sizeMapping>40</sizeMapping>
             <requiredInHierarchy>true</requiredInHierarchy>
         </addressComponent>
          <addressComponent>
             <field>ADDRESS_4</field>
-            <nameMapping>Ward</nameMapping>
+            <nameMapping>Woreda</nameMapping>
             <sizeMapping>40</sizeMapping>
             <requiredInHierarchy>true</requiredInHierarchy>
         </addressComponent>
