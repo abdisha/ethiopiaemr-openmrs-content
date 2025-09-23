@@ -2,7 +2,7 @@
 
 # 🇪🇹 EthiopiaEMR Content Package (EthiopiaEMR 3.x)
 
-EthiopiaEMR is an extended version of OpenMRS 3.x that provides comprehensive hospital management capabilities. This system is designed to support healthcare facilities in Ethiopia with integrated modules for both clinical and administrative operations.
+EthiopiaEMR is an extended version of OpenMRS 3.x and the KenyaEMR flavour that provides comprehensive hospital management capabilities. This system is designed to support healthcare facilities in Ethiopia with integrated modules for both clinical and administrative operations.
 
 ## Features
 
