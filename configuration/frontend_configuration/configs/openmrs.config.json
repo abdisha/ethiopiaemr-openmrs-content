@@ -421,7 +421,12 @@
           "linkage-services-dashboard-nav-group",
           "diagnostics-dashboard-nav-group",
           "kenyaemr-home-page-link",
-          "kenyaemr-wards-dashboard-link"
+          "kenyaemr-wards-dashboard-link",
+          "facility-dashboard-link",
+          "registration-dashboard-link",
+          "triage-dashboard-link",
+          "mch-dashboard-link",
+          "mortuary-dashboard-link"
         ],
         "add": ["procedure-dashboard-link", "imaging-orders-link"],
         "configure": {
