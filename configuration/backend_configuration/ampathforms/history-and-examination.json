@@ -1,0 +1,177 @@
+{
+  "name": "History and Examination - Test Bahmni",
+  "description": "History and Examination form Redesigned Using Bahmni's Form.",
+  "version": "1.0",
+  "published": true,
+  "uuid": "a0e2fe97-5060-4e59-9f67-0e234454705c",
+  "encounter": "Admission",
+  "retired": false,
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": true,
+          "questions": [
+            {
+              "label": "Chief Complaint:",
+              "type": "obsGroup",
+              "id": "chiefComplaintGroup",
+              "questionOptions": {
+                "concept": "5219AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "repeating"
+              },
+              "questions": [
+                {
+                  "label": "Complaint",
+                  "type": "obs",
+                  "id": "chiefComplaintSingle",
+                  "required": true,
+                  "questionOptions": {
+                    "concept": "5219AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "rendering": "select",
+                    "answers": [
+                      {
+                        "concept": "147235AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Bleeding from Ear"
+                      },
+                      {
+                        "concept": "1069AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Pain"
+                      },
+                      {
+                        "concept": "160170AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Vomiting"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Duration",
+                  "type": "obs",
+                  "id": "chiefComplaintDuration",
+                  "questionOptions": {
+                    "concept": "159948AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "rendering": "number",
+                    "min": "0",
+                    "max": "90"
+                  }
+                },
+                {
+                  "label": "Complaint Duration in:",
+                  "type": "obs",
+                  "id": "complaintDuration",
+                  "questionOptions": {
+                    "concept": "1732AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "rendering": "select",
+                    "answers": [
+                      {
+                        "concept": "1733AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Minutes"
+                      },
+                      {
+                        "concept": "1822AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Hours"
+                      },
+                      {
+                        "concept": "1072AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Days"
+                      },
+                      {
+                        "concept": "1073AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Weeks"
+                      },
+                      {
+                        "concept": "113440AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Months"
+                      },
+                      {
+                        "concept": "113441AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Years"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ChiefComplaint",
+              "label": "Chief Complaint",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "4"
+              }
+            },
+            {
+              "id": "HistoryNote",
+              "label": "History Note",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "4"
+              }
+            },
+            {
+              "label": "Smoking History",
+              "type": "obs",
+              "required": false,
+              "id": "smoke_history",
+              "questionOptions": {
+                "rendering": "toggle",
+                "concept": "5493db84-cff3-4271-bcc0-ea4b99e70b30",
+                "toggleOptions": {
+                  "labelTrue": "Yes",
+                  "labelFalse": "No"
+                }
+              },
+              "validators": []
+            },
+            {
+              "label": "Plan",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "4"
+              },
+              "id": "triageNotes"
+            }
+          ]
+        },
+        {
+          "label": "Image/Video",
+          "isExpanded": true,
+          "questions": [
+            {
+              "label": "Image/Video",
+              "type": "obsGroup",
+              "required": false,
+              "id": "ImageVideoGroup",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "126340AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "questions": [
+                {
+                  "label": "Image/Video",
+                  "type": "obs",
+                  "id": "ImageVideo",
+                  "questionOptions": {
+                    "rendering": "file",
+                    "concept": "126340AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                }
+              ],
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
