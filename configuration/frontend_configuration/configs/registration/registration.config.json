@@ -14,9 +14,7 @@
         "id": "addressInformation",
         "name": "Address information",
         "fields": [
-          "address.countyDistrict",
-          "address.stateProvince",
-          "address.address4",
+          "address",
           "address.address2"
         ]
       },
