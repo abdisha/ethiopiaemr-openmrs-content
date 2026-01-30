@@ -163,7 +163,8 @@
               "privileges": ["o3: View Patient Chart Flags"]
             }
           }
-        }
+        },
+        "remove": ["patient-flag"]
       },
       "patient-info-slot": {
         "configure": {
