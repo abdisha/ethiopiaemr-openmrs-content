@@ -721,9 +721,9 @@
     "Translation overrides": {
       "en": {
         "address1": "Postal Address",
-        "address2": "Landmark",
+        "address2": "House Number",
         "address4": "Woreda",
-        "address5": "Sub-location",
+        "address5": "Kebele",
         "address6": "Location",
         "city": "Village",
         "district": "Region",
