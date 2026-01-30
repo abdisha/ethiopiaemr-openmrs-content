@@ -128,8 +128,5 @@
   "@kenyaemr/esm-facility-dashboard-app": {
     "showAirAndReportLinks": true,
     "facilityDashboardAboveSiteUrl": "http://34.35.62.41:8080/superset/dashboard/153/"
-  },
-  "@kenyaemr/esm-patient-flags-app": {
-    "instanceName": ""
   }
 }
