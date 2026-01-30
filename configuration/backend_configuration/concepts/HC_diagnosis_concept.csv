@@ -34,7 +34,7 @@ affe37d8-7ee1-529c-8cd1-51dfe10e4319,,,Chapter 25: Codes for special purposes,Ch
 6150cfc5-846d-58a7-9794-5d843f46beeb,,ESV-ICD 11:1A07,Typhoid fever (Super-Category),Typhoid fever (Super-Category),,Convset,N/A,,,1,33
 141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:1A07; ICD-10-WHO:A01.0; ICPC2:D70; 3BT:30000308; PIH:141; ICD-11-WHO:1A07; IMO ProblemIT:24925; CIEL:141; SNOMED CT:4834000; AMPATH:141; ICD-11-WHO:1A07.Z,Typhoid fever,Typhoid fever,,Diagnosis,N/A,,,1,34
 f2818d67-5fb8-5dbf-9a87-2a29d02a88d3,,ESV-ICD 11:1A08,Paratyphoid fever (Super-Category),Paratyphoid fever (Super-Category),,Convset,N/A,,,1,35
-8397c8d5-0f45-5aac-a9a6-7e37325e8dc9,,ESV-ICD 11:1A08,Paratyphoid fever,Paratyphoid fever,,Diagnosis,N/A,,,1,36
+130811AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:1A08; CIEL:130811; ICD-10-WHO:A01.4; SNOMED CT:85904008; ICPC2:D70; IMO ProblemIT:51837; 3BT:10078462,Paratyphoid fever,Paratyphoid fever,,Diagnosis,N/A,,,2,36
 5098eb79-e3d9-5c3c-9ac6-076a845fca3c,,ESV-ICD 11:1A0Z,"Bacterial intestinal infections, unspecified (Super-Category)","Bacterial intestinal infections, unspecified (Super-Category)",,Convset,N/A,,,1,37
 155234AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:1A0Z; IMO ProblemIT:711649; CIEL:155234; SNOMED CT:312108008; ICD-11-WHO:1A0Z; ICD-10-WHO:A04.9,"Bacterial intestinal infections, unspecified","Bacterial intestinal infections, unspecified",,Diagnosis,N/A,,,1,38
 dad8aed1-0456-51b0-9a32-9b77a60be5dd,,ESV-ICD 11:1A1Z,"Bacterial foodborne intoxications, unspecified (Super-Category)","Bacterial foodborne intoxications, unspecified (Super-Category)",,Convset,N/A,,,1,39
@@ -165,7 +165,7 @@ bbb721bd-c498-553b-bfa7-9ac259553ae8,,ESV-ICD 11:1F40,Malaria due to Plasmodium 
 2abed50b-d1be-510e-8e65-5b02b129df0d,,ESV-ICD 11:1F45,Malaria without parasitological confirmation (Super-Category),Malaria without parasitological confirmation (Super-Category),,Convset,N/A,,,1,164
 70574419-3325-404f-ada8-c59ac1681945,,ESV-ICD 11:1F45; ICD-11-WHO:1F45,Malaria without parasitological confirmation,Malaria without parasitological confirmation,,Diagnosis,N/A,,,1,165
 f825942f-27a5-5da5-82e9-9ec8e9b8b959,,ESV-ICD 11:1F51,African trypanosomiasis (Super-Category),African trypanosomiasis (Super-Category),,Convset,N/A,,,1,166
-ec8cfe69-875d-5b40-9390-69cd322d853a,,ESV-ICD 11:1F51,African trypanosomiasis,African trypanosomiasis,,Diagnosis,N/A,,,1,167
+149241AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:1F51; CIEL:149241; 3BT:10003831; SNOMED CT:27031003; ICPC2:A78; IMO ProblemIT:26405; ICD-10-WHO:B56.9,African trypanosomiasis,African trypanosomiasis,,Diagnosis,N/A,,,2,167
 1e21a2d0-0551-52e7-a430-c20d2618a4c7,,ESV-ICD 11:1F53,Chagas disease (Super-Category),Chagas disease (Super-Category),,Convset,N/A,,,1,168
 f2e8cf93-b3d0-4211-a3ee-b27548fb9310,,ESV-ICD 11:1F53; ICD-11-WHO:1F53,Chagas disease,Chagas disease,,Diagnosis,N/A,,,1,169
 e1060488-5b9d-5f08-9558-82526bbba88a,,ESV-ICD 11:1F54,Leishmaniasis (Super-Category),Leishmaniasis (Super-Category),,Convset,N/A,,,1,170
@@ -451,7 +451,7 @@ f022050a-ef27-56a0-b153-493958c1d36c,,ESV-ICD 11:9A80,Hyphaema (Super-Category),
 120860AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:9B10; ICPC2:F92; AMPATH:70; ICD-11-WHO:9B10.Z; ICD-11-WHO:9B10; ICD-10-WHO:H26.9; SNOMED CT:193570009; CIEL:120860; PIH:70; IMO ProblemIT:85140,Cataract,Cataract,,Diagnosis,N/A,,,1,450
 ab6c9a04-63a4-5908-bb2b-586b07ec2df6,,ESV-ICD 11:9B10.20,Traumatic cataract,Traumatic cataract,,Diagnosis,N/A,,,1,451
 16b31e4f-3708-570a-9e21-abd5e8cb6cb1,,ESV-ICD 11:9B71,Retinopathy (Super-Category),Retinopathy (Super-Category),,Convset,N/A,,,1,452
-e9b44249-0b05-5578-80d1-70d83b3d4dc1,,ESV-ICD 11:9B71.1,Hypertensive retinopathy,Hypertensive retinopathy,,Diagnosis,N/A,,,1,453
+138180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:9B71.1; CIEL:138180; IMO ProblemIT:16695; ICD-10-WHO:H35.0; SNOMED CT:6962006,Hypertensive retinopathy,Hypertensive retinopathy,,Diagnosis,N/A,,,2,453
 418098cb-c2fe-5beb-8f0e-9f4f49f2cf6b,,ESV-ICD 11:9C60,Glaucoma suspect (Super-Category),Glaucoma suspect (Super-Category),,Convset,N/A,,,1,454
 fb798d49-4440-5bfe-817c-12f3adb5fcb8,,ESV-ICD 11:9C60,Glaucoma suspect,Glaucoma suspect,,Diagnosis,N/A,,,1,455
 ee2f6528-722b-5477-9304-d39c42b914a3,,ESV-ICD 11:9C61,Glaucoma (Super-Category),Glaucoma (Super-Category),,Convset,N/A,,,1,456
@@ -860,7 +860,7 @@ cb330101-432d-4e6e-b2a0-3ae2b8d9760a,,ESV-ICD 11:GB59; ICD-11-WHO:GB59,Renal or 
 7c61d053-9e93-516c-a972-39a7ee2ec53b,,ESV-ICD 11:GB60,Acute kidney failure (Super-Category),Acute kidney failure (Super-Category),,Convset,N/A,,,1,859
 7c1d4ff4-af28-50df-8bae-79b5782f1fcd,,ESV-ICD 11:GB60,Acute kidney failure,Acute kidney failure,,Diagnosis,N/A,,,1,860
 2929566b-969d-5e4d-b922-8839bd6e8323,,ESV-ICD 11:GB61,Chronic kidney disease (Super-Category),Chronic kidney disease (Super-Category),,Convset,N/A,,,1,861
-b6092e96-45b2-5c7e-9811-161029da8893,,ESV-ICD 11:GB61,Chronic kidney disease,Chronic kidney disease,,Diagnosis,N/A,,,1,862
+145438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:GB61; CIEL:145438; IMO ProblemIT:502200; SNOMED CT:709044004; SNOMED CT:128290005; ICD-10-WHO:N03.9,Chronic kidney disease,Chronic kidney disease,,Diagnosis,N/A,,,2,862
 e25c7942-104e-52ff-ace2-7d047b4c546e,,ESV-ICD 11:GB70,Calculus of upper urinary tract (Super-Category),Calculus of upper urinary tract (Super-Category),,Convset,N/A,,,1,863
 116500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:GB70.0; IMO ProblemIT:47623; 3BT:10092404; ICD-11-WHO:GB70.0Z; ICPC2:U95; ICD-11-WHO:GB70.0; CIEL:116500; ICD-10-WHO:N20.0; AMPATH:1877; SNOMED CT:95570007,Calculus of kidney,Calculus of kidney,,Diagnosis,N/A,,,1,864
 527e7828-ed81-5809-923f-38eecc30ac22,,ESV-ICD 11:GB71,Calculus of lower urinary tract (Super-Category),Calculus of lower urinary tract (Super-Category),,Convset,N/A,,,1,865
@@ -1117,7 +1117,7 @@ a8f9c00a-17d0-5d1e-98cc-82ef78955446,,ESV-ICD 11:MD22,Haemoptysis (Super-Categor
 f9ce26a4-39ed-55c7-809c-482be95e1217,,ESV-ICD 11:MD94,Halitosis (Super-Category),Halitosis (Super-Category),,Convset,N/A,,,1,1116
 146926AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:MD94; ICD-10-WHO:R19.6; ICD-11-WHO:MD94; CIEL:146926; ICPC2:D20; SNOMED CT:79879001; IMO ProblemIT:27500; 3BT:10039417,Halitosis,Halitosis,,Diagnosis,N/A,,,1,1117
 0695485f-18d9-5bec-a8e1-a4d892e1321f,,ESV-ICD 11:ME01,Abdominal distension (Super-Category),Abdominal distension (Super-Category),,Convset,N/A,,,1,1118
-2930b791-0b48-4246-b733-ba68a7b80ba6,,ESV-ICD 11:ME01; ICD-11-WHO:ME01,Abdominal distension,Abdominal distension,,Diagnosis,N/A,,,1,1119
+150915AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME01; ICD-11-WHO:ME01; CIEL:150915; 3BT:30000230; ICD-10-WHO:R14; SNOMED CT:41931001; IMO ProblemIT:37142; ICPC2:D25,Abdominal distension,Abdominal distension,,Diagnosis,N/A,,,2,1119
 a457dd73-f330-5d48-b86a-53728d86ab17,,ESV-ICD 11:ME02,Abdominal rigidity (Super-Category),Abdominal rigidity (Super-Category),,Convset,N/A,,,1,1120
 150902AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME02; SNOMED CT:72300008; ICPC2:D29; 3BT:10039679; ICD-11-WHO:ME02; CIEL:150902; ICD-10-WHO:R19.3; IMO ProblemIT:84358,Abdominal rigidity,Abdominal rigidity,,Diagnosis,N/A,,,1,1121
 6e6b17ed-277d-5f0d-bd9a-38a621b54c3d,,ESV-ICD 11:ME04,Ascites (Super-Category),Ascites (Super-Category),,Convset,N/A,,,1,1122
@@ -1135,14 +1135,14 @@ dac57e39-8967-4011-90a6-95d5e07c619e,,ESV-ICD 11:ME10.1; ICD-11-WHO:ME10.1,Unspe
 134394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME24.A4; ICD-11-WHO:ME24.A4; ICPC2:D15; 3BT:10058683; IMO ProblemIT:7672; SNOMED CT:2901004; CIEL:134394; ICD-10-WHO:K92.1,Melaena,Melaena,,Diagnosis,N/A,,,1,1134
 3403626b-6c48-58db-a927-01bb5c2b1421,,ESV-ICD 11:ME64,Non-specific cutaneous vascular signs (Super-Category),Non-specific cutaneous vascular signs (Super-Category),,Convset,N/A,,,1,1135
 143050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME64.1; SNOMED CT:119419001; SNOMED CT:3415004; AMPATH:589; CIEL:143050; ICD-10-WHO:R23.0; ICD-11-WHO:ME64.1; IMO ProblemIT:27806,Cyanosis,Cyanosis,,Diagnosis,N/A,,,1,1136
-f0000c8f-1ee6-4dd5-b40c-a5744a2138af,,ESV-ICD 11:ME64.2; ICD-11-WHO:ME64.2,Pallor,Pallor,,Diagnosis,N/A,,,1,1137
+5245AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME64.2; ICD-11-WHO:ME64.2; CIEL:5245; IMO ProblemIT:736264; SNOMED CT:398979000; AMPATH:5245; ICD-10-WHO:R23.1,Pallor,Pallor,,Diagnosis,N/A,,,2,1137
 cbab53c2-c03a-5df6-b8d6-c752af522d43,,ESV-ICD 11:ME66,Miscellaneous non-specific skin-related symptoms and signs (Super-Category),Miscellaneous non-specific skin-related symptoms and signs (Super-Category),,Convset,N/A,,,1,1138
-d10711ee-1ed5-40b8-a56a-df3359914453,,ESV-ICD 11:ME66.6; ICD-11-WHO:ME66.6,Rash,Rash,,Diagnosis,N/A,,,1,1139
+512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME66.6; ICD-11-WHO:ME66.6; CIEL:512; ICD-10-WHO:R21; SNOMED CT:271807003; AMPATH:512; AMPATH:5180; AMPATH:5950; PIH:512; IMO ProblemIT:43543; WHO-HIV-DAK:HIV.C.DE54,Rash,Rash,,Diagnosis,N/A,,,2,1139
 3d729856-1d4a-54d0-819e-a58a6b74953a,,ESV-ICD 11:ME84,Spinal pain (Super-Category),Spinal pain (Super-Category),,Convset,N/A,,,1,1140
 116225AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME84.2; CIEL:116225; ICD-11-WHO:ME84.2; AMPATH:898; ICD-10-WHO:M54.5; IMO ProblemIT:1784; AMPATH:143; AMPATH:456; SNOMED CT:279039007,Low back pain,Low back pain,,Diagnosis,N/A,,,1,1141
 127112AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME84.3; IMO ProblemIT:1787; AMPATH:1479; ICPC2:L86; ICD-10-WHO:M54.3; PIH:3772; 3BT:10047804; ICD-11-WHO:ME84.3; SNOMED CT:23056005; CIEL:127112; PIH Malawi:3772,Sciatica,Sciatica,,Diagnosis,N/A,,,1,1142
 e315b248-cb71-5088-ba1c-fa4953d1a7eb,,ESV-ICD 11:ME85,Stiffness of joint (Super-Category),Stiffness of joint (Super-Category),,Convset,N/A,,,1,1143
-9733e56f-a28f-4077-a436-db8e0cb2dfdc,,ESV-ICD 11:ME85; ICD-11-WHO:ME85,Stiffness of joint,Stiffness of joint,,Diagnosis,N/A,,,1,1144
+116554AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:ME85; ICD-11-WHO:ME85; CIEL:116554; ICD-10-WHO:M25.6; IMO ProblemIT:83277; SNOMED CT:84445001,Stiffness of joint,Stiffness of joint,,Diagnosis,N/A,,,2,1144
 86886f04-0d27-5931-bed3-39dc343e85a8,,ESV-ICD 11:MF30,Breast lump or mass female (Super-Category),Breast lump or mass female (Super-Category),,Convset,N/A,,,1,1145
 7c32b3e3-45c6-4256-9e86-45b8d43f21e6,,ESV-ICD 11:MF30; ICD-11-WHO:MF30,Breast lump or mass female,Breast lump or mass female,,Diagnosis,N/A,,,1,1146
 3c8d9577-7f5c-504e-832c-dc9c9f83e8f7,,ESV-ICD 11:MF3A,Vaginal discharge (Super-Category),Vaginal discharge (Super-Category),,Convset,N/A,,,1,1147
@@ -1169,7 +1169,7 @@ a4ae348d-7f82-5b5f-bcbb-fc98f4d6b91d,,ESV-ICD 11:MF94,Haemoglobinuria (Super-Cat
 73589edc-4e4d-53e8-aca3-cefc3e24a211,,ESV-ICD 11:MG22,Fatigue (Super-Category),Fatigue (Super-Category),,Convset,N/A,,,1,1168
 140501AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:MG22; SNOMED CT:84229001; PIH:5949; SNOMED CT:248274002; SNOMED NP:314109004; AMPATH:5949; ICPC2:A04; CIEL:140501; IMO ProblemIT:27337; ICD-11-WHO:MG22; 3BT:10104623; ICD-10-WHO:R53,Fatigue,Fatigue,,Diagnosis,N/A,,,1,1169
 bbf809d5-ee12-564b-8ad7-77f8bc54442d,,ESV-ICD 11:MG29,Oedema (Super-Category),Oedema (Super-Category),,Convset,N/A,,,1,1170
-e22a347d-38c6-47bc-886b-6fb1ca172983,,ESV-ICD 11:MG29; ICD-11-WHO:MG29,Oedema,Oedema,,Diagnosis,N/A,,,1,1171
+460AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:MG29; ICD-11-WHO:MG29; CIEL:460; IMO ProblemIT:42607; ICPC2:K07; AMPATH:6002; AMPATH:5143; PIH Malawi:460; PIH:460; AMPATH:460; ICD-10-WHO:R60.9; SNOMED CT:267038008; ICD-11-WHO:MG29.Z,Oedema,Oedema,,Diagnosis,N/A,,,2,1171
 488fb4d8-3bf8-5c1e-bb3f-c52b6eb397af,,ESV-ICD 11:MG40,Shock (Super-Category),Shock (Super-Category),,Convset,N/A,,,1,1172
 112989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,ESV-ICD 11:MG40; ICPC2:K99; IMO ProblemIT:88061; 3BT:10090345; PIH:7101; ICD-11-WHO:MG40; ICD-10-WHO:R57.9; SNOMED CT:27942005; ICD-11-WHO:MG40.Z; CIEL:112989,Shock,Shock,,Diagnosis,N/A,,,1,1173
 f2186754-2870-5b68-b9eb-0d0c39a26fff,,ESV-ICD 11:MG43,Symptoms and signs concerning food and fluid intake (Super-Category),Symptoms and signs concerning food and fluid intake (Super-Category),,Convset,N/A,,,1,1174
