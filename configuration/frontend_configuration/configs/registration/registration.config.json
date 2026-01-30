@@ -4,7 +4,7 @@
     ],
     "sections": [
       "demographics",
-      "addressInformation",
+      "contact",
       "otherInformation",
       "sourceInformation",
       "relationships",
@@ -12,8 +12,8 @@
     ],
     "sectionDefinitions": [
       {
-        "id": "addressInformation",
-        "name": "Address information",
+        "id": "contact",
+        "name": "Address Information",
         "fields": [
           "address",
           "address.address5",
@@ -23,11 +23,7 @@
       {
         "id": "otherInformation",
         "name": "Other Information",
-        "fields": [
-          "telephoneContact",
-          "email",
-          "contactLivingWithPatient"
-        ]
+        "fields": ["telephoneContact", "email", "contactLivingWithPatient"]
       },
       {
         "id": "sourceInformation",
