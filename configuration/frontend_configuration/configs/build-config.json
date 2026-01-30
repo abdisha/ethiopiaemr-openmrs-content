@@ -32,7 +32,6 @@
     "@kenyaemr/esm-appointments-app": "next",
     "@kenyaemr/esm-patient-registration-app": "next",
     "@kenyaemr/esm-login-app": "latest",
-    "@kenyaemr/esm-patient-flags-app": "next",
     "@kenyaemr/esm-version-app": "next",
     "@kenyaemr/esm-care-panel-app": "next",
     "@kenyaemr/esm-express-workflow-app": "next",
