@@ -112,7 +112,9 @@
       "Manage Stocks",
       "Facility Dashboard",
       "Dispensing App",
-      "KenyaEMR Home"    
+      "KenyaEMR Home",
+      "Reports",
+      "Referrals"
     ]
   },
   "@kenyaemr/esm-imaging-orders-app": {
