@@ -102,6 +102,19 @@
   "@kenyaemr/esm-procedure-app": {
     "procedureOrderTypeUuid": "b4a7c280-369e-4d12-9ce8-18e36783fed6"
   },
+  "@kenyaemr/esm-patient-flags-app": {
+    "excludeLinks": [
+      "ADR Assessment",
+      "Case Management",
+      "Cross Border",
+      "Lab Manifest App",
+      "Supplies Dispensing",
+      "Manage Stocks",
+      "Facility Dashboard",
+      "Dispensing App",
+      "KenyaEMR Home"    
+    ]
+  },
   "@kenyaemr/esm-imaging-orders-app": {
     "extensionSlots": {
       "imaging-orders-action": {
