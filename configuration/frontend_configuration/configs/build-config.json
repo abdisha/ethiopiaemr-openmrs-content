@@ -30,7 +30,7 @@
     "@openmrs/esm-service-queues-app": "latest",
     "@kenyaemr/esm-patient-search-app": "next",
     "@kenyaemr/esm-appointments-app": "next",
-    "@kenyaemr/esm-patient-registration-app": "next",
+    "@openmrs/esm-patient-registration-app": "next",
     "@kenyaemr/esm-login-app": "latest",
     "@kenyaemr/esm-version-app": "next",
     "@kenyaemr/esm-care-panel-app": "next",
