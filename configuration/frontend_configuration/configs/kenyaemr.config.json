@@ -9,11 +9,17 @@
     "defaultFacilityUrl": "/ws/rest/v1/kenyaemr/default-facility",
     "patientIdentifierType": "Unique Patient Number",
     "showUnscheduledAppointmentsTab": false,
-    "appointmentStatuses": ["Scheduled"],
-    "appointmentTypes": ["Scheduled"],
+    "appointmentStatuses": [
+      "Scheduled"
+    ],
+    "appointmentTypes": [
+      "Scheduled"
+    ],
     "extensionSlots": {
       "scheduled-appointments-panels-slot": {
-        "remove": ["cancelled-appointments-panel"],
+        "remove": [
+          "cancelled-appointments-panel"
+        ],
         "configure": {
           "expected-appointments-panel": {
             "showForPastDate": true,
@@ -82,46 +88,7 @@
       "sw-KE": "ETB",
       "am-ET": "ETB",
       "en-GB": "ETB"
-    },
-    "triageVariants": {
-      "central": {
-        "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
-        "name": "Central Triage Form",
-        "displayName": "Central Triage",
-        "enabled": true,
-        "order": 0,
-        "privilege": "Central Triage Access",
-        "patientTypes": {
-          "adult": {
-            "displayName": "Adult",
-            "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
-            "formName": "Central Triage - Adult"
-          },
-          "pediatric": {
-            "displayName": "Pediatric",
-            "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
-            "formName": "Central Triage - Pediatric"
-          },
-          "gynecology": {
-            "displayName": "Gynecology",
-            "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
-            "formName": "Central Triage - Gynecology"
-          }
-        }
-      },
-      "emergency": {
-        "formUuid": "61c4de68-1721-45a6-b42e-f5ca6439493f",
-        "name": "Emergency Triage Form",
-        "displayName": "Emergency Triage",
-        "enabled": true,
-        "order": 1,
-        "privilege": "Emergency Triage Access"
-      }
-    },
-    "visitTypeUuid": "3371a4d4-f66f-4454-a86d-92c7b3da990c",
-    "identifierSourceUuid": "fb034aac-2353-4940-abe2-7bc94e7c1e71",
-    "facilityCode": "HOSP",
-    "defaultIdentifierTypeUuid": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+    }
   },
   "@kenyaemr/esm-login-app": {
     "logo": {
@@ -168,14 +135,18 @@
   "@kenyaemr/esm-imaging-orders-app": {
     "extensionSlots": {
       "imaging-orders-action": {
-        "add": ["billing-test-order-action"]
+        "add": [
+          "billing-test-order-action"
+        ]
       }
     }
   },
   "@kenyaemr/esm-procedure-orders-app": {
     "extensionSlots": {
       "procedure-orders-action": {
-        "add": ["billing-test-order-action"]
+        "add": [
+          "billing-test-order-action"
+        ]
       }
     }
   },
@@ -183,7 +154,9 @@
     "search": {
       "disableTabletSearchOnKeyUp": true
     },
-    "defaultIdentifierTypes": ["24aedd37-b5be-4e08-8311-3721b8d5100d"]
+    "defaultIdentifierTypes": [
+      "24aedd37-b5be-4e08-8311-3721b8d5100d"
+    ]
   },
   "@kenyaemr/esm-version-app": {
     "extensionSlots": {}
@@ -191,5 +164,46 @@
   "@kenyaemr/esm-facility-dashboard-app": {
     "showAirAndReportLinks": true,
     "facilityDashboardAboveSiteUrl": "http://34.35.62.41:8080/superset/dashboard/153/"
+  },
+  "@palladium-ethiopia/esm-clinical-workflow-app": {
+    "triageVariants": {
+      "central": {
+        "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
+        "name": "Central Triage Form",
+        "displayName": "Central Triage",
+        "enabled": true,
+        "order": 0,
+        "privilege": "Central Triage Access",
+        "patientTypes": {
+          "adult": {
+            "displayName": "Adult",
+            "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
+            "formName": "Central Triage - Adult"
+          },
+          "pediatric": {
+            "displayName": "Pediatric",
+            "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
+            "formName": "Central Triage - Pediatric"
+          },
+          "gynecology": {
+            "displayName": "Gynecology",
+            "formUuid": "d9375924-49da-45f8-b74e-7d0454ac1c29",
+            "formName": "Central Triage - Gynecology"
+          }
+        }
+      },
+      "emergency": {
+        "formUuid": "61c4de68-1721-45a6-b42e-f5ca6439493f",
+        "name": "Emergency Triage Form",
+        "displayName": "Emergency Triage",
+        "enabled": true,
+        "order": 1,
+        "privilege": "Emergency Triage Access"
+      }
+    },
+    "visitTypeUuid": "3371a4d4-f66f-4454-a86d-92c7b3da990c",
+    "identifierSourceUuid": "fb034aac-2353-4940-abe2-7bc94e7c1e71",
+    "facilityCode": "HOSP",
+    "defaultIdentifierTypeUuid": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
   }
 }
