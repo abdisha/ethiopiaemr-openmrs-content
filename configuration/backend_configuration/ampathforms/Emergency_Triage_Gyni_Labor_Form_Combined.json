@@ -1,10 +1,10 @@
 {
-  "name": "Emergency Triage Form - Gyni",
-  "description": "Emergency Department Triage Form for Gynecology patients migrated from Bahmni",
+  "name": "Emergency Triage Form Combined (GYNI & Obstetrics)",
+  "description": "Combined Emergency Triage Form for Gynecology and Obstetrics/Labor patients with conditional sections",
   "version": "1",
   "published": true,
   "encounter": "Triage",
-  "uuid":"1df88856-d54e-43e9-8ed2-dafde77c6081",
+  "uuid": "1df88856-d54e-43e9-8ed2-dafde77c6081",
   "pages": [
     {
       "label": "Visit Details",
@@ -45,6 +45,26 @@
                 "rendering": "ui-select-extended"
               },
               "id": "encLocation"
+            },
+            {
+              "label": "Emergency Triage Category",
+              "type": "obs",
+              "required": "true",
+              "id": "emergencyTriageCategory",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "bb321ad1-9c88-40cc-813b-1e9d2eee89d4",
+                "answers": [
+                  {
+                    "concept": "33445548-3f35-4d32-b45a-432ebfe475c0",
+                    "label": "GYNI Emergency"
+                  },
+                  {
+                    "concept": "0ae36e05-0a16-4603-935b-5d9f538aaed5",
+                    "label": "Obstetrics/Labor"
+                  }
+                ]
+              }
             }
           ]
         }
@@ -56,6 +76,9 @@
         {
           "label": "Patient Information",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Address",
@@ -98,6 +121,9 @@
         {
           "label": "Mode of Arrival",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Mode of arrival to the Hospital/ED",
@@ -135,6 +161,9 @@
         {
           "label": "Referral Information",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Origin of referral",
@@ -191,6 +220,9 @@
         {
           "label": "Chief Complaint and History",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Chief complaint",
@@ -260,6 +292,9 @@
         {
           "label": "Gestation Status",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Gestation",
@@ -298,6 +333,9 @@
         {
           "label": "Gynecological Assessment",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Vaginal Bleeding",
@@ -360,6 +398,9 @@
         {
           "label": "Membrane Status",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Membrane",
@@ -398,6 +439,9 @@
         {
           "label": "Clinical Presentation",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Presentation",
@@ -427,6 +471,9 @@
         {
           "label": "Blood Pressure",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "BP-Systolic",
@@ -451,6 +498,9 @@
         {
           "label": "Medical History",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Past medical illness",
@@ -466,6 +516,9 @@
         {
           "label": "Triage Assessment",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Assessment",
@@ -503,6 +556,9 @@
         {
           "label": "Investigation and Plan",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Investigation Plan",
@@ -518,6 +574,9 @@
         {
           "label": "Disposition Plan",
           "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
+          },
           "questions": [
             {
               "label": "Plan",
@@ -558,6 +617,90 @@
                 "concept": "1859203e-8293-0123-4567-890123abcd22"
               },
               "id": "reevaluateHours"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "P/A (PER ABDOMEN) - Obstetrics",
+      "sections": [
+        {
+          "label": "Physical Examination - Per Abdomen",
+          "isExpanded": "true",
+          "hide": {
+            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '0ae36e05-0a16-4603-935b-5d9f538aaed5'"
+          },
+          "questions": [
+            {
+              "label": "Fundal Height (Weeks)",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "fundal_height_weeks"
+            },
+            {
+              "label": "P/A Presenting Part",
+              "type": "obs",
+              "required": "false",
+              "id": "presentingPart",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "160090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "160091AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cephalic"
+                  },
+                  {
+                    "concept": "139814AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Breech"
+                  },
+                  {
+                    "concept": "124261AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Transverse"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "FHS",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "cefe2cf4-eace-442a-8ca6-730997ce1eb5",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Present"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Absent"
+                  }
+                ]
+              },
+              "id": "fhs"
+            },
+            {
+              "label": "LMP",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "lmp"
+            },
+            {
+              "label": "Amount of Liquor",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "ffdae04b-b351-4a8d-9368-4658c4e52f49"
+              },
+              "id": "amount_of_liquor"
             }
           ]
         }

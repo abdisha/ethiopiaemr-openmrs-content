@@ -626,3 +626,6 @@ d691c207-17db-4847-b898-f5d7faa71f71,,,Presence of reaction,Reaction,Whether a t
 b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e,,,IUCD contraindication present,IUCD contraindicated,Question asking whether patient has contraindications for intrauterine contraceptive device,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
 ad858385-1e6a-4bbc-8bb7-d11756d4397f,,,PICT Counseling/Testing Result,PICT,Provider Initiated Counseling and Testing for HIV result,Question,Coded,1228AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1229AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
 f6071829-0314-2345-6789-012345abcd16,,,Patient bed number,Bed number,Bed number where patient was admitted in the healthcare facility,Question,Text,,,1,1
+33445548-3f35-4d32-b45a-432ebfe475c0,,,GYNI Emergency,GYNI Emergency,Answer option indicating patient is presenting with gynecological emergency,Finding,N/A,,,1,1
+0ae36e05-0a16-4603-935b-5d9f538aaed5,,,Obstetrics/Labor,Obstetrics/Labor,Answer option indicating patient is presenting with obstetrics or labor emergency,Finding,N/A,,,1,1
+bb321ad1-9c88-40cc-813b-1e9d2eee89d4,,,Emergency Triage Category,Emergency Triage Category,Question to categorize emergency triage patient type as either GYNI Emergency or Obstetrics/Labor,Question,Coded,33445548-3f35-4d32-b45a-432ebfe475c0;0ae36e05-0a16-4603-935b-5d9f538aaed5,,1,1
