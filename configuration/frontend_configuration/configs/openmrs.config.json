@@ -468,7 +468,10 @@
           "triage-dashboard-link",
           "mch-dashboard-link",
           "mortuary-dashboard-link",
-          "pharmacy-homepage-dashboard-link"
+          "pharmacy-homepage-dashboard-link",
+          "consultation-dashboard-link",
+          "ward-dashboard-link"
+
         ],
         "add": [],
         "configure": {
