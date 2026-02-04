@@ -157,6 +157,9 @@
             "stateProvince": "Zone"
           },
           "searchAddressByLevel": true
+        },
+        "validation": {
+          "required": true
         }
       },
       "phone": {
