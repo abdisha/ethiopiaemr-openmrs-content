@@ -41,9 +41,7 @@
     "extensionSlots": {
       "billing-dashboard-slot": {},
       "provider-banner-info-slot": {
-        "remove": [
-          "provider-banner"
-        ]
+        "remove": ["provider-banner"]
       }
     },
     "excludedPaymentMode": [
@@ -163,7 +161,8 @@
       "KenyaEMR Home",
       "Reports",
       "Referrals"
-    ]
+    ],
+    "instanceName": "EthioEMR 3.0 "
   },
   "@kenyaemr/esm-imaging-orders-app": {
     "extensionSlots": {
@@ -186,7 +185,7 @@
     "defaultIdentifierTypes": ["24aedd37-b5be-4e08-8311-3721b8d5100d"]
   },
   "@kenyaemr/esm-version-app": {
-    "extensionSlots": {}
+    "defaultLogoPath": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo.png"
   },
   "@kenyaemr/esm-facility-dashboard-app": {
     "showAirAndReportLinks": true,
