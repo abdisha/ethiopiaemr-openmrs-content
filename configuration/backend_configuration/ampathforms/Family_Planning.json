@@ -4,6 +4,7 @@
     "version": "1.0",
     "published": true,
     "uuid": "8357cfb2-5c21-4550-8958-21b487ae9e52",
+    "retired": false,
     "encounter": "Consultation",
     "pages": [
         {
@@ -151,5 +152,7 @@
                 }
             ]
         }
-    ]
+    ],
+    "processor": "EncounterFormProcessor",
+    "referencedForms": []
 }

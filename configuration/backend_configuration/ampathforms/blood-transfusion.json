@@ -986,5 +986,7 @@
         }
       ]
     }
-  ]
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }

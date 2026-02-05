@@ -910,5 +910,7 @@
         }
       ]
     }
-  ]
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }

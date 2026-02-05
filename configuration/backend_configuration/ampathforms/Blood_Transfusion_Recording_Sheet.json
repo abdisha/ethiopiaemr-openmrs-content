@@ -152,5 +152,7 @@
         }
       ]
     }
-  ]
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }

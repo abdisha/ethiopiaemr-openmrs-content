@@ -1,6 +1,6 @@
 {
   "name": "DKA Follow up Sheet",
-  "description": "Diabetic Ketoacidosis follow-up monitoring form",
+  "description": "Diabetic Ketoacidosis follow-up monitoring form migrated from Bahmni",
   "published": true,
   "retired": false,
   "version": "1.0",

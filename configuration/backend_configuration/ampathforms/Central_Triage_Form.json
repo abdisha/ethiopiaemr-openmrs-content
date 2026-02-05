@@ -3,8 +3,9 @@
   "description": "Central Triage Form for vital signs assessment",
   "version": "1.0",
   "published": true,
-  "encounter": "Triage",
   "uuid": "ff723d59-0650-4b84-858d-c1045b690683",
+  "retired": false,
+  "encounter": "Triage",
   "pages": [
     {
       "label": "Visit Details",

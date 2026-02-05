@@ -4,6 +4,7 @@
   "version": "1",
   "published": true,
   "uuid": "e16b3e3a-c33c-47b6-aec8-864398c6b802",
+  "retired": false,
   "encounter": "Triage",
   "pages": [
     {
@@ -131,5 +132,7 @@
         }
       ]
     }
-  ]
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }

@@ -42,7 +42,7 @@ a1b2c3d4-e5f6-7890-1234-56789abcdef0,,,Diarrhea present,Diarrhea present,Questio
 04d5e6f7-0819-012c-3456-789abcd01111,,,Specify Feeding problem details,Feeding details,Free text field to specify details about feeding problems in child,Question,Text,,,1,1
 cc177191-2c36-4f22-89a0-9cfba86ad2fb,,,Specify other problems details,Other problems details,Free text field to specify details about other problems in child,Question,Text,,,1,1
 05e6f708-1920-123d-4567-89abcd002222,,,Clinical classification notes,Classification,Free text field for clinical classification and assessment notes,Question,Text,,,1,1
-47f8091a-2b92-a12d-7456-89def0123456,,,Treatment outcome assessment,Outcome,Assessment of treatment outcome for childhood illness management,Question,Coded,1898AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1257AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;162678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+47f8091a-2b92-a12d-7456-89def0123456,,,Treatment outcome assessment,Outcome,Assessment of treatment outcome for childhood illness management,Question,Coded,88c89230-d2c4-454f-9214-7bc6fe103a78;ed585ad2-bd12-4f27-afe1-773701997176;e4d4ae0b-df2b-468c-b690-8793fcc50a13,,3,1
 5809a2b3-3ca3-b23e-8567-9ef012345678,,,General diagnosis notes,Diagnosis notes,Free text field for general diagnosis and clinical notes documentation,Question,Text,,,1,1
 7aa9b0c1-5d2e-345f-789a-567890123456,,,Stiff neck,Stiff neck,Child has stiff neck indicating possible meningitis or severe infection,Symptom/Finding,N/A,,,1,1
 8bb0c1d2-6e3f-456a-890b-678901234567,,,Bulged fontanel less than 1 year,Bulged fontanel <1yr,Child under 1 year has bulged fontanel indicating increased intracranial pressure,Symptom/Finding,N/A,,,1,1
@@ -60,8 +60,6 @@ cc177191-2c36-4f22-89a0-9cfba86ad2fb,,,Specify other problems details,Other prob
 0aa2b3c4-8d5e-678f-012a-901234567890,,,Specify other problems text,Other problems text,Free text field to specify details about other problems in child assessment,Question,Text,,,1,1
 17e8596b-1b8c-901d-345f-123456789012,,,Stridor present,Stridor,Child has stridor indicating upper airway obstruction,Symptom/Finding,N/A,,,1,1
 16d7485a-0a7b-890c-234f-012345678901,,,Chest indrawing present,Chest indrawing,Child has chest indrawing indicating respiratory distress,Symptom/Finding,N/A,,,1,1
-4d34d70b-7224-4c34-a7bf-5a95c3841c9a,,,Immunization up-to-date (childhood illness),Up-to-Date,Child immunization status is up-to-date for age,Finding,N/A,,,1,1
-d51f480f-6df9-4910-b790-9d06434b0b2b,,,Immunization not up-to-date (childhood illness),Not Up-to-Date,Child immunization status is not up-to-date for age,Finding,N/A,,,1,1
 88c89230-d2c4-454f-9214-7bc6fe103a78,,,Treatment outcome improved (childhood illness),Improved,Child condition improved after treatment for childhood illness,Finding,N/A,,,1,1
 ed585ad2-bd12-4f27-afe1-773701997176,,,Treatment outcome same (childhood illness),Same,Child condition unchanged after treatment for childhood illness,Finding,N/A,,,1,1
 e4d4ae0b-df2b-468c-b690-8793fcc50a13,,,Treatment outcome worse (childhood illness),Worse,Child condition worsened after treatment for childhood illness,Finding,N/A,,,1,1
