@@ -5,7 +5,6 @@
   "published": true,
   "encounter": "Consultation",
   "uuid": "10603bc3-c113-4112-93b8-c7420fa62b38",
-  "encounterType": "Consultation",
   "pages": [
     {
       "label": "Visit Details",
