@@ -667,26 +667,13 @@
           "isExpanded": true,
           "questions": [
             {
-              "label": "Image/Video",
-              "type": "obsGroup",
-              "required": false,
-              "id": "ImageVideoGroup",
+              "type": "obs",
               "questionOptions": {
-                "rendering": "repeating",
-                "concept": "c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f"
+                "rendering": "file",
+                "concept": "7cac8397-53cd-4f00-a6fe-028e8d743f8e"
               },
-              "questions": [
-                {
-                  "label": "Image/Video",
-                  "type": "obs",
-                  "id": "ImageVideo",
-                  "questionOptions": {
-                    "rendering": "file",
-                    "concept": "d2e3f4a5-6b7c-8d9e-0f1a-2b3c4d5e6f7a"
-                  }
-                }
-              ],
-              "validators": []
+              "id": "fileUploadQuestion",
+              "label": "Image/Video Upload"
             }
           ]
         }

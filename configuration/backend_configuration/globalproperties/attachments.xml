@@ -2,7 +2,7 @@
     <globalProperties>
         <globalProperty>
             <property>attachments.allowedFileExtensions</property>
-             <value>jpeg,jpg,png,pdf,gif,svg,bmp</value>
+             <value>jpeg,jpg,png,pdf,gif,svg,bmp,mp4</value>
         </globalProperty>
     </globalProperties>
 </config>
