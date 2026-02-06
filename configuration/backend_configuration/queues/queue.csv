@@ -4,7 +4,7 @@ Uuid,Name,Description,Location,Service,Priority concept set,Status concept set,R
 8e1a1234-1234-11ee-be56-0242ac120003,Pediatric OPD Queue,Queue for Pediatric OPD,ac3e8ef2-1eec-11ee-a908-70b5e8304d75,d8176d1b-1234-11ee-be56-0242ac120003,,,
 8e1a1234-1234-11ee-be56-0242ac120004,ART Queue,Queue for ART Clinic,ac3e8ef2-1eec-11ee-a908-70b5e8304d76,d8176d1b-1234-11ee-be56-0242ac120004,,,
 8e1a1234-1234-11ee-be56-0242ac120005,ANC Queue,Queue for Antenatal Care,ac3e8ef2-1eec-11ee-a908-70b5e8304d77,d8176d1b-1234-11ee-be56-0242ac120005,,,
-8e1a1234-1234-11ee-be56-0242ac120006,Dental Queue,Queue for Dental Clinic,ac3e8ef2-1eec-11ee-a908-70b5e8304d78,d8176d1b-1234-11ee-be56-0242ac120006,,,
+8e1a1234-1234-11ee-be56-0242ac120006,Dental Queue,Queue for Dental Clinic,ac3e8ef2-1eec-11ee-a908-70b5e8304d78,161252AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,,
 8e1a1234-1234-11ee-be56-0242ac120007,Dermatology Queue,Queue for Dermatology Clinic,ac3e8ef2-1eec-11ee-a908-70b5e8304d79,d8176d1b-1234-11ee-be56-0242ac120007,,,
 8e1a1234-1234-11ee-be56-0242ac120008,Orthopedic Queue,Queue for Orthopedic Clinic,ac3e8ef2-1eec-11ee-a908-70b5e8304d80,d8176d1b-1234-11ee-be56-0242ac120008,,,
 8e1a1234-1234-11ee-be56-0242ac120009,Neuro Clinic Queue,Queue for Neurosurgical Clinic,ac3e8ef2-1eec-11ee-a908-70b5e8304d81,d8176d1b-1234-11ee-be56-0242ac120009,,,
