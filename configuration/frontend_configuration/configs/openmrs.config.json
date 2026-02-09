@@ -132,7 +132,7 @@
     "extensionSlots": {
       "patient-actions-slot": {
         "configure": {
-          "delete-visit-buttont": {
+          "delete-visit-button": {
             "Display conditions": {
               "privileges": ["o3: Delete Active Visit"]
             }

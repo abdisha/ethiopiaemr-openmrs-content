@@ -46,6 +46,102 @@
   "@palladium-ethiopia/esm-billing-app": {
     "extensionSlots": {
       "billing-dashboard-slot": {},
+      "billing-admin-dashboard-slot": {
+        "configure": {
+          "payments-points-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Payment Point"
+              ]
+            }
+          },
+          "payment-mode-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Payment Mode"
+              ]
+            }
+          },          
+          "bill-deposit-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Deposit"
+              ]
+            }
+          },
+          "billable-exemptions-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Exemptions Schema"
+              ]
+            }
+          },
+          "clinical-charges-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Charge Items"
+              ]
+            }
+          },
+          "payment-history-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Payment History"
+              ]
+            }
+          },
+          "patient-billing-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Bill Manager"
+              ]
+            }
+          }
+        }
+      },
+      "bill-actions-slot": {
+        "configure": {
+          "waive-bill-action-button": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Waive Bill"
+              ]
+            }
+          },
+          "delete-bill-action-button": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Delete Bill"
+              ]
+            }
+          }
+        }
+      },
+      "bill-actions-overflow-menu-slot": {
+        "configure": {
+          "refund-line-item": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Refund Line Item"
+              ]
+            }
+          },
+          "edit-line-item": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Edit Bill Item"
+              ]
+            }
+          },
+          "cancel-line-item": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Cancel Bill Item"
+              ]
+            }
+          }
+        }
+      },
       "provider-banner-info-slot": {
         "remove": ["provider-banner"]
       }
