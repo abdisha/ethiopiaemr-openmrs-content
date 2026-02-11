@@ -1,12 +1,8 @@
 <config>
     <globalProperties>
         <globalProperty>
-            <property>ethioemrcustommodule.MPIPatientDetailEndpoint</property>
+            <property>ethiopiaemrcustommodule.MPIPatientDetailEndpoint</property>
             <value>https://app.openfn.org/i/e1efbe93-8784-4a16-8f56-fcff42b9c4cc</value>
-        </globalProperty>
-        <globalProperty>
-            <property>ethioemrcustommodule.healthIdIdentifierTypeUuid</property>
-            <value>cce42242-9e55-40a6-8739-1e6be1369bbe</value>
         </globalProperty>
     </globalProperties>
 </config>
