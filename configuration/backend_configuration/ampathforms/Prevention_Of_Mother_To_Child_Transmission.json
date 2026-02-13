@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "label": "Prevention of Mother-to-child Transmission",
+      "label": "Risk Assessment & Baby Outcomes",
       "sections": [
         {
           "label": "Risk Group",
@@ -73,11 +73,11 @@
                   },
                   {
                     "concept": "c3d4e5f6-7081-9012-3456-789012cdef01",
-                    "label": "People Who Inject Drugs"
+                    "label": "People WHO Inject Drugs"
                   },
                   {
                     "concept": "d4e5f607-8192-0123-4567-890123def012",
-                    "label": "MSM and Transgenders"
+                    "label": "Msm and Transgenders"
                   },
                   {
                     "concept": "e5f60718-9203-1234-5678-901234ef0123",
@@ -105,28 +105,32 @@
           ]
         },
         {
-          "label": "HIV Positive Born Babies",
+          "label": "Hiv Positive Born Babies",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Live Birth",
+              "label": "Live Births",
               "type": "obs",
               "required": false,
               "id": "liveBirth",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "29304152-3647-5678-9012-345678234567"
-              }
+                "concept": "29304152-3647-5678-9012-345678234567",
+                "step": "0.01"
+              },
+              "questionInfo": "Number of live births. Enter the count of babies born alive"
             },
             {
-              "label": "Birth Weight",
+              "label": "Birth Weight (g)",
               "type": "obs",
               "required": false,
               "id": "birthWeight",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "30415263-4758-6789-0123-456789345678"
-              }
+                "concept": "30415263-4758-6789-0123-456789345678",
+                "step": "0.01"
+              },
+              "questionInfo": "Birth weight in grams. Normal range: 2500-4000g"
             },
             {
               "label": "Started ARV Prophylaxis for Baby",
@@ -149,7 +153,7 @@
               }
             },
             {
-              "label": "Breast feeding options opted by HIV +ve mother",
+              "label": "Breast Feeding Options Opted by Hiv +ve Mother",
               "type": "obs",
               "required": false,
               "id": "breastFeedingOptions",
@@ -173,7 +177,7 @@
               }
             },
             {
-              "label": "FP services provided postpartum",
+              "label": "Fp Services Provided Postpartum",
               "type": "obs",
               "required": false,
               "id": "fpServicesPostpartum",
@@ -199,7 +203,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Transferred out during pregnancy",
+              "label": "Transferred Out During Pregnancy",
               "type": "obs",
               "required": false,
               "id": "transferredOutDuringPregnancy",
@@ -221,7 +225,7 @@
           ]
         },
         {
-          "label": "Date and Place of Transfer out for continuum",
+          "label": "Date and Place of Transfer Out for Continuum",
           "isExpanded": "true",
           "questions": [
             {
@@ -268,9 +272,14 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "HIV Status Assessment",
+      "sections": [
         {
-          "label": "Women identified HIV Positive",
+          "label": "Women Identified Hiv Positive",
           "isExpanded": "true",
           "questions": [
             {
@@ -314,11 +323,11 @@
           ]
         },
         {
-          "label": "HIV Status of Male Partner",
+          "label": "Hiv Status of Male Partner",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Who already know their HIV status",
+              "label": "WHO Already Knows Their Hiv Status as:",
               "type": "obs",
               "required": false,
               "id": "malePartnerHivStatus",
@@ -333,12 +342,16 @@
                   {
                     "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Positive"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
                   }
                 ]
               }
             },
             {
-              "label": "Referred if the status is unknown",
+              "label": "Referred If the Status Is Unknown",
               "type": "obs",
               "required": false,
               "id": "malePartnerReferred",
@@ -355,16 +368,24 @@
                     "label": "No"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "malePartnerHivStatus !== '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "ART Eligibility & Treatment",
+      "sections": [
         {
           "label": "ART Eligibility and Date for First",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "WHO clinical staging",
+              "label": "WHO Clinical Staging",
               "type": "obs",
               "required": false,
               "id": "whoClinicalStaging",
@@ -398,8 +419,10 @@
               "id": "cd4Count",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5497AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
+                "concept": "5497AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "questionInfo": "CD4 T-cell count in cells/mm³. Normal range: 500-1200 cells/mm³. Critical if <200 cells/mm³"
             },
             {
               "label": "Date",
@@ -418,7 +441,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Started ART during",
+              "label": "Started ART During",
               "type": "obs",
               "required": false,
               "id": "startedArtDuring",
@@ -446,7 +469,7 @@
               }
             },
             {
-              "label": "ART start date",
+              "label": "ART Start Date",
               "type": "obs",
               "required": false,
               "id": "artStartDate",
@@ -466,11 +489,11 @@
                 "answers": [
                   {
                     "concept": "d6071829-0314-2345-6789-012345901234",
-                    "label": "AZT/3TC/NVP"
+                    "label": "Azt/3TC/Nvp"
                   },
                   {
                     "concept": "e7182930-1425-3456-7890-123456012345",
-                    "label": "AZT/3TC/LPV/r"
+                    "label": "Azt/3TC/Lpv/R"
                   },
                   {
                     "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -478,35 +501,35 @@
                   },
                   {
                     "concept": "f8293041-2536-4567-8901-234567123456",
-                    "label": "AZT/3TC/NVP-Paediatric"
+                    "label": "Azt/3TC/Nvp-paediatric"
                   },
                   {
                     "concept": "09304152-3647-5678-9012-345678234567",
-                    "label": "AZT/3TC/EFV"
+                    "label": "Azt/3TC/Efv"
                   },
                   {
                     "concept": "10415263-4758-6789-0123-456789345678",
-                    "label": "AZT/3TC/EFV-Paediatric"
+                    "label": "Azt/3TC/Efv-paediatric"
                   },
                   {
                     "concept": "21526374-5869-7890-1234-567890456789",
-                    "label": "TDF/3TC/NVP"
+                    "label": "Tdf/3TC/Nvp"
                   },
                   {
                     "concept": "32637485-6970-8901-2345-678901567890",
-                    "label": "TDF/3TC/NVP-Paediatric"
+                    "label": "Tdf/3TC/Nvp-paediatric"
                   },
                   {
                     "concept": "43748596-7081-9012-3456-789012678901",
-                    "label": "TDF/3TC/EFV"
+                    "label": "Tdf/3TC/Efv"
                   },
                   {
                     "concept": "54859607-8192-0123-4567-890123789012",
-                    "label": "TDF/3TC/EFV-Paediatric"
+                    "label": "Tdf/3TC/Efv-paediatric"
                   },
                   {
                     "concept": "65960718-9203-1234-5678-901234890123",
-                    "label": "TDF/3TC/LPV/r"
+                    "label": "Tdf/3TC/Lpv/R"
                   }
                 ]
               }
@@ -524,8 +547,10 @@
               "id": "cd4After6Months",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "76071829-0314-2345-6789-012345901234"
-              }
+                "concept": "76071829-0314-2345-6789-012345901234",
+                "step": "0.01"
+              },
+              "questionInfo": "CD4 T-cell count in cells/mm³ after 6 months of ART. Normal range: 500-1200 cells/mm³"
             },
             {
               "label": "After 12 months",
@@ -534,17 +559,24 @@
               "id": "cd4After12Months",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "87182930-1425-3456-7890-123456012345"
-              }
+                "concept": "87182930-1425-3456-7890-123456012345",
+                "step": "0.01"
+              },
+              "questionInfo": "CD4 T-cell count in cells/mm³ after 12 months of ART. Normal range: 500-1200 cells/mm³"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Treatment Follow-up & Monitoring",
+      "sections": [
         {
-          "label": "TB Treatment During",
+          "label": "Tb Treatment During",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Pregnancy category",
+              "label": "Pregnancy Category",
               "type": "obs",
               "required": false,
               "id": "pregnancyCategory",
@@ -554,7 +586,7 @@
                 "answers": [
                   {
                     "concept": "a9304152-3647-5678-9012-345678234567",
-                    "label": "Category A"
+                    "label": "Category a"
                   },
                   {
                     "concept": "b0415263-4758-6789-0123-456789345678",
@@ -580,7 +612,7 @@
               }
             },
             {
-              "label": "TB treatment start date",
+              "label": "Tb Treatment Start Date",
               "type": "obs",
               "required": false,
               "id": "tbTreatmentStartDate",
@@ -666,7 +698,7 @@
                 "answers": [
                   {
                     "concept": "c7182930-1425-3456-7890-123456012345",
-                    "label": "Normal delivery"
+                    "label": "Normal Delivery"
                   },
                   {
                     "concept": "d8293041-2536-4567-8901-234567123456",
@@ -684,7 +716,7 @@
               }
             },
             {
-              "label": "Baby birth status",
+              "label": "Baby Birth Status",
               "type": "obs",
               "required": false,
               "id": "babyBirthStatus",

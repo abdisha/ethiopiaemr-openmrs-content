@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -120,7 +120,7 @@
               }
             },
             {
-              "label": "Important physical examination finding",
+              "label": "Important Physical Examination Finding",
               "type": "obs",
               "required": false,
               "id": "importantPhysicalExaminationFinding",
@@ -131,7 +131,7 @@
               }
             },
             {
-              "label": "Immediate cause of death",
+              "label": "Immediate Cause of Death",
               "type": "obs",
               "required": false,
               "id": "immediateCauseOfDeath",
@@ -142,7 +142,7 @@
               }
             },
             {
-              "label": "Physician who confirmed the Death",
+              "label": "Physician WHO Confirmed the Death",
               "type": "encounterProvider",
               "required": false,
               "id": "physicianWhoConfirmedDeath",

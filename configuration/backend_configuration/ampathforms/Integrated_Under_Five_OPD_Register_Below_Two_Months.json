@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -64,8 +64,10 @@
               "id": "weight",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "questionInfo": "Infant weight measurement in kilograms. Normal range for infants below 2 months: 2.5-4.5 kg"
             },
             {
               "label": "Temperature (°C)",
@@ -73,12 +75,16 @@
               "id": "temperature",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01",
+                "min": "25",
+                "max": "43"
               },
               "alert": {
-                "alertWhenExpression": "temperature && (temperature >= 38.0 || temperature < 36.0)",
-                "message": "Temperature is abnormal (Normal range 36.0-37.9°C)"
-              }
+                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
+              },
+              "questionInfo": "Normal range: 36.5-37.5°C"
             },
             {
               "label": "Visit Type",
@@ -90,7 +96,7 @@
                 "answers": [
                   {
                     "concept": "164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "New visit"
+                    "label": "New Visit"
                   },
                   {
                     "concept": "160530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -111,7 +117,8 @@
               "id": "presentingComplaint",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "160531AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "160531AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             }
           ]
@@ -218,12 +225,14 @@
               "id": "respiratoryRate",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "respiratoryRate && (respiratoryRate > 60 || respiratoryRate < 30)",
                 "message": "Respiratory Rate is abnormal for infant (Normal range 30-60 breaths/min)"
-              }
+              },
+              "questionInfo": "Normal range for infants: 30-60 breaths/min"
             },
             {
               "label": "Signs and Symptoms",
@@ -235,7 +244,7 @@
                 "answers": [
                   {
                     "concept": "9647586e-7081-9012-6789-345678901234",
-                    "label": "Unable to feed"
+                    "label": "Unable to Feed"
                   },
                   {
                     "concept": "18f96a7c-2c9d-012e-456f-234567890123",
@@ -247,15 +256,15 @@
                   },
                   {
                     "concept": "16d7485a-0a7b-890c-234f-012345678901",
-                    "label": "Severe chest indrawing"
+                    "label": "Severe Chest Indrawing"
                   },
                   {
                     "concept": "d4e5f607-1829-0123-def0-456789012345",
-                    "label": "Fever or low body temperature"
+                    "label": "Fever or Low Body Temperature"
                   },
                   {
                     "concept": "0758697f-8192-0123-7890-456789012345",
-                    "label": "Umbilicus red or draining pus"
+                    "label": "Umbilicus Red or Draining Pus"
                   },
                   {
                     "concept": "1869708a-9203-1234-8901-567890123456",
@@ -263,11 +272,11 @@
                   },
                   {
                     "concept": "2970819b-0314-2345-9012-678901234567",
-                    "label": "Movement only when stimulated"
+                    "label": "Movement Only When Stimulated"
                   },
                   {
                     "concept": "3081920c-1425-3456-0123-789012345678",
-                    "label": "No movement even when stimulated"
+                    "label": "No Movement Even When Stimulated"
                   }
                 ]
               }
@@ -284,7 +293,7 @@
               "id": "diarrheaPresent",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "142412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
                 "answers": [
                   {
                     "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -303,7 +312,8 @@
               "id": "durationNotes",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "db5660ab-ff74-4b9e-9e4a-e3ad1fbb5e1e"
+                "concept": "db5660ab-ff74-4b9e-9e4a-e3ad1fbb5e1e",
+                "rows": "3"
               },
               "hide": {
                 "hideWhenExpression": "diarrheaPresent !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
@@ -318,27 +328,27 @@
                 "concept": "19a7b8c9-3d0e-123f-567a-345678901234",
                 "answers": [
                   {
-                    "label": "Blood In Stool",
+                    "label": "Blood in Stool",
                     "concept": "1aa8c9d0-4e1f-234a-678b-456789012345"
                   },
                   {
-                    "label": "Restless/ Irritable",
+                    "label": "Restless/Irritable",
                     "concept": "1bb9d0e1-5f2a-345b-789c-567890123456"
                   },
                   {
-                    "label": "Drinks eagerly",
+                    "label": "Drinks Eagerly",
                     "concept": "1cc0e1f2-6a3b-456c-890d-678901234567"
                   },
                   {
-                    "label": "Sunken eyes",
+                    "label": "Sunken Eyes",
                     "concept": "1dd1f2a3-7b4c-567d-901e-789012345678"
                   },
                   {
-                    "label": "Lethargic/ Unconscious",
+                    "label": "Lethargic/Unconscious",
                     "concept": "14b52637-e859-6789-012d-ef0123456789"
                   },
                   {
-                    "label": "Unable to drink or Breastfeed",
+                    "label": "Unable to Drink or Breastfeed",
                     "concept": "11829304-b526-3456-789a-bcdef0123456"
                   }
                 ]
@@ -348,7 +358,7 @@
               }
             },
             {
-              "label": "Turgor/skin pinch",
+              "label": "Turgor/Skin Pinch",
               "type": "obs",
               "id": "skinTurgor",
               "questionOptions": {
@@ -376,7 +386,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Mother HIV Ab Test",
+              "label": "Mother Hiv Ab Test",
               "type": "obs",
               "id": "motherHivTest",
               "questionOptions": {
@@ -399,7 +409,7 @@
               }
             },
             {
-              "label": "Child Ab Test",
+              "label": "Child AB Test",
               "type": "obs",
               "id": "childAbTest",
               "questionOptions": {
@@ -439,7 +449,7 @@
                   },
                   {
                     "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Not done"
+                    "label": "Not Done"
                   }
                 ]
               }
@@ -471,7 +481,7 @@
       "label": "Feeding Assessment",
       "sections": [
         {
-          "label": "Feeding Problem/Low Weight for HIV Negative Mother or Unknown HIV Status",
+          "label": "Feeding Problem/Low Weight for Hiv Negative Mother or Unknown Hiv Status",
           "isExpanded": "true",
           "questions": [
             {
@@ -499,14 +509,15 @@
               "id": "breastfeedingFrequency",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1e6f7081-9203-1234-ef01-567890123456"
+                "concept": "1e6f7081-9203-1234-ef01-567890123456",
+                "step": "0.01"
               },
               "hide": {
                 "hideWhenExpression": "infantBreastfeeds !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
-              "label": "Switching before one is empty",
+              "label": "Switching Before One Is Empty",
               "type": "obs",
               "id": "switchingBeforeEmpty",
               "questionOptions": {
@@ -528,7 +539,7 @@
               }
             },
             {
-              "label": "Child Receive other food/drinks",
+              "label": "Child Receive Other Food/Drinks",
               "type": "obs",
               "id": "otherFoodDrinks",
               "questionOptions": {
@@ -552,7 +563,8 @@
               "id": "otherFoodFrequency",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "2f708192-0314-2345-f012-678901234567"
+                "concept": "2f708192-0314-2345-f012-678901234567",
+                "step": "0.01"
               },
               "hide": {
                 "hideWhenExpression": "otherFoodDrinks !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
@@ -585,7 +597,7 @@
               }
             },
             {
-              "label": "If other specify",
+              "label": "If Other Specify",
               "type": "obs",
               "id": "feedingMethodOther",
               "questionOptions": {
@@ -606,7 +618,7 @@
                 "answers": [
                   {
                     "concept": "5203142e-3647-5678-2345-901234567890",
-                    "label": "Not low"
+                    "label": "Not Low"
                   },
                   {
                     "concept": "500a5312-b28e-4a19-a602-48c81b033321",
@@ -656,7 +668,7 @@
           ]
         },
         {
-          "label": "Feeding Problem/Low Weight in HIV Positive Mother Who Decided Not to Breastfeed",
+          "label": "Feeding Problem/Low Weight in Hiv Positive Mother Who Decided Not to Breastfeed",
           "isExpanded": "true",
           "questions": [
             {
@@ -669,15 +681,15 @@
                 "answers": [
                   {
                     "concept": "7425364b-5869-7890-4567-123456789012",
-                    "label": "Inappropriate replacement milk/fluids"
+                    "label": "Inappropriate Replacement Milk/Fluids"
                   },
                   {
                     "concept": "8536475c-6970-8901-5678-234567890123",
-                    "label": "Insufficient replacement feeds"
+                    "label": "Insufficient Replacement Feeds"
                   },
                   {
                     "concept": "9647586d-7081-9012-6789-345678901234",
-                    "label": "Replacement Milk incorrectly/unhygenically prepared"
+                    "label": "Replacement Milk Incorrectly/Unhygenically Prepared"
                   },
                   {
                     "concept": "0758697e-8192-0123-7890-456789012345",
@@ -685,11 +697,11 @@
                   },
                   {
                     "concept": "1869708f-9203-1234-8901-567890123456",
-                    "label": "Bottle feeding"
+                    "label": "Bottle Feeding"
                   },
                   {
                     "concept": "22c555fe-de45-44b6-bf86-f485ad10150d",
-                    "label": "Low weight"
+                    "label": "Low Weight"
                   },
                   {
                     "concept": "8b0e78c1-2594-4d14-bbc0-f888d4b8de44",
@@ -733,19 +745,19 @@
                 "answers": [
                   {
                     "concept": "4192031c-2536-4567-1234-890123456789",
-                    "label": "Chin touching the breast"
+                    "label": "Chin Touching the Breast"
                   },
                   {
                     "concept": "5203142d-3647-5678-2345-901234567890",
-                    "label": "Mouth wide open"
+                    "label": "Mouth Wide Open"
                   },
                   {
                     "concept": "6314253e-4758-6789-3456-012345678901",
-                    "label": "Lower lip turned outward"
+                    "label": "Lower Lip Turned Outward"
                   },
                   {
                     "concept": "7425364f-5869-7890-4567-123456789012",
-                    "label": "More areola seen above than below the mouth"
+                    "label": "More Areola Seen Above Than Below the Mouth"
                   }
                 ]
               }
@@ -764,7 +776,7 @@
                   },
                   {
                     "concept": "9647586b-7081-9012-6789-345678901234",
-                    "label": "Not well"
+                    "label": "Not Well"
                   }
                 ]
               }
@@ -796,7 +808,7 @@
       "label": "Additional Information",
       "sections": [
         {
-          "label": "Immunization and Vitamin A",
+          "label": "Immunization and Vitamin a",
           "isExpanded": "true",
           "questions": [
             {
@@ -839,7 +851,8 @@
               "id": "otherProblems",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             },
             {
@@ -848,7 +861,8 @@
               "id": "classificationNotes",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             },
             {
@@ -857,7 +871,8 @@
               "id": "medicationNotes",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "1f96f08e-741e-4d00-a82c-dd4c1a5874d2"
+                "concept": "1f96f08e-741e-4d00-a82c-dd4c1a5874d2",
+                "rows": "3"
               }
             },
             {
@@ -870,7 +885,7 @@
                 "answers": [
                   {
                     "concept": "1a7ccb02-9d98-4085-b5b0-ed66454d26de",
-                    "label": "Breast feeding"
+                    "label": "Breast Feeding"
                   },
                   {
                     "concept": "58f9a2b3-4c5d-6e7f-8901-234567890def",
@@ -878,13 +893,13 @@
                   },
                   {
                     "concept": "5203142f-3647-5678-2345-901234567890",
-                    "label": "Keep warm"
+                    "label": "Keep Warm"
                   }
                 ]
               }
             },
             {
-              "label": "Referred To",
+              "label": "Referred to",
               "type": "obs",
               "id": "referredTo",
               "questionOptions": {
@@ -904,7 +919,8 @@
               "id": "nextDate",
               "questionOptions": {
                 "rendering": "date",
-                "concept": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             },
             {
@@ -913,7 +929,8 @@
               "id": "outcome",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             },
             {
@@ -922,7 +939,8 @@
               "id": "remark",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             }
           ]

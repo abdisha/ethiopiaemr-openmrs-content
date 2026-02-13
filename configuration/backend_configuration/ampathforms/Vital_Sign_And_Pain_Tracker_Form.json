@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -82,7 +82,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 60-100 bpm",
               "alert": {
@@ -104,7 +105,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 90-140 mmHg",
               "alert": {
@@ -120,7 +122,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 60-90 mmHg",
               "alert": {
@@ -163,13 +166,14 @@
                 "rendering": "number",
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "25",
-                "max": "43"
+                "max": "43",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 36.5-37.5°C",
               "validators": [],
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 38.0 || myValue < 36.0)",
-                "message": "Temperature is out of range (Normal range 36.5-37.5)"
+                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
               }
             },
             {
@@ -180,7 +184,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 12-20 breaths/min",
               "validators": [],
@@ -190,7 +195,7 @@
               }
             },
             {
-              "label": "SPO2",
+              "label": "Saturation (SPO2%)",
               "type": "obs",
               "required": false,
               "id": "painTrackerSPO2",
@@ -198,7 +203,8 @@
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "min": "0",
-                "max": "100"
+                "max": "100",
+                "step": "0.01"
               },
               "questionInfo": "Normal: ≥90%",
               "validators": [],
@@ -214,7 +220,8 @@
               "id": "painTrackerWeight",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "step": "0.01"
               },
               "validators": []
             },
@@ -225,7 +232,8 @@
               "id": "painTrackerFluidInputs",
               "questionOptions": {
                 "concept": "163036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "step": "0.01"
               }
             },
             {
@@ -235,7 +243,8 @@
               "id": "painTrackerFluidOutputs",
               "questionOptions": {
                 "concept": "163036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "step": "0.01"
               }
             },
             {
@@ -245,7 +254,8 @@
               "id": "painTrackerGlucose",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
@@ -254,7 +264,8 @@
               "required": false,
               "questionOptions": {
                 "rendering": "number",
-                "concept": "160347AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "160347AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "id": "glasgowComaScale"
             },

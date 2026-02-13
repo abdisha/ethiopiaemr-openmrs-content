@@ -1,7 +1,7 @@
 {
   "name": "Emergency Triage Form Combined (GYNI & Obstetrics)",
   "description": "Combined Emergency Triage Form for Gynecology and Obstetrics/Labor patients with conditional sections",
-  "version": "1",
+  "version": "1.0",
   "published": true,
   "uuid": "1df88856-d54e-43e9-8ed2-dafde77c6081",
   "retired": false,
@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -58,7 +58,7 @@
                 "answers": [
                   {
                     "concept": "33445548-3f35-4d32-b45a-432ebfe475c0",
-                    "label": "GYNI Emergency"
+                    "label": "Gyni Emergency"
                   },
                   {
                     "concept": "0ae36e05-0a16-4603-935b-5d9f538aaed5",
@@ -86,12 +86,13 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "d616d6d4-2548-4b68-99e7-f3c85fa96328"
+                "concept": "d616d6d4-2548-4b68-99e7-f3c85fa96328",
+                "rows": "3"
               },
               "id": "address"
             },
             {
-              "label": "Time of arrival to ED",
+              "label": "Time of Arrival to ED",
               "type": "obs",
               "questionOptions": {
                 "rendering": "datetime",
@@ -100,7 +101,7 @@
               "id": "timeArrivalED"
             },
             {
-              "label": "Triage time",
+              "label": "Triage Time",
               "type": "obs",
               "questionOptions": {
                 "rendering": "datetime",
@@ -113,7 +114,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "48a0a9be-b477-44cf-b370-8d407dffd152"
+                "concept": "48a0a9be-b477-44cf-b370-8d407dffd152",
+                "rows": "3"
               },
               "id": "ambulance"
             }
@@ -127,7 +129,7 @@
           },
           "questions": [
             {
-              "label": "Mode of arrival to the Hospital/ED",
+              "label": "Mode of Arrival to the Hospital/ED",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -139,7 +141,7 @@
                   },
                   {
                     "concept": "85cd7e8f-9001-789a-123e-f01234567890",
-                    "label": "private Car"
+                    "label": "Private Car"
                   },
                   {
                     "concept": "4f694879-6290-411b-8140-b6562715854e",
@@ -167,7 +169,7 @@
           },
           "questions": [
             {
-              "label": "Origin of referral",
+              "label": "Origin of Referral",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -198,7 +200,7 @@
               "id": "originReferral"
             },
             {
-              "label": "Pre hospital care/First Aid given",
+              "label": "Pre Hospital Care/First Aid Given",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -226,11 +228,12 @@
           },
           "questions": [
             {
-              "label": "Chief complaint",
+              "label": "Chief Complaint",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "2f607182-9304-1234-5678-901234abcd05"
+                "concept": "2f607182-9304-1234-5678-901234abcd05",
+                "rows": "2"
               },
               "id": "chiefComplaint"
             },
@@ -239,7 +242,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "f33d1aeb-9033-4405-bdca-6f7f534663f9"
+                "concept": "f33d1aeb-9033-4405-bdca-6f7f534663f9",
+                "rows": "2"
               },
               "id": "gravida"
             },
@@ -248,7 +252,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "610f3f1d-e5a0-42ea-bb4e-c816fe3cfee2"
+                "concept": "610f3f1d-e5a0-42ea-bb4e-c816fe3cfee2",
+                "rows": "2"
               },
               "id": "para"
             },
@@ -257,7 +262,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "775f3a78-1c78-40af-84cd-4ca7f4a7d7aa"
+                "concept": "775f3a78-1c78-40af-84cd-4ca7f4a7d7aa",
+                "rows": "2"
               },
               "id": "abortion"
             },
@@ -280,11 +286,12 @@
               "id": "ultrasound"
             },
             {
-              "label": "Gestational Age(GA)",
+              "label": "Gestational Age (GA)",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "8526f708-5960-7890-1234-567890abcd0b"
+                "concept": "8526f708-5960-7890-1234-567890abcd0b",
+                "rows": "2"
               },
               "id": "gestationalAge"
             }
@@ -381,7 +388,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "5293647a-2637-4567-8901-234567abcd12"
+                "concept": "5293647a-2637-4567-8901-234567abcd12",
+                "rows": "3"
               },
               "id": "pv"
             },
@@ -390,7 +398,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "6304758b-3748-5678-9012-345678abcd13"
+                "concept": "6304758b-3748-5678-9012-345678abcd13",
+                "rows": "3"
               },
               "id": "cervix"
             }
@@ -431,7 +440,9 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1859203a-8293-0123-4567-890123abcd18"
+                "concept": "1859203a-8293-0123-4567-890123abcd18",
+                "min": "0",
+                "step": "0.1"
               },
               "id": "hours"
             }
@@ -449,7 +460,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "2960314b-9304-1234-5678-901234abcd19"
+                "concept": "2960314b-9304-1234-5678-901234abcd19",
+                "rows": "3"
               },
               "id": "presentation"
             },
@@ -458,7 +470,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "3071425c-0415-2345-6789-012345abcd1a"
+                "concept": "3071425c-0415-2345-6789-012345abcd1a",
+                "rows": "3"
               },
               "id": "fhb"
             }
@@ -477,20 +490,24 @@
           },
           "questions": [
             {
-              "label": "BP-Systolic",
+              "label": "Bp-systolic",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "step": "0.01"
               },
               "id": "bpSystolic"
             },
             {
-              "label": "BP-Diastolic",
+              "label": "Bp-diastolic",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "step": "0.01"
               },
               "id": "bpDiastolic"
             }
@@ -504,7 +521,7 @@
           },
           "questions": [
             {
-              "label": "Past medical illness",
+              "label": "Past Medical Illness",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
@@ -566,7 +583,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "4182536d-1526-3456-7890-123456abcd1b"
+                "concept": "4182536d-1526-3456-7890-123456abcd1b",
+                "rows": "3"
               },
               "id": "investigationPlan"
             }
@@ -588,15 +606,15 @@
                 "answers": [
                   {
                     "concept": "6304758f-3748-5678-9012-345678abcd1d",
-                    "label": "Admit to LW"
+                    "label": "Admit to Lw"
                   },
                   {
                     "concept": "7415869a-4859-6789-0123-456789abcd1e",
-                    "label": "Send to GW"
+                    "label": "Send to Gw"
                   },
                   {
                     "concept": "8526970b-5960-7890-1234-567890abcd1f",
-                    "label": "ANC"
+                    "label": "ANC Referral"
                   },
                   {
                     "concept": "9637081c-6071-8901-2345-678901abcd20",
@@ -615,7 +633,9 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1859203e-8293-0123-4567-890123abcd22"
+                "concept": "1859203e-8293-0123-4567-890123abcd22",
+                "min": "0",
+                "step": "0.1"
               },
               "id": "reevaluateHours"
             }
@@ -624,7 +644,7 @@
       ]
     },
     {
-      "label": "P/A (PER ABDOMEN) - Obstetrics",
+      "label": "P/A (PER ABDOMEN)- Obstetrics",
       "sections": [
         {
           "label": "Physical Examination - Per Abdomen",
@@ -638,7 +658,9 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "step": "0.1"
               },
               "id": "fundal_height_weeks"
             },
@@ -699,7 +721,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "ffdae04b-b351-4a8d-9368-4658c4e52f49"
+                "concept": "ffdae04b-b351-4a8d-9368-4658c4e52f49",
+                "rows": "3"
               },
               "id": "amount_of_liquor"
             }

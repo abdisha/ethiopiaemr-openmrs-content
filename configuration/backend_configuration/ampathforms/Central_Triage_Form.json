@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -65,7 +65,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 60-100 bpm",
               "alert": {
@@ -86,7 +87,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 90-120 mmHg",
               "alert": {
@@ -101,7 +103,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 60-90 mmHg",
               "alert": {
@@ -142,12 +145,13 @@
                 "rendering": "number",
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "25",
-                "max": "43"
+                "max": "43",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 36.5-37.5°C",
               "alert": {
-                "alertWhenExpression": "myValue && (myValue < 36.5 || myValue > 37.5)",
-                "message": "Temperature is outside the normal range (36.5–37.5°C). Abnormal"
+                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
               }
             },
             {
@@ -157,7 +161,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 16-24 breaths/min",
               "alert": {
@@ -166,14 +171,15 @@
               }
             },
             {
-              "label": "SPO2 (>90)",
+              "label": "Saturation (SPO2%)",
               "type": "obs",
               "id": "spo2",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "100"
+                "max": "100",
+                "step": "0.01"
               },
               "questionInfo": "Normal: >90%",
               "alert": {
@@ -188,7 +194,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             },
             {
@@ -198,7 +205,21 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
+              }
+            },
+            {
+              "label": "BMI (Kg/m2)",
+              "type": "obs",
+              "id": "bmi",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "calculate": {
+                  "calculateExpression": "calcBMI(height,weight)"
+                },
+                "step": "0.01"
               }
             }
           ]

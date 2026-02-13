@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -95,43 +95,47 @@
               "id": "bloodUnitNumber"
             },
             {
-              "label": "Hgb/ Hct Result Notes",
+              "label": "Hgb/Hct Result Notes",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "1194fec8-4093-4479-bee5-f791012f544b"
               },
+              "questionInfo": "Hgb = Hemoglobin, Hct = Hematocrit",
               "id": "hgbHctResultNotes"
             },
             {
-              "label": "BG/Rh of pt",
+              "label": "BG/Rh of Pt",
               "type": "obs",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "7fd27265-efcc-46e6-b580-e34d3476774e"
               },
+              "questionInfo": "BG = Blood Group, Rh = Rhesus factor",
               "id": "bgRhOfPt"
             },
             {
-              "label": "BG/Rh of blood given",
+              "label": "BG/Rh of Blood Given",
               "type": "obs",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "752baba8-0370-4c2f-845e-481c7730c3d5"
               },
+              "questionInfo": "BG = Blood Group, Rh = Rhesus factor",
               "id": "bgRhOfBloodGiven"
             },
             {
-              "label": "Cross Match number",
+              "label": "Cross Match Number",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "01736152-fe5b-427b-b93a-e583b785f6c9"
+                "concept": "01736152-fe5b-427b-b93a-e583b785f6c9",
+                "step": "0.01"
               },
               "id": "crossMatchNumber"
             },
             {
-              "label": "Any reaction seen",
+              "label": "Any Reaction Seen",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
