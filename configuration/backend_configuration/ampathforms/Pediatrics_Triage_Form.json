@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -59,16 +59,18 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "WEIGHT",
+              "label": "Weight (kg)",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
+              "questionInfo": "Pediatric weight measurement in kilograms",
               "id": "weight"
             },
             {
-              "label": "Time of illness/ accident",
+              "label": "Time of Illness/Accident",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
@@ -98,11 +100,11 @@
           ]
         },
         {
-          "label": "Triage time",
+          "label": "Triage Time",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Mode of arrival",
+              "label": "Mode of Arrival",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -137,7 +139,7 @@
               "id": "modeOfArrival"
             },
             {
-              "label": "Pre Hospital Care/first aid",
+              "label": "Pre Hospital Care/First Aid",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -156,7 +158,7 @@
               "id": "preHospitalCareFirstAid"
             },
             {
-              "label": "If yes specify",
+              "label": "If Yes Specify",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
@@ -192,7 +194,7 @@
                   },
                   {
                     "concept": "67792c5f-c3d0-42ef-b20b-a61c30d1fa9b",
-                    "label": "yellow"
+                    "label": "Yellow"
                   },
                   {
                     "concept": "4da071fe-7089-4e59-b53b-df16d49337dd",
@@ -203,7 +205,7 @@
               "id": "emergency"
             },
             {
-              "label": "if red ABCD",
+              "label": "If Red Abcd",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -247,7 +249,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Airway and breathing",
+              "label": "Airway and Breathing",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -255,15 +257,15 @@
                 "answers": [
                   {
                     "concept": "892f9568-5086-4148-af4c-7d14f7d2cfe8",
-                    "label": "Obstructed breathing"
+                    "label": "Obstructed Breathing"
                   },
                   {
                     "concept": "58566778-8990-6782-0126-c23456789a12",
-                    "label": "Central cyanosis"
+                    "label": "Central Cyanosis"
                   },
                   {
                     "concept": "7dcd7908-2118-43d3-b469-c90fb042836c",
-                    "label": "Sever Respiratory distress"
+                    "label": "Sever Respiratory Distress"
                   }
                 ]
               },
@@ -278,7 +280,7 @@
                 "answers": [
                   {
                     "concept": "46beb2f8-f33e-4ea9-95ff-261d2ff61838",
-                    "label": "Cold hands"
+                    "label": "Cold Hands"
                   },
                   {
                     "concept": "d3c2517d-049a-4258-8046-fbff8a9e0c86",
@@ -286,14 +288,14 @@
                   },
                   {
                     "concept": "ef376108-0270-4f68-9a61-3ee11adc1e1b",
-                    "label": "Weak and fast pulse"
+                    "label": "Weak and Fast Pulse"
                   }
                 ]
               },
               "id": "circulation"
             },
             {
-              "label": "Dehydration (sever)only in child with diarrhea) Plus any two of those",
+              "label": "Dehydration (sever)Only in Child with Diarrhea)Plus Any Two of Those",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -305,7 +307,7 @@
                   },
                   {
                     "concept": "1dd1f2a3-7b4c-567d-901e-789012345678",
-                    "label": "Sunken eyes"
+                    "label": "Sunken Eyes"
                   },
                   {
                     "concept": "edbfc52e-de3e-45cf-b52b-3c4425c5a172",
@@ -326,45 +328,72 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
-              "id": "heartRate"
+              "id": "heartRate",
+              "questionInfo": "Normal range for school age: 70-110 bpm"
             },
             {
               "label": "Respiratory Rate",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
-              "id": "respiratoryRate"
+              "id": "respiratoryRate",
+              "questionInfo": "Normal range for school age: 18-25 breaths/min"
             },
             {
               "label": "Systolic Blood Pressure",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
-              "id": "systolicBloodPressure"
+              "id": "systolicBloodPressure",
+              "questionInfo": "Normal range for school age: 95-115 mmHg"
+            },
+            {
+              "label": "Diastolic Blood Pressure",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "id": "diastolicBloodPressure",
+              "questionInfo": "Normal range for school age: 55-75 mmHg"
             },
             {
               "label": "Temperature",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01",
+                "min": "25",
+                "max": "43"
               },
-              "id": "temperature"
+              "id": "temperature",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
+              },
+              "questionInfo": "Normal range for school age: 36.5-37.5°C"
             },
             {
               "label": "Saturation",
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
-              "id": "saturation"
+              "id": "saturation",
+              "questionInfo": "Normal range for school age: ≥90%"
             }
           ]
         },
@@ -397,7 +426,7 @@
                   },
                   {
                     "concept": "72d950f7-17c5-469d-abf0-8882d656e049",
-                    "label": "Trauma or urgent surgical condition"
+                    "label": "Trauma or Urgent Surgical Condition"
                   }
                 ]
               },
@@ -431,11 +460,11 @@
                 "answers": [
                   {
                     "concept": "88def9bc-6eba-433d-ae62-4cf563c00e9c",
-                    "label": "Respiratory distress"
+                    "label": "Respiratory Distress"
                   },
                   {
                     "concept": "843b93f3-303a-4358-ae57-0ef855b5e79a",
-                    "label": "Restless, continually irritable and lethargy"
+                    "label": "Restless,Continually Irritable and Lethargy"
                   },
                   {
                     "concept": "ad5d211b-1701-4cd0-b55b-dd681598ddc6",
@@ -528,7 +557,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Underlying disease",
+              "label": "Underlying Disease",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -587,7 +616,7 @@
                   },
                   {
                     "concept": "1a4c003c-3ed4-4776-8457-72c6bc50cb6c",
-                    "label": "lethargic/Unconscious/Coma"
+                    "label": "Lethargic/Unconscious/Coma"
                   }
                 ]
               },
@@ -695,7 +724,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Triage level",
+              "label": "Triage Level",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -718,7 +747,7 @@
               "id": "triageLevel"
             },
             {
-              "label": "Action to be taken",
+              "label": "Action to Be Taken",
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
@@ -737,7 +766,7 @@
               "id": "actionToBeTaken"
             },
             {
-              "label": "If green Proceed with assessment and treatment according to the child's priority",
+              "label": "If Green Proceed with Assessment and Treatment According to the Child's Priority",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",

@@ -1,7 +1,7 @@
 {
   "name": "Emergency Labor/Obstetrics Form",
   "description": "Obstetrics Form migrated from Bahmni",
-  "version": "1",
+  "version": "1.0",
   "published": true,
   "uuid": "e16b3e3a-c33c-47b6-aec8-864398c6b802",
   "retired": false,
@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -63,7 +63,8 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "id": "fundal_height_weeks"
             },

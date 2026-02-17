@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -59,14 +59,15 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Age at admission",
+              "label": "Age at Admission",
               "type": "obs",
               "required": false,
               "id": "ageAtAdmission",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "7b2c3d4e-5f60-7890-1234-567890abcd11",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             }
           ]
@@ -86,13 +87,14 @@
               }
             },
             {
-              "label": "Mother age",
+              "label": "Mother Age",
               "type": "obs",
               "required": false,
               "id": "motherAge",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "164168AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "164168AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
@@ -102,7 +104,8 @@
               "id": "gravida",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5624AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5624AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
@@ -112,21 +115,23 @@
               "id": "parity",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1053AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1053AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
-              "label": "Previous abortion",
+              "label": "Previous Abortion",
               "type": "obs",
               "required": false,
               "id": "previousAbortion",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1823AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1823AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
-              "label": "Maternal blood group",
+              "label": "Maternal Blood Group",
               "type": "obs",
               "required": false,
               "id": "maternalBloodGroup",
@@ -152,11 +157,11 @@
                   },
                   {
                     "concept": "1230AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "AB Positive"
+                    "label": "Ab Positive"
                   },
                   {
                     "concept": "1231AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "AB Negative"
+                    "label": "Ab Negative"
                   },
                   {
                     "concept": "699AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -192,7 +197,8 @@
               "id": "gestationalAge",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1409AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1409AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
@@ -202,7 +208,8 @@
               "id": "ancVisitNumber",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1590AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1590AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             }
           ]
@@ -213,7 +220,7 @@
       "label": "Medical History & Tests",
       "sections": [
         {
-          "label": "HIV and Laboratory Tests",
+          "label": "Hiv and Laboratory Tests",
           "isExpanded": "true",
           "questions": [
             {
@@ -227,7 +234,7 @@
                 "answers": [
                   {
                     "concept": "1228AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Non-Reactive"
+                    "label": "Non-reactive"
                   },
                   {
                     "concept": "1229AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -237,7 +244,7 @@
               }
             },
             {
-              "label": "IF Reactive for HIV is The Mother On HAART",
+              "label": "If Reactive for Hiv Is the Mother on Haart",
               "type": "obs",
               "required": false,
               "id": "motherOnHaart",
@@ -260,7 +267,7 @@
               }
             },
             {
-              "label": "RPR/VDRL result",
+              "label": "Rpr/Vdrl Result",
               "type": "obs",
               "required": false,
               "id": "rprVdrlResult",
@@ -274,11 +281,11 @@
                   },
                   {
                     "concept": "1229AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Non-Reactive"
+                    "label": "Non-reactive"
                   },
                   {
                     "concept": "c69067da-51bf-429c-8f6a-c3c41202bdf5",
-                    "label": "InConclusive"
+                    "label": "Inconclusive"
                   }
                 ]
               }
@@ -294,24 +301,25 @@
                 "answers": [
                   {
                     "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "HBV REACTIVE"
+                    "label": "Hbv Reactive"
                   },
                   {
                     "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "HBV NON REACTIVE"
+                    "label": "Hbv Non Reactive"
                   }
                 ]
               }
             },
             {
-              "label": "Viral load",
+              "label": "Viral Load",
               "type": "obs",
               "required": false,
               "id": "viralLoad",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             }
           ]
@@ -321,7 +329,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Diagnosed or suspected multiple pregnancy?",
+              "label": "Diagnosed or Suspected Multiple Pregnancy?",
               "type": "obs",
               "required": false,
               "id": "multiplePregnancy",
@@ -381,7 +389,7 @@
               }
             },
             {
-              "label": "Isoimmunization Rh (-) in current or in previous pregnancy?",
+              "label": "Isoimmunization Rh (-)In Current or in Previous Pregnancy?",
               "type": "obs",
               "required": false,
               "id": "rhIsoimmunization",
@@ -401,7 +409,7 @@
               }
             },
             {
-              "label": "Vaginal bleeding?",
+              "label": "Vaginal Bleeding?",
               "type": "obs",
               "required": false,
               "id": "vaginalBleeding",
@@ -421,7 +429,7 @@
               }
             },
             {
-              "label": "Pelvic mass?",
+              "label": "Pelvic Mass?",
               "type": "obs",
               "required": false,
               "id": "pelvicMass",
@@ -441,7 +449,7 @@
               }
             },
             {
-              "label": "Systolic >140 mm/hg and/or Diastolic Blood pressure 90mmHg",
+              "label": "Systolic >140 mm/Hg and/or Diastolic Blood pressure 90mmHg",
               "type": "obs",
               "required": false,
               "id": "hypertension",
@@ -467,7 +475,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Previous stillbirth or neonatal loss",
+              "label": "Previous Stillbirth or Neonatal Loss",
               "type": "obs",
               "required": false,
               "id": "previousStillbirth",
@@ -547,7 +555,7 @@
               }
             },
             {
-              "label": "Last pregnancy: Hospital admission for hypertension or preeclampsia/ Eclampsia",
+              "label": "Last Pregnancy:Hospital Admission for Hypertension or Preeclampsia/Eclampsia",
               "type": "obs",
               "required": false,
               "id": "lastPregnancyHypertension",
@@ -567,7 +575,7 @@
               }
             },
             {
-              "label": "previous surgery on reproductive tract? (myomectomy, removal of septum, fistula repair, cone biopsy, C/S, repaired rapture, cervical circlage)",
+              "label": "previous surgery on reproductive tract? (myomectomy,Removal of Septum,Fistula Repair,Cone Biopsy,c/S,Repaired Rapture,Cervical Circlage)",
               "type": "obs",
               "required": false,
               "id": "previousReproductiveSurgery",
@@ -598,7 +606,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "DEXAMETHASONE GIVEN",
+              "label": "Dexamethasone Given",
               "type": "obs",
               "required": false,
               "id": "dexamethasoneGiven",
@@ -618,7 +626,7 @@
               }
             },
             {
-              "label": "MAGNESIUM SULPHATE GIVEN",
+              "label": "Magnesium Sulphate Given",
               "type": "obs",
               "required": false,
               "id": "magnesiumSulphateGiven",
@@ -638,7 +646,7 @@
               }
             },
             {
-              "label": "PROPHYLACTIC ANTIBIOTICS",
+              "label": "Prophylactic Antibiotics",
               "type": "obs",
               "required": false,
               "id": "prophylacticAntibiotics",
@@ -686,7 +694,7 @@
                   },
                   {
                     "concept": "9940841c-3758-4679-9123-456890abcd39",
-                    "label": "ELECTIVE C/S"
+                    "label": "Elective C/S"
                   }
                 ]
               }
@@ -698,17 +706,19 @@
               "id": "laborDuration",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "159616AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "159616AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
-              "label": "ROM Hours prior to delivery",
+              "label": "ROM Hours Prior to Delivery",
               "type": "obs",
               "required": false,
               "id": "romHours",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "a85909c3-8293-0123-4567-890123abcd24"
+                "concept": "a85909c3-8293-0123-4567-890123abcd24",
+                "step": "0.01"
               }
             },
             {
@@ -736,7 +746,7 @@
               }
             },
             {
-              "label": "INDICATION FOR C/S OR INSTRUMENTAL DELIVERY",
+              "label": "Indication for C/S or Instrumental Delivery",
               "type": "obs",
               "required": false,
               "id": "deliveryIndication",
@@ -780,7 +790,7 @@
               }
             },
             {
-              "label": "Birth weight in gram",
+              "label": "Birth Weight in Gram",
               "type": "obs",
               "required": false,
               "id": "birthWeight",
@@ -788,29 +798,32 @@
                 "rendering": "number",
                 "concept": "5916AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "500",
-                "max": "6000"
+                "max": "6000",
+                "step": "0.01"
               }
             },
             {
-              "label": "APGAR score at 1 minute",
+              "label": "APGAR Score at 1 Minute",
               "type": "obs",
               "required": false,
               "id": "apgar1Min",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "159603AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             },
             {
-              "label": "APGAR score at 5 minutes",
+              "label": "APGAR Score at 5 Minutes",
               "type": "obs",
               "required": false,
               "id": "apgar5Min",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "159604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             },
             {
@@ -821,11 +834,12 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "159605AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             },
             {
-              "label": "Newborn Resuscitation notes",
+              "label": "Newborn Resuscitation Notes",
               "type": "obs",
               "required": false,
               "id": "resuscitationNotes",
@@ -835,7 +849,7 @@
               }
             },
             {
-              "label": "TTC eye ointment given in both eyes GIVEN",
+              "label": "TTC Eye Ointment Given in Both Eyes Given",
               "type": "obs",
               "required": false,
               "id": "ttcEyeOintment",
@@ -855,7 +869,7 @@
               }
             },
             {
-              "label": "VITAMIN K GIVEN",
+              "label": "Vitamin K Given",
               "type": "obs",
               "required": false,
               "id": "vitaminKGiven",

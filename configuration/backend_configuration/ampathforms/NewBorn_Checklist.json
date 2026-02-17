@@ -8,7 +8,7 @@
   "encounter": "Consultation",
   "pages": [
     {
-      "label": "NewBorn checklist",
+      "label": "Newborn Checklist",
       "sections": [
         {
           "label": "Encounter Details",
@@ -54,7 +54,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Type of birth",
+              "label": "Type of Birth",
               "type": "obs",
               "required": false,
               "id": "typeOfBirth",
@@ -78,24 +78,28 @@
               }
             },
             {
-              "label": "APGAR score at 1 minute",
+              "label": "APGAR Score at 1 Minute",
               "type": "obs",
               "required": false,
               "id": "apgar1Min",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "159603AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
+                "concept": "159603AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "questionInfo": "Newborn assessment score (0-10). Normal: 7-10"
             },
             {
-              "label": "APGAR score at 5 minutes",
+              "label": "APGAR Score at 5 Minutes",
               "type": "obs",
               "required": false,
               "id": "apgar5Min",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "159604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
+                "concept": "159604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "questionInfo": "Newborn assessment score (0-10). Normal: 7-10"
             },
             {
               "label": "APGAR Score at 10 min",
@@ -104,11 +108,13 @@
               "id": "apgar10Min",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "159605AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
+                "concept": "159605AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "questionInfo": "Newborn assessment score (0-10). Normal: 7-10"
             },
             {
-              "label": "Stillbirth type",
+              "label": "Stillbirth Type",
               "type": "obs",
               "required": false,
               "id": "stillbirthType",
@@ -122,11 +128,11 @@
                   },
                   {
                     "concept": "1e5f6071-8293-0123-4567-890123abcd05",
-                    "label": "Fresh stillbirth"
+                    "label": "Fresh Stillbirth"
                   },
                   {
                     "concept": "2f607182-9304-1234-5678-901234abcd06",
-                    "label": "Macerated stillbirth"
+                    "label": "Macerated Stillbirth"
                   }
                 ]
               }
@@ -152,7 +158,7 @@
               }
             },
             {
-              "label": "Birth weight",
+              "label": "Birth Weight (g)",
               "type": "obs",
               "required": false,
               "id": "birthWeight",
@@ -160,17 +166,25 @@
                 "rendering": "number",
                 "concept": "5916AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "500",
-                "max": "6000"
-              }
+                "max": "6000",
+                "step": "0.01"
+              },
+              "questionInfo": "Newborn weight at birth. Normal range: 2500-4000g"
             },
             {
-              "label": "Length",
+              "label": "Length (cm)",
               "type": "obs",
               "required": false,
               "id": "length",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
+              },
+              "questionInfo": "Newborn length at birth (crown to heel). Normal range: 45-55 cm",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 45 || myValue > 55)",
+                "message": "Length is outside the normal range (45-55 cm). You can still save."
               }
             },
             {
@@ -216,7 +230,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "BCG Date",
+              "label": "Bcg Date",
               "type": "obs",
               "required": false,
               "id": "bcgDate",
@@ -269,16 +283,17 @@
                     "label": "Skin to Skin Contact"
                   }
                 ]
-              }
+              },
+              "questionInfo": "Vit K = Vitamin K injection. TTC = Tetanus Toxoid Coverage"
             }
           ]
         },
         {
-          "label": "Post-Delivery Checklist",
+          "label": "Post-delivery Checklist",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Maternal bleeding controlled",
+              "label": "Maternal Bleeding Controlled",
               "type": "obs",
               "required": false,
               "id": "maternalBleedingControlled",
@@ -298,7 +313,7 @@
               }
             },
             {
-              "label": "Mother needs to start antibiotics",
+              "label": "Mother Needs to Start Antibiotics",
               "type": "obs",
               "required": false,
               "id": "motherNeedsAntibiotics",
@@ -318,7 +333,7 @@
               }
             },
             {
-              "label": "Baby need to start antibiotics",
+              "label": "Baby Need to Start Antibiotics",
               "type": "obs",
               "required": false,
               "id": "babyNeedsAntibiotics",
@@ -338,7 +353,7 @@
               }
             },
             {
-              "label": "Is baby feeding well",
+              "label": "Is Baby Feeding Well",
               "type": "obs",
               "required": false,
               "id": "babyFeedingWell",
@@ -358,7 +373,7 @@
               }
             },
             {
-              "label": "If mother HIV positive, mother is on ART and baby has neverapin syrup for 6 weeks",
+              "label": "If Mother Hiv Positive, mother is on ART and baby has neverapin syrup for 6 weeks",
               "type": "obs",
               "required": false,
               "id": "hivPositiveMotherArt",
@@ -378,7 +393,7 @@
               }
             },
             {
-              "label": "Family planning options counseled",
+              "label": "Family Planning Options Counseled",
               "type": "obs",
               "required": false,
               "id": "familyPlanningCounseled",
@@ -398,7 +413,7 @@
               }
             },
             {
-              "label": "Health education offered",
+              "label": "Health Education Offered",
               "type": "obs",
               "required": false,
               "id": "healthEducationOffered",
@@ -418,7 +433,7 @@
               }
             },
             {
-              "label": "Appointment given if needed",
+              "label": "Appointment Given If Needed",
               "type": "obs",
               "required": false,
               "id": "appointmentGiven",
@@ -438,7 +453,7 @@
               }
             },
             {
-              "label": "Midwife name",
+              "label": "Midwife Name",
               "type": "encounterProvider",
               "required": false,
               "id": "midwifeName",

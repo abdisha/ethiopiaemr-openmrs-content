@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -52,14 +52,14 @@
       ]
     },
     {
-      "label": "DKA Follow up Sheet",
+      "label": "Vital Signs & Assessment",
       "sections": [
         {
           "label": "Basic Information",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Date and Time Form Filled In",
+              "label": "Date and Time Form Filled in",
               "type": "obs",
               "required": true,
               "id": "dateTimeFormFilled",
@@ -83,12 +83,14 @@
                 "rendering": "number",
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "300"
+                "max": "300",
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
                 "message": "Pulse Rate is out of range (Normal range 60-100)"
-              }
+              },
+              "questionInfo": "Normal range: 60-100 bpm"
             },
             {
               "label": "Systolic BP",
@@ -98,13 +100,13 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "300"
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 130.5 || myValue < 119.5)",
                 "message": "Systolic is out of range (Normal range 120-130)"
-              }
+              },
+              "questionInfo": "Normal range: 90-120 mmHg"
             },
             {
               "label": "Diastolic BP",
@@ -114,13 +116,13 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "200"
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 85.5 || myValue < 79.5)",
                 "message": "Diastolic is out of range (Normal range 80-85)"
-              }
+              },
+              "questionInfo": "Normal range: 60-90 mmHg"
             },
             {
               "label": "Posture",
@@ -151,12 +153,14 @@
                 "rendering": "number",
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "25",
-                "max": "50"
+                "max": "43",
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
-                "message": "Temperature is out of range (Normal range 35-37°C)"
-              }
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
+              },
+              "questionInfo": "Normal range: 36.5-37.5°C"
             },
             {
               "label": "Respiratory Rate",
@@ -167,15 +171,16 @@
                 "rendering": "number",
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "100"
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 25 || myValue < 12)",
                 "message": "Respiratory Rate is out of range (Normal range 12-24)"
-              }
+              },
+              "questionInfo": "Normal range: 16-24 breaths/min"
             },
             {
-              "label": "SPO2 (%)",
+              "label": "Saturation (SPO2%)",
               "type": "obs",
               "required": false,
               "id": "spo2",
@@ -183,12 +188,14 @@
                 "rendering": "number",
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "100"
+                "max": "100",
+                "step": "0.01"
               },
               "alert": {
                 "alertWhenExpression": "myValue && myValue < 95",
                 "message": "SPO2 is below normal (Normal range ≥95%)"
-              }
+              },
+              "questionInfo": "Normal range: ≥90%"
             },
             {
               "label": "Weight (kg)",
@@ -199,7 +206,7 @@
                 "rendering": "number",
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "300"
+                "step": "0.01"
               }
             },
             {
@@ -211,7 +218,7 @@
                 "rendering": "number",
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "250"
+                "step": "0.01"
               }
             },
             {
@@ -223,11 +230,17 @@
                 "rendering": "number",
                 "concept": "160287AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
-                "max": "10"
+                "max": "10",
+                "step": "0.01"
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Treatment & Monitoring",
+      "sections": [
         {
           "label": "Laboratory and Treatment",
           "isExpanded": "true",
@@ -238,8 +251,10 @@
               "required": false,
               "id": "rbs",
               "questionOptions": {
-                "rendering": "Numeric",
-                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "rendering": "number",
+                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "step": "0.01"
               }
             },
             {
@@ -249,7 +264,9 @@
               "id": "ketone",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "d9e8f7a6-b5c4-4d3e-8f2a-1b2c3d4e5f6a"
+                "concept": "d9e8f7a6-b5c4-4d3e-8f2a-1b2c3d4e5f6a",
+                "min": "0",
+                "step": "0.1"
               }
             },
             {
@@ -259,7 +276,9 @@
               "id": "potassium",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "step": "0.1"
               }
             },
             {
@@ -286,7 +305,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "166650AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             },
             {
@@ -297,7 +317,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "162659AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               }
             }
           ]
@@ -313,7 +334,7 @@
               "id": "remarks",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rows": "3"
               }
             }

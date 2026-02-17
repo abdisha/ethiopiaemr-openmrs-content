@@ -1,5 +1,5 @@
 {
-  "name": "AAA_History and Examination Testing Seeded Concepts",
+  "name": "History and Examination",
   "description": "History and Examination form Redesigned Using Bahmni's Form.",
   "version": "1.1",
   "published": true,
@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -574,8 +574,7 @@
                   "questionOptions": {
                     "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "rendering": "number",
-                    "min": "0",
-                    "max": "90"
+                    "min": "0"
                   }
                 },
                 {
@@ -679,5 +678,7 @@
         }
       ]
     }
-  ]
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }

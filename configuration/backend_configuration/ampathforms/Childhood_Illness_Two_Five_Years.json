@@ -1,6 +1,6 @@
 {
-  "name": "Childhood Illness( Children aged 2 months to 5 years)",
-  "description": "Childhood Illness( Children aged 2 months to 5 years) migrated from Bahmni",
+  "name": "Childhood Illness (Children aged 2 months to 5 years)",
+  "description": "Childhood Illness (Children aged 2 months to 5 years) migrated from Bahmni",
   "version": "1.0",
   "published": true,
   "uuid": "68e7ce9d-bf99-4bfd-9673-2728ad2c5cd2",
@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -76,7 +76,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "General Danger Signs present",
+              "label": "General Danger Signs Present",
               "type": "obs",
               "required": false,
               "id": "presenceOfGeneralDangerSigns",
@@ -105,7 +105,7 @@
                 "concept": "10718293-a415-2345-6789-abcdef012345",
                 "answers": [
                   {
-                    "label": "Unable to drink or Breastfeed",
+                    "label": "Unable to Drink or Breastfeed",
                     "concept": "11829304-b526-3456-789a-bcdef0123456"
                   },
                   {
@@ -113,7 +113,7 @@
                     "concept": "164482AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Convulsion history",
+                    "label": "Convulsion History",
                     "concept": "12930415-c637-4567-890b-cdef01234567"
                   },
                   {
@@ -121,7 +121,7 @@
                     "concept": "13a41526-d748-5678-901c-def012345678"
                   },
                   {
-                    "label": "Lethargic/ Unconscious",
+                    "label": "Lethargic/Unconscious",
                     "concept": "14b52637-e859-6789-012d-ef0123456789"
                   }
                 ]
@@ -163,11 +163,13 @@
               "id": "respiratoryRate",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "hide": {
                 "hideWhenExpression": "isEmpty(acuteRespiratoryInfectionPresent) || !acuteRespiratoryInfectionPresent"
-              }
+              },
+              "questionInfo": "Normal range for school age: 18-25 breaths/min"
             },
             {
               "label": "Duration Units",
@@ -180,7 +182,7 @@
                 "answers": [
                   {
                     "concept": "1072AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Days"
+                    "label": "days"
                   },
                   {
                     "concept": "1822AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -200,7 +202,7 @@
                   },
                   {
                     "concept": "1073AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Weeks"
+                    "label": "weeks"
                   },
                   {
                     "concept": "1734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -219,7 +221,8 @@
               "id": "durationAcuteRespiratory",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "hide": {
                 "hideWhenExpression": "isEmpty(acuteRespiratoryInfectionPresent) || !acuteRespiratoryInfectionPresent"
@@ -235,7 +238,7 @@
                 "concept": "15c63748-f96a-789b-123e-f01234567890",
                 "answers": [
                   {
-                    "label": "Chest indrawing",
+                    "label": "Chest Indrawing",
                     "concept": "16d7485a-0a7b-890c-234f-012345678901"
                   },
                   {
@@ -259,7 +262,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Diarrhea present",
+              "label": "Diarrhea Present",
               "type": "obs",
               "required": false,
               "id": "presenceOfDiarrhea",
@@ -289,7 +292,7 @@
                 "answers": [
                   {
                     "concept": "1072AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Days"
+                    "label": "days"
                   },
                   {
                     "concept": "1822AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -309,7 +312,7 @@
                   },
                   {
                     "concept": "1073AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Weeks"
+                    "label": "weeks"
                   },
                   {
                     "concept": "1734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -318,7 +321,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || !presenceOfDiarrhea"
+                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || presenceOfDiarrhea !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -328,10 +331,11 @@
               "id": "durationDiarrhea",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || !presenceOfDiarrhea"
+                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || presenceOfDiarrhea !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -344,37 +348,37 @@
                 "concept": "19a7b8c9-3d0e-123f-567a-345678901234",
                 "answers": [
                   {
-                    "label": "Blood In Stool",
+                    "label": "Blood in Stool",
                     "concept": "1aa8c9d0-4e1f-234a-678b-456789012345"
                   },
                   {
-                    "label": "Restless/ Irritable",
+                    "label": "Restless/Irritable",
                     "concept": "1bb9d0e1-5f2a-345b-789c-567890123456"
                   },
                   {
-                    "label": "Drinks eagerly",
+                    "label": "Drinks Eagerly",
                     "concept": "1cc0e1f2-6a3b-456c-890d-678901234567"
                   },
                   {
-                    "label": "Sunken eyes",
+                    "label": "Sunken Eyes",
                     "concept": "1dd1f2a3-7b4c-567d-901e-789012345678"
                   },
                   {
-                    "label": "Lethargic/ Unconscious",
+                    "label": "Lethargic/Unconscious",
                     "concept": "14b52637-e859-6789-012d-ef0123456789"
                   },
                   {
-                    "label": "Unable to drink or Breastfeed",
+                    "label": "Unable to Drink or Breastfeed",
                     "concept": "11829304-b526-3456-789a-bcdef0123456"
                   }
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || !presenceOfDiarrhea"
+                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || presenceOfDiarrhea !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
-              "label": "Turgor/skin pinch",
+              "label": "Turgor/Skin Pinch",
               "type": "obs",
               "required": false,
               "id": "turgorSkinPinch",
@@ -383,7 +387,7 @@
                 "concept": "1ee2f3a4-8c5d-678e-012f-890123456789"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || !presenceOfDiarrhea"
+                "hideWhenExpression": "isEmpty(presenceOfDiarrhea) || presenceOfDiarrhea !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
@@ -413,7 +417,7 @@
               }
             },
             {
-              "label": "Fever detected on",
+              "label": "Fever Detected on",
               "type": "obs",
               "required": false,
               "id": "feverDetectedOn",
@@ -450,7 +454,7 @@
                 "answers": [
                   {
                     "concept": "1072AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Days"
+                    "label": "days"
                   },
                   {
                     "concept": "1822AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -470,7 +474,7 @@
                   },
                   {
                     "concept": "1073AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Weeks"
+                    "label": "weeks"
                   },
                   {
                     "concept": "1734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -489,14 +493,15 @@
               "id": "durationFever",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "hide": {
                 "hideWhenExpression": "isEmpty(presenceOfFever) || !presenceOfFever"
               }
             },
             {
-              "label": "Malaria risk",
+              "label": "Malaria Risk",
               "type": "obs",
               "required": false,
               "id": "malariaRisk",
@@ -601,7 +606,7 @@
                 "concept": "73ffc7dc-b550-47af-b7e8-39655bf8a3c1",
                 "answers": [
                   {
-                    "label": "Stiff neck",
+                    "label": "Stiff Neck",
                     "concept": "7aa9b0c1-5d2e-345f-789a-567890123456"
                   },
                   {
@@ -609,7 +614,7 @@
                     "concept": "8bb0c1d2-6e3f-456a-890b-678901234567"
                   },
                   {
-                    "label": "General Rash, Cough",
+                    "label": "General Rash,Cough",
                     "concept": "9cc1d2e3-7f4a-567b-901c-789012345678"
                   },
                   {
@@ -617,7 +622,7 @@
                     "concept": "0dd2e3f4-8a5b-678c-012d-890123456789"
                   },
                   {
-                    "label": "Red eyes",
+                    "label": "Red Eyes",
                     "concept": "1ee3f4a5-9b6c-789d-123e-901234567890"
                   },
                   {
@@ -625,7 +630,7 @@
                     "concept": "2ff4a5b6-0c7d-890e-234f-012345678901"
                   },
                   {
-                    "label": "Mouth Ulcer/ Deep or Extensive",
+                    "label": "Mouth Ulcer/Deep or Extensive",
                     "concept": "3aa5b6c7-1d8e-901f-345a-123456789012"
                   }
                 ]
@@ -641,7 +646,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Ear problem",
+              "label": "Ear Problem",
               "type": "obs",
               "required": false,
               "id": "presenceOfEarProblem",
@@ -671,7 +676,7 @@
                 "answers": [
                   {
                     "concept": "1072AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Days"
+                    "label": "days"
                   },
                   {
                     "concept": "1822AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -691,7 +696,7 @@
                   },
                   {
                     "concept": "1073AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Weeks"
+                    "label": "weeks"
                   },
                   {
                     "concept": "1734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -704,13 +709,14 @@
               }
             },
             {
-              "label": "Ear discharge",
+              "label": "Ear Discharge",
               "type": "obs",
               "required": false,
               "id": "earDischargeDays",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               },
               "hide": {
                 "hideWhenExpression": "isEmpty(presenceOfEarProblem) || !presenceOfEarProblem"
@@ -726,7 +732,7 @@
                 "concept": "03c4d5e6-f708-901b-2345-6789abcd0000",
                 "answers": [
                   {
-                    "label": "Ear pain",
+                    "label": "Ear Pain",
                     "concept": "4aa6b7c8-2d9e-012f-456a-345678901234"
                   },
                   {
@@ -734,7 +740,7 @@
                     "concept": "5bb7c8d9-3e0f-123a-567b-456789012345"
                   },
                   {
-                    "label": "Tender swelling behind the ear",
+                    "label": "Tender Swelling Behind the Ear",
                     "concept": "6cc8d9e0-4f1a-234b-678c-567890123456"
                   }
                 ]
@@ -877,7 +883,7 @@
               }
             },
             {
-              "label": "Any medical complications",
+              "label": "Any Medical Complications",
               "type": "obs",
               "required": false,
               "id": "anyMedicalComplications",
@@ -986,7 +992,7 @@
               }
             },
             {
-              "label": "Child DNA/PCR Test",
+              "label": "Child Dna/Pcr Test",
               "type": "obs",
               "required": false,
               "id": "childDnaPcrTestResult",
@@ -1056,7 +1062,7 @@
               }
             },
             {
-              "label": "TB Symptoms and Risk Factors",
+              "label": "Tb Symptoms and Risk Factors",
               "type": "obs",
               "required": false,
               "id": "tuberculosisSymptoms",
@@ -1069,23 +1075,23 @@
                     "concept": "85822a93-0801-4787-8ec3-4f3d04e87e35"
                   },
                   {
-                    "label": "Night sweat",
+                    "label": "Night Sweat",
                     "concept": "4c2a0bc4-6280-4695-b8fe-f44e1417e5ee"
                   },
                   {
-                    "label": "Close Contact History with known TB pt.",
+                    "label": "Close Contact History with Known Tb Pt.",
                     "concept": "cb3719c5-239c-475a-ae8f-88c9b996bfa1"
                   },
                   {
-                    "label": "Contact with MDR TB",
+                    "label": "Contact with Mdr Tb",
                     "concept": "d746e6f4-1620-467e-9053-0f7e96f46912"
                   },
                   {
-                    "label": "Swelling or discharging wound",
+                    "label": "Swelling or Discharging Wound",
                     "concept": "82228be2-e916-4428-9aef-478c28a76844"
                   },
                   {
-                    "label": "Signs of acute malnutrition (MAM/SAM)",
+                    "label": "Signs of acute malnutrition (MAM/Sam)",
                     "concept": "4148ad41-be02-443d-b748-ff95f2f84eeb"
                   }
                 ]
@@ -1119,11 +1125,11 @@
                     "concept": "599fe157-a7f7-4c22-b270-9ce25aa31296"
                   },
                   {
-                    "label": "Up-to-Date",
+                    "label": "Up-to-date",
                     "concept": "ae23be45-1581-40eb-9aad-771e58729802"
                   },
                   {
-                    "label": "Not Up-to-Date",
+                    "label": "Not Up-to-date",
                     "concept": "256813f5-9123-42cb-a456-d51db0f0d8b3"
                   },
                   {
@@ -1153,11 +1159,11 @@
                 "concept": "164498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
-                    "label": "Up-to-Date",
+                    "label": "Up-to-date",
                     "concept": "164497AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Not Up-to-Date",
+                    "label": "Not Up-to-date",
                     "concept": "164496AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   }
                 ]
@@ -1196,7 +1202,7 @@
           ]
         },
         {
-          "label": "Assess For Feeding",
+          "label": "Assess for Feeding",
           "isExpanded": "true",
           "questions": [
             {
@@ -1307,11 +1313,11 @@
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "1f96f08e-741e-4d00-a82c-dd4c1a5874d2",
-                "rows": "4"
+                "rows": "3"
               }
             },
             {
-              "label": "Counsel mother about",
+              "label": "Counsel Mother About",
               "type": "obs",
               "required": false,
               "id": "counselMotherAbout",
@@ -1335,7 +1341,7 @@
               }
             },
             {
-              "label": "Referred To",
+              "label": "Referred to",
               "type": "obs",
               "required": false,
               "id": "referredTo",
@@ -1345,7 +1351,7 @@
               }
             },
             {
-              "label": "Next date",
+              "label": "Next Date",
               "type": "obs",
               "required": false,
               "id": "nextDate",
@@ -1379,14 +1385,14 @@
               }
             },
             {
-              "label": "HMIS Diagnosis",
+              "label": "Hmis Diagnosis",
               "type": "obs",
               "required": false,
               "id": "hmisDiagnosisNotes",
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "5809a2b3-3ca3-b23e-8567-9ef012345678",
-                "rows": "4"
+                "rows": "3"
               }
             },
             {
@@ -1396,8 +1402,8 @@
               "id": "acifIfsRemark",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rows": "4"
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3"
               }
             }
           ]

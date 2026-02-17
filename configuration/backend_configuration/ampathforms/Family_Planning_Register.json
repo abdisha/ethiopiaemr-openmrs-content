@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -79,7 +79,7 @@
               }
             },
             {
-              "label": "Registration date",
+              "label": "Registration Date",
               "type": "obs",
               "required": true,
               "id": "registrationDate",
@@ -117,7 +117,7 @@
               }
             },
             {
-              "label": "Educational status",
+              "label": "Educational Status",
               "type": "obs",
               "required": false,
               "id": "educationalStatus",
@@ -129,11 +129,11 @@
           ]
         },
         {
-          "label": "HIV Testing",
+          "label": "Hiv Testing",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "HIV test offered",
+              "label": "Hiv Test Offered",
               "type": "obs",
               "required": false,
               "id": "hivTestOffered",
@@ -153,7 +153,7 @@
               }
             },
             {
-              "label": "HIV test performed",
+              "label": "Hiv Test Performed",
               "type": "obs",
               "required": false,
               "id": "hivTestPerformed",
@@ -176,7 +176,7 @@
               }
             },
             {
-              "label": "HIV Result",
+              "label": "Hiv Result",
               "type": "obs",
               "required": false,
               "id": "hivTestResult",
@@ -199,7 +199,7 @@
               }
             },
             {
-              "label": "HIV Specific Contraceptive counseling offered",
+              "label": "Hiv Specific Contraceptive Counseling Offered",
               "type": "obs",
               "required": false,
               "id": "hivSpecificContraceptiveCounselingOffered",
@@ -219,7 +219,7 @@
               }
             },
             {
-              "label": "HIV positive linked to ART",
+              "label": "Hiv Positive Linked to ART",
               "type": "obs",
               "required": false,
               "id": "hivPositiveLinkedToArt",
@@ -248,7 +248,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Target Population category",
+              "label": "Target Population Category",
               "type": "obs",
               "required": false,
               "id": "targetPopulationCategory",
@@ -257,15 +257,15 @@
                 "concept": "4f8a2b1c-3d5e-4567-8901-234567890abc",
                 "answers": [
                   {
-                    "label": "Female commercial Sex Workers",
+                    "label": "Female Commercial Sex Workers",
                     "concept": "160579AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Long distance drivers",
+                    "label": "Long Distance Drivers",
                     "concept": "162198AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Mobile workers/daily laborers",
+                    "label": "Mobile Workers/Daily Laborers",
                     "concept": "7e9f1a2b-4c6d-5678-9012-345678901de0"
                   },
                   {
@@ -277,15 +277,15 @@
                     "concept": "1174AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Children of PLHIV",
+                    "label": "Children of Plhiv",
                     "concept": "1393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Partner of PLHIV",
+                    "label": "Partner of Plhiv",
                     "concept": "8f0a2b3c-5d7e-6789-0123-456789012e0a"
                   },
                   {
-                    "label": "Other MARPS",
+                    "label": "Other Marps",
                     "concept": "9a1b3c4d-6e8f-7890-1234-567890123f0a"
                   },
                   {
@@ -302,7 +302,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "TT status checked",
+              "label": "Tt Status Checked",
               "type": "obs",
               "required": false,
               "id": "ttStatusChecked",
@@ -322,7 +322,7 @@
               }
             },
             {
-              "label": "Contraindication for IUCD",
+              "label": "Contraindication for Iucd",
               "type": "obs",
               "required": false,
               "id": "contraindicationForIucd",
@@ -342,17 +342,18 @@
               }
             },
             {
-              "label": "Visit number",
+              "label": "Visit Number",
               "type": "obs",
               "required": false,
               "id": "visitNumber",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "164812AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "164812AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "step": "0.01"
               }
             },
             {
-              "label": "Contraceptive provided",
+              "label": "Contraceptive Provided",
               "type": "obs",
               "required": false,
               "id": "contraceptiveProvided",
@@ -416,7 +417,7 @@
               }
             },
             {
-              "label": "Appointment date",
+              "label": "Appointment Date",
               "type": "obs",
               "required": false,
               "id": "appointmentDate",
@@ -432,7 +433,7 @@
               "id": "remark",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rows": "4"
               }
             }

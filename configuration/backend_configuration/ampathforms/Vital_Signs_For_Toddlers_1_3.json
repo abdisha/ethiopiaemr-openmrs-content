@@ -5,7 +5,7 @@
   "published": true,
   "uuid": "52ce52e1-a716-4687-989b-964d04148879",
   "retired": false,
-  "encounter": "Consultation",
+  "encounter": "Vitals",
   "pages": [
     {
       "label": "Visit Details",
@@ -15,7 +15,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Visit date:",
+              "label": "Visit Date:",
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
@@ -66,7 +66,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range for toddlers: 90-150 bpm",
               "alert": {
@@ -83,13 +84,14 @@
                 "rendering": "number",
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "25",
-                "max": "43"
+                "max": "43",
+                "step": "0.01"
               },
               "questionInfo": "Normal range: 36.5-37.5°C",
               "validators": [],
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 38.0 || myValue < 36.0)",
-                "message": "Temperature is out of range (Normal range 36.5-37.5)"
+                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
               }
             },
             {
@@ -100,7 +102,8 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range for toddlers: 20-30 breaths/min",
               "validators": [],
@@ -110,7 +113,7 @@
               }
             },
             {
-              "label": "SPO2",
+              "label": "Saturation (SPO2%)",
               "type": "obs",
               "required": false,
               "id": "toddlerSPO2",
@@ -118,7 +121,8 @@
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "min": "0",
-                "max": "100"
+                "max": "100",
+                "step": "0.01"
               },
               "questionInfo": "Normal: ≥90%",
               "validators": [],
@@ -128,34 +132,40 @@
               }
             },
             {
-              "label": "Weight",
+              "label": "Weight (kg)",
               "type": "obs",
               "required": false,
               "id": "toddlerWeight",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
-              }
+                "rendering": "number",
+                "step": "0.01"
+              },
+              "questionInfo": "Toddler weight measurement in kilograms"
             },
             {
-              "label": "Length",
+              "label": "Length (cm)",
               "type": "obs",
               "required": false,
               "id": "toddlerLength",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
-              }
+                "rendering": "number",
+                "step": "0.01"
+              },
+              "questionInfo": "Toddler length measurement in centimeters (crown to heel)"
             },
             {
-              "label": "MUAC",
+              "label": "MUAC (cm)",
               "type": "obs",
               "required": false,
               "id": "toddlerMUAC",
               "questionOptions": {
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
-              }
+                "rendering": "number",
+                "step": "0.01"
+              },
+              "questionInfo": "Mid-Upper Arm Circumference in centimeters. Measure at midpoint between shoulder and elbow"
             }
           ]
         },
@@ -164,14 +174,15 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Systolic B.P",
+              "label": "Systolic B.p",
               "type": "obs",
               "required": false,
               "id": "toddlerSystolic",
               "questionOptions": {
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range for toddlers: 80-110 mmHg",
               "alert": {
@@ -180,14 +191,15 @@
               }
             },
             {
-              "label": "Diastolic B.P",
+              "label": "Diastolic B.p",
               "type": "obs",
               "required": false,
               "id": "toddlerDiastolic",
               "questionOptions": {
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
-                "min": "0"
+                "min": "0",
+                "step": "0.01"
               },
               "questionInfo": "Normal range for toddlers: 50-70 mmHg",
               "alert": {

@@ -1,158 +1,158 @@
 {
-    "name": "Family Planning",
-    "description": "Family Planning form migrated from Bahmni",
-    "version": "1.0",
-    "published": true,
-    "uuid": "8357cfb2-5c21-4550-8958-21b487ae9e52",
-    "retired": false,
-    "encounter": "Consultation",
-    "pages": [
+  "name": "Family Planning",
+  "description": "Family Planning form migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "8357cfb2-5c21-4550-8958-21b487ae9e52",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Family Planning",
+      "sections": [
         {
-            "label": "Family Planning",
-            "sections": [
-                {
-                    "label": "Family Planning Information",
-                    "isExpanded": "true",
-                    "questions": [
-                        {
-                            "label": "Family Planning Method Provided",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "radio",
-                                "concept": "374AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                "answers": [
-                                    {
-                                        "concept": "907AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Depo"
-                                    },
-                                    {
-                                        "concept": "780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Pills"
-                                    },
-                                    {
-                                        "concept": "190AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Condoms"
-                                    },
-                                    {
-                                        "concept": "1359AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Implant"
-                                    },
-                                    {
-                                        "concept": "5275AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "IUCD"
-                                    }
-                                ]
-                            },
-                            "id": "familyPlanningMethodProvided"
-                        },
-                        {
-                            "label": "Notes - (optional)",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "textarea",
-                                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                            },
-                            "id": "familyPlanningMethodNotes",
-                            "hide": {
-                                "hideWhenExpression": "isEmpty(familyPlanningMethodProvided)"
-                            }
-                        },
-                        {
-                            "label": "Units Provided",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "text",
-                                "concept": "9c4d5e6f-7081-9012-cdef-345678901999"
-                            },
-                            "id": "unitsProvided"
-                        },
-                        {
-                            "label": "Notes (if necessary)",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "textarea",
-                                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                            },
-                            "id": "unitsProvidedNotes",
-                            "hide": {
-                                "hideWhenExpression": "isEmpty(unitsProvided)"
-                            }
-                        },
-                        {
-                            "label": "Users Type",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "radio",
-                                "concept": "1e6f7081-9203-1234-ef01-56789012345a",
-                                "answers": [
-                                    {
-                                        "concept": "6bee05c0-d9e0-4c5f-9a8a-3cbad70fdc9d",
-                                        "label": "Existing"
-                                    },
-                                    {
-                                        "concept": "763a1d59-f3b5-492a-ba63-f0a1562ce441",
-                                        "label": "New"
-                                    }
-                                ]
-                            },
-                            "id": "usersType"
-                        },
-                        {
-                            "label": "Notes (if necessary)",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "textarea",
-                                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                            },
-                            "id": "usersTypeNotes",
-                            "hide": {
-                                "hideWhenExpression": "isEmpty(usersType)"
-                            }
-                        },
-                        {
-                            "label": "Family Planning Method Discontinued/Removed",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "radio",
-                                "concept": "3081a2b3-1425-3456-0123-789012345abc",
-                                "answers": [
-                                    {
-                                        "concept": "5275AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "IUCD"
-                                    },
-                                    {
-                                        "concept": "907AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Depo"
-                                    },
-                                    {
-                                        "concept": "780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Pills"
-                                    },
-                                    {
-                                        "concept": "1359AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                        "label": "Implant"
-                                    }
-                                ]
-                            },
-                            "id": "familyPlanningMethodDiscontinued"
-                        },
-                        {
-                            "label": "Notes (if necessary)",
-                            "type": "obs",
-                            "questionOptions": {
-                                "rendering": "textarea",
-                                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                            },
-                            "id": "familyPlanningMethodDiscontinuedNotes",
-                            "hide": {
-                                "hideWhenExpression": "isEmpty(familyPlanningMethodDiscontinued)"
-                            }
-                        }
-                    ]
-                }
-            ]
+          "label": "Family Planning Information",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Family Planning Method Provided",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "374AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "907AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Depo"
+                  },
+                  {
+                    "concept": "780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pills"
+                  },
+                  {
+                    "concept": "190AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Condoms"
+                  },
+                  {
+                    "concept": "1359AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Implant"
+                  },
+                  {
+                    "concept": "5275AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "IUCD"
+                  }
+                ]
+              },
+              "id": "familyPlanningMethodProvided"
+            },
+            {
+              "label": "Notes - (optional)",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "familyPlanningMethodNotes",
+              "hide": {
+                "hideWhenExpression": "isEmpty(familyPlanningMethodProvided)"
+              }
+            },
+            {
+              "label": "Units Provided",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9c4d5e6f-7081-9012-cdef-345678901999"
+              },
+              "id": "unitsProvided"
+            },
+            {
+              "label": "Notes (if necessary)",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "unitsProvidedNotes",
+              "hide": {
+                "hideWhenExpression": "isEmpty(unitsProvided)"
+              }
+            },
+            {
+              "label": "Users Type",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1e6f7081-9203-1234-ef01-56789012345a",
+                "answers": [
+                  {
+                    "concept": "6bee05c0-d9e0-4c5f-9a8a-3cbad70fdc9d",
+                    "label": "Existing"
+                  },
+                  {
+                    "concept": "763a1d59-f3b5-492a-ba63-f0a1562ce441",
+                    "label": "New"
+                  }
+                ]
+              },
+              "id": "usersType"
+            },
+            {
+              "label": "Notes (if necessary)",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "usersTypeNotes",
+              "hide": {
+                "hideWhenExpression": "isEmpty(usersType)"
+              }
+            },
+            {
+              "label": "Family Planning Method Discontinued/Removed",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "3081a2b3-1425-3456-0123-789012345abc",
+                "answers": [
+                  {
+                    "concept": "5275AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "IUCD"
+                  },
+                  {
+                    "concept": "907AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Depo"
+                  },
+                  {
+                    "concept": "780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pills"
+                  },
+                  {
+                    "concept": "1359AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Implant"
+                  }
+                ]
+              },
+              "id": "familyPlanningMethodDiscontinued"
+            },
+            {
+              "label": "Notes (if necessary)",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "familyPlanningMethodDiscontinuedNotes",
+              "hide": {
+                "hideWhenExpression": "isEmpty(familyPlanningMethodDiscontinued)"
+              }
+            }
+          ]
         }
-    ],
-    "processor": "EncounterFormProcessor",
-    "referencedForms": []
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }
