@@ -13,20 +13,12 @@
       {
         "id": "contact",
         "name": "Address Information",
-        "fields": [
-          "address",
-          "address.address5",
-          "address.address2"
-        ]
+        "fields": ["address", "address.address5", "address.address2"]
       },
       {
         "id": "otherInformation",
         "name": "Other Information",
-        "fields": [
-          "telephoneContact",
-          "email",
-          "contactLivingWithPatient"
-        ]
+        "fields": ["telephoneContact", "email", "contactLivingWithPatient"]
       },
       {
         "id": "sourceInformation",
@@ -69,7 +61,10 @@
         "id": "telephoneContact",
         "type": "person attribute",
         "label": "Phone Number",
-        "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a"
+        "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
+        "validation": {
+          "required": true
+        }
       },
       {
         "id": "contactLivingWithPatient",
