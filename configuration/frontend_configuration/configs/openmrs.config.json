@@ -131,6 +131,7 @@
     },
     "extensionSlots": {
       "patient-actions-slot": {
+        "remove": ["delete-visit-button"],
         "configure": {
           "delete-visit-button": {
             "Display conditions": {
