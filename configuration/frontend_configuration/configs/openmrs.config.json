@@ -628,6 +628,16 @@
             "Display conditions": {
               "privileges": ["o3: View Claims Management Dashboard"]
             }
+          },
+          "central-triage-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["ethioemr: Triage: View Triage"]
+            }
+          },
+          "emergency-triage-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["ethioemr: Triage: View Triage"]
+            }
           }
         }
       },
