@@ -644,6 +644,21 @@
             "Display conditions": {
               "privileges": ["ethiopiaemr: MRU: View MRU"]
             }
+          },
+          "radiology-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: View Imaging Dashboard"]
+            }
+          },
+          "accounting-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: View Accounting Dashboard"]
+            }
+          },
+          "patient-scoreboard-link": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: View Patient Scoreboard"]
+            }
           }
         }
       },
