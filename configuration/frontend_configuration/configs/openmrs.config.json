@@ -632,17 +632,17 @@
           },
           "central-triage-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Triage: View Triage"]
+              "privileges": ["ethiopiaemr: Triage: View Triage"]
             }
           },
           "emergency-triage-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Triage: View Triage"]
+              "privileges": ["ethiopiaemr: Triage: View Triage"]
             }
           },
           "ewf-mru-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: MRU: View MRU"]
+              "privileges": ["ethiopiaemr: MRU: View MRU"]
             }
           }
         }
