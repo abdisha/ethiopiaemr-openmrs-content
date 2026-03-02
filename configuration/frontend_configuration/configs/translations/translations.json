@@ -482,7 +482,7 @@
       }
     }
   },
-  "@openmrs/esm-patient-orders-app": {
+  "@palladium-ethiopia/esm-patient-orders-app": {
     "Translation overrides": {
       "am": {
         "actionsMenu": "የእርምጃ ምናሌ",

@@ -260,19 +260,13 @@
         }
       },
       "patient-chart-encounters-dashboard-slot": {
-        "remove": [
-          "past-visits-detail-overview"
-        ]
+        "remove": ["past-visits-detail-overview"]
       },
       "patient-actions-slot": {
-        "remove": [
-          "start-visit-button"
-        ]
+        "remove": ["start-visit-button"]
       },
       "extra-visit-attribute-slot": {
-        "remove": [
-          "billing-check-in-form"
-        ]
+        "remove": ["billing-check-in-form"]
       },
       "visit-form-bottom-slot": {
         "remove": ["custom-visit-form-queue-fields", "visit-form-queue-fields"]
@@ -407,7 +401,7 @@
       "clinicianEncounterRole": "a0b03050-c99b-11e0-9572-0800200c9a66"
     }
   },
-  "@openmrs/esm-patient-orders-app": {
+  "@palladium-ethiopia/esm-patient-orders-app": {
     "showReferenceNumberField": false,
     "orderEncounterType": "7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3",
     "extensionSlots": {
@@ -514,7 +508,6 @@
           "pharmacy-homepage-dashboard-link",
           "consultation-dashboard-link",
           "ward-dashboard-link"
-
         ],
         "add": [],
         "configure": {
