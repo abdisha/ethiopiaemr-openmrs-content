@@ -401,41 +401,6 @@
       "clinicianEncounterRole": "a0b03050-c99b-11e0-9572-0800200c9a66"
     }
   },
-  "@palladium-ethiopia/esm-patient-orders-app": {
-    "showReferenceNumberField": false,
-    "orderEncounterType": "7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3",
-    "extensionSlots": {
-      "order-basket-slot": {
-        "configure": {
-          "drug-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Medication Order Form"]
-            }
-          },
-          "lab-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Test Order Form"]
-            }
-          },
-          "procedures-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Procedure Order"]
-            }
-          },
-          "imaging-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Imaging Order Form"]
-            }
-          },
-          "medical-supply-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Medical Supply Order Form"]
-            }
-          }
-        }
-      }
-    }
-  },
   "@openmrs/esm-patient-vitals-app": {
     "vitals": {
       "useFormEngine": true,
