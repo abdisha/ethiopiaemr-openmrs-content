@@ -1,0 +1,225 @@
+{
+
+  "@palladium-ethiopia/esm-billing-app": {
+    "extensionSlots": {
+      "billing-dashboard-slot": {},
+      "billing-admin-dashboard-slot": {
+        "configure": {
+          "payments-points-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Payment Point"
+              ]
+            }
+          },
+          "payment-mode-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Payment Mode"
+              ]
+            }
+          },          
+          "bill-deposit-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Deposit"
+              ]
+            }
+          },
+          "billable-exemptions-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Exemptions Schema"
+              ]
+            }
+          },
+          "clinical-charges-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Charge Items"
+              ]
+            }
+          },
+          "payment-history-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Payment History"
+              ]
+            }
+          },
+          "patient-billing-dashboard-link": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: View Bill Manager"
+              ]
+            }
+          }
+        }
+      },
+      "bill-actions-slot": {
+        "configure": {
+          "waive-bill-action-button": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Waive Bill"
+              ]
+            }
+          },
+          "delete-bill-action-button": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Delete Bill"
+              ]
+            }
+          }
+        }
+      },
+      "bill-actions-overflow-menu-slot": {
+        "configure": {
+          "refund-line-item": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Refund Line Item"
+              ]
+            }
+          },
+          "edit-line-item": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Edit Bill Item"
+              ]
+            }
+          },
+          "cancel-line-item": {
+            "Display conditions": {
+              "privileges": [
+                "ethioemr: Billing: Cancel Bill Item"
+              ]
+            }
+          }
+        }
+      },
+      "provider-banner-info-slot": {
+        "remove": ["provider-banner"]
+      }
+    },
+    "excludedPaymentMode": [
+      {
+        "uuid": "eb6173cb-9678-4614-bbe1-0ccf7ed9d1d4",
+        "label": "Waiver"
+      }
+    ],
+    "patientExemptionCategories": [
+      {
+        "value": "IN_PRISON",
+        "label": "In Prison"
+      },
+      {
+        "value": "UNDER_5",
+        "label": "Under 5"
+      },
+      {
+        "value": "CCC",
+        "label": "CCC"
+      },
+      {
+        "value": "REFUGEES",
+        "label": "Refugees"
+      },
+      {
+        "value": "ABOVE_60_YRS",
+        "label": "Above 60 years"
+      }
+    ],
+    "localeCurrencyMapping": {
+      "en": "ETB",
+      "sw": "ETB",
+      "am": "ETB",
+      "en-KE": "ETB",
+      "sw-KE": "ETB",
+      "am-ET": "ETB",
+      "en-GB": "ETB"
+    }
+  },
+  "@palladium-ethiopia/esm-clinical-workflow-app": {
+    "triageVariants": {
+      "central": {
+        "formUuid": "ff723d59-0650-4b84-858d-c1045b690683",
+        "name": "Central Triage Form",
+        "displayName": "Central Triage",
+        "enabled": true,
+        "order": 0,
+        "privilege": "Central Triage Access",
+        "patientTypes": {
+          "adult": {
+            "displayName": "Adult",
+            "formUuid": "ff723d59-0650-4b84-858d-c1045b690683",
+            "formName": "Central Triage - Adult"
+          },
+          "pediatric": {
+            "displayName": "Pediatric",
+            "formUuid": "070e7d10-c6b8-4540-9718-5908738039c3",
+            "formName": "Central Triage - Pediatric"
+          },
+          "gynecology": {
+            "displayName": "Gynecology",
+            "formUuid": "1df88856-d54e-43e9-8ed2-dafde77c6081",
+            "formName": "Central Triage - Gynecology"
+          }
+        }
+      },
+      "emergency": {
+        "formUuid": "4ff622f8-212e-4f0f-b6a6-1aa19d776ffb",
+        "name": "Emergency Triage Form",
+        "displayName": "Emergency Triage",
+        "enabled": true,
+        "order": 1,
+        "privilege": "Emergency Triage Access"
+      }
+    },
+    "visitTypeUuid": "3371a4d4-f66f-4454-a86d-92c7b3da990c",
+    "identifierSourceUuid": "fb034aac-2353-4940-abe2-7bc94e7c1e71",
+    "facilityCode": "HOSP",
+    "defaultIdentifierTypeUuid": "dfacd928-0370-4315-99d7-6ec1c9f7ae76",
+    "disabilityStatusAttributeTypeUuid": "54d4a066-15f5-102d-96e4-000c29c2a5d7",
+    "healthIdLookupUrl": "openmrs/ws/rest/v1/ethiopiaemrcustommodule/mpi/patient",
+    "healthIdIdentifierTypeUuid": "cce42242-9e55-40a6-8739-1e6be1369bbe",
+    "emergencyLocationTags": ["Emergency"],
+    "drugOrderTypeUuid": "131168f4-15f5-102d-96e4-000c29c2a5d7"
+  },
+  "@palladium-ethiopia/esm-patient-orders-app": {
+    "showReferenceNumberField": false,
+    "orderEncounterType": "7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3",
+    "extensionSlots": {
+      "order-basket-slot": {
+        "configure": {
+          "drug-order-panel": {
+            "Display conditions": {
+              "privileges": ["o3: View Medication Order Form"]
+            }
+          },
+          "lab-order-panel": {
+            "Display conditions": {
+              "privileges": ["o3: View Test Order Form"]
+            }
+          },
+          "procedures-order-panel": {
+            "Display conditions": {
+              "privileges": ["o3: View Procedure Order"]
+            }
+          },
+          "imaging-order-panel": {
+            "Display conditions": {
+              "privileges": ["o3: View Imaging Order Form"]
+            }
+          },
+          "medical-supply-order-panel": {
+            "Display conditions": {
+              "privileges": ["o3: View Medical Supply Order Form"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
