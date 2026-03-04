@@ -147,8 +147,31 @@
             "Display conditions": {
               "privileges": ["o3: Mark Patient As Alive/Dead"]
             }
+          },
+          "start-visit-button": {
+            "Display conditions": {
+              "privileges": ["o3: CheckIn Patient"]
+            }
+          },
+          "start-visit-button2": {
+            "Display conditions": {
+              "privileges": ["o3: CheckIn Patient"]
+            }
+          },
+          "stop-visit-button": {
+            "Display conditions": {
+              "privileges": ["o3: CheckOut Patient"]
+            }
+          },
+          "mark-alive-button": {
+            "Display conditions": {
+              "privileges": ["o3: Mark Patient As Alive/Dead"]
+            }
           }
-        }
+        },
+        "remove": [
+          "mortuary-mark-patient-deceased-button"
+        ]
       },
       "patient-banner-tags-slot": {
         "remove": ["patient-info-sha-status"]
@@ -157,6 +180,11 @@
   },
   "@openmrs/esm-patient-chart-app": {
     "extensionSlots": {
+      "patient-chart": {
+        "remove": [
+          "patient-chart-order-basket"
+        ]
+      },
       "top-of-all-patient-dashboards-slot": {
         "configure": {
           "patient-flag": {
@@ -172,7 +200,7 @@
           "patient-vitals-info": {
             "Display conditions": {
               "privileges": [
-                "o3: View Patient Chart Vitals & Biometrics Dashboard"
+                "o3: View Patient Vitals and Biometrics"
               ]
             }
           }
@@ -232,22 +260,30 @@
         }
       },
       "patient-chart-encounters-dashboard-slot": {
-        "remove": [
-          "past-visits-detail-overview"
-        ]
+        "remove": ["past-visits-detail-overview"]
       },
       "patient-actions-slot": {
-        "remove": [
-          "start-visit-button"
-        ]
+        "remove": ["start-visit-button"]
       },
       "extra-visit-attribute-slot": {
-        "remove": [
-          "billing-check-in-form"
-        ]
+        "remove": ["billing-check-in-form"]
       },
       "visit-form-bottom-slot": {
         "remove": ["custom-visit-form-queue-fields", "visit-form-queue-fields"]
+      },
+      "visit-detail-overview-actions": {
+        "configure": {
+          "edit-visit-action-button": {
+            "Display conditions": {
+              "privileges": ["o3: Edit Visit"]
+            }
+          },
+          "delete-visit-action-button": {
+            "Display conditions": {
+              "privileges": ["o3: Delete Visit"]
+            }
+          }
+        }
       }
     },
     "showExtraVisitAttributesSlot": true,
@@ -365,7 +401,7 @@
       "clinicianEncounterRole": "a0b03050-c99b-11e0-9572-0800200c9a66"
     }
   },
-  "@openmrs/esm-patient-orders-app": {
+  "@palladium-ethiopia/esm-patient-orders-app": {
     "showReferenceNumberField": false,
     "orderEncounterType": "7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3",
     "extensionSlots": {
@@ -469,8 +505,8 @@
           "mch-dashboard-link",
           "mortuary-dashboard-link",
           "pharmacy-homepage-dashboard-link",
-          "consultation-dashboard-link"
-
+          "consultation-dashboard-link",
+          "ward-dashboard-link"
         ],
         "add": [],
         "configure": {
@@ -698,7 +734,7 @@
           "results-summary-dashboard": {
             "Display conditions": {
               "privileges": [
-                "o3: View Patient Chart Vitals & Biometrics Dashboard"
+                "o3: View Patient Vitals and Biometrics"
               ]
             }
           }
