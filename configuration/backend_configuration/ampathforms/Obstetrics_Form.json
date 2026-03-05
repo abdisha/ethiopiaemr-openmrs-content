@@ -1,5 +1,5 @@
 {
-  "name": "Emergency Labor/Obstetrics Form",
+  "name": "Emergency Labor(Obstetrics) Form",
   "description": "Obstetrics Form migrated from Bahmni",
   "version": "1.0",
   "published": true,
@@ -19,6 +19,7 @@
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
+              "readonly": true,
               "questionOptions": {
                 "rendering": "date"
               },
@@ -36,7 +37,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encProvider "
+              "id": "encProvider ",
+              "readonly": true
             },
             {
               "label": "Location:",
@@ -45,7 +47,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "encLocation",
+              "readonly": true
             }
           ]
         }

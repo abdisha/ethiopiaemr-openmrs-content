@@ -1,0 +1,198 @@
+{
+  "name": "Medication Administration Record",
+  "description": "Medication Administration Record migrated from Bahmni",
+  "version": "1.1",
+  "published": true,
+  "uuid": "72d06752-3c8f-488a-9052-5996b6434576",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Medication Administration Details",
+      "sections": [
+        {
+          "label": "Medication Administration Record",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Current Assesment",
+              "type": "obs",
+              "required": true,
+              "id": "currAsses",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "162725AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Medication",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Medication order and administration",
+              "type": "obsGroup",
+              "id": "medicationToBeAdministered",
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "d5e6f7a8-b9c0-4d1e-2f3a-4b5c6d7e8f9a"
+              },
+              "questions": [
+                {
+                  "label": "Drug Name",
+                  "type": "obs",
+                  "required": true,
+                  "id": "drugName",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "c3082af8-f935-40c5-aa5b-74c684e81aea"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Dose",
+                  "type": "obs",
+                  "required": true,
+                  "id": "dose",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "b9566cda-b384-4689-a99a-1dc40c93ae7c",
+                    "step": "0.01"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Route",
+                  "type": "obs",
+                  "required": true,
+                  "id": "route",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "160244AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "answers": [
+                      {
+                        "concept": "160240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Oral"
+                      },
+                      {
+                        "concept": "160241AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Inhalation"
+                      },
+                      {
+                        "concept": "160243AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Intramuscular"
+                      },
+                      {
+                        "concept": "160242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Intravenous"
+                      },
+                      {
+                        "concept": "160245AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Subcutaneous"
+                      }
+                    ]
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Frequency",
+                  "type": "obs",
+                  "required": true,
+                  "id": "frequency",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "160855AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  "validators": []
+                },
+                {
+                  "label": "Medication Administration",
+                  "type": "obsGroup",
+                  "id": "medicationAdministration",
+                  "questionOptions": {
+                    "rendering": "group",
+                    "concept": "c4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f"
+                  },
+                  "questions": [
+                    {
+                      "label": "Administering provider",
+                      "type": "encounterProvider",
+                      "required": true,
+                      "id": "nurseName",
+                      "questionOptions": {
+                        "rendering": "ui-select-extended",
+                        "concept": "166692AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      "validators": []
+                    },
+                    {
+                      "label": "Date and Time",
+                      "type": "obs",
+                      "required": true,
+                      "id": "time",
+                      "datePickerFormat": "both",
+                      "questionOptions": {
+                        "rendering": "datetime",
+                        "concept": "162869AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                      },
+                      "validators": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "465a92f2-baf8-42e9-9612-53064be868e8",
+  "referencedForms": []
+}
