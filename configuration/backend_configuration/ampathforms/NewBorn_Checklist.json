@@ -27,7 +27,8 @@
                   "allowFutureDates": "false"
                 }
               ],
-              "id": "encDate"
+              "id": "encDate",
+              "readonly": true
             },
             {
               "label": "Provider:",
@@ -36,7 +37,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encProvider"
+              "id": "encProvider",
+              "readonly": true
             },
             {
               "label": "Location:",
@@ -45,7 +47,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "encLocation",
+              "readonly": true
             }
           ]
         },

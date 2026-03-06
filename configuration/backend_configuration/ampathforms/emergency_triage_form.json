@@ -19,6 +19,7 @@
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
+              "readonly": true,
               "questionOptions": {
                 "rendering": "date"
               },
@@ -33,19 +34,21 @@
               "label": "Provider:",
               "type": "encounterProvider",
               "required": "true",
+              "id": "encProvider ",
+              "readonly": true,
               "questionOptions": {
                 "rendering": "ui-select-extended"
-              },
-              "id": "encProvider "
+              }
             },
             {
               "label": "Location:",
               "type": "encounterLocation",
               "required": "true",
+              "id": "encLocation",
+              "readonly": true,
               "questionOptions": {
                 "rendering": "ui-select-extended"
-              },
-              "id": "encLocation"
+              }
             }
           ]
         }
@@ -66,7 +69,10 @@
               "datePickerFormat": "both",
               "questionOptions": {
                 "rendering": "datetime",
-                "concept": "159622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "159622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
               },
               "validators": [
                 {
@@ -86,7 +92,10 @@
               "datePickerFormat": "both",
               "questionOptions": {
                 "rendering": "datetime",
-                "concept": "71c2d3e4-f5a6-7890-1234-567890abcdef"
+                "concept": "71c2d3e4-f5a6-7890-1234-567890abcdef",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
               },
               "validators": [
                 {
@@ -99,22 +108,34 @@
               }
             },
             {
-              "label": "Time of Arrival",
+              "label": "Medico Legal Case",
               "type": "obs",
-              "id": "timeOfArrival",
+              "id": "medicoLegalCase",
               "questionOptions": {
-                "concept": "0d4e5f60-7182-9012-3456-789abcdef012",
+                "concept": "1716AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "radio",
                 "answers": [
                   {
-                    "concept": "1e5f6071-8293-0123-4567-89abcdef0123",
-                    "label": "Day"
+                    "concept": "86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Road Traffic Injury"
                   },
                   {
-                    "concept": "2f6071a2-9304-1234-5678-9abcdef01234",
-                    "label": "Night"
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Others"
                   }
                 ]
+              }
+            },
+            {
+              "label": "If Others, specify:",
+              "type": "obs",
+              "id": "medicoLegalCaseOtherSpecify",
+              "questionOptions": {
+                "concept": "160686AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "text"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(medicoLegalCase) || medicoLegalCase !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
@@ -555,7 +576,7 @@
                     "label": "Convulsion"
                   },
                   {
-                    "concept": "118350AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "156238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 
                     "label": "Fall Injury"
                   },
                   {

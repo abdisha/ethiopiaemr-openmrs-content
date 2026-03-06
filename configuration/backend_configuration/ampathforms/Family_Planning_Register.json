@@ -19,6 +19,7 @@
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
+              "readonly": true,
               "questionOptions": {
                 "rendering": "date"
               },
@@ -36,7 +37,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encProvider "
+              "id": "encProvider ",
+              "readonly": true
             },
             {
               "label": "Location:",
@@ -45,7 +47,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "encLocation",
+              "readonly": true
             }
           ]
         }
@@ -277,11 +280,11 @@
                     "concept": "1174AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Children of Plhiv",
+                    "label": "Children of PLHIV",
                     "concept": "1393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "label": "Partner of Plhiv",
+                    "label": "Partner of PLHIV",
                     "concept": "8f0a2b3c-5d7e-6789-0123-456789012e0a"
                   },
                   {

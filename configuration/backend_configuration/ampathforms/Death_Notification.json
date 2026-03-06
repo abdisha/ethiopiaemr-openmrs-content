@@ -1,5 +1,5 @@
 {
-  "name": "Death Notification Testing Seeded Concepts",
+  "name": "Death Notification",
   "description": "Death Notification form translated from Bahmni to O3",
   "version": "1.4",
   "published": true,
@@ -19,6 +19,7 @@
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
+              "readonly": true,
               "questionOptions": {
                 "rendering": "date"
               },
@@ -36,7 +37,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encProvider "
+              "id": "encProvider ",
+              "readonly": true
             },
             {
               "label": "Location:",
@@ -45,7 +47,8 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encLocation"
+              "id": "encLocation",
+              "readonly": true
             }
           ]
         }
