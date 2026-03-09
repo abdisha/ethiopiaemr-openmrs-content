@@ -185,7 +185,8 @@
     "healthIdLookupUrl": "openmrs/ws/rest/v1/ethiopiaemrcustommodule/mpi/patient",
     "healthIdIdentifierTypeUuid": "cce42242-9e55-40a6-8739-1e6be1369bbe",
     "emergencyLocationTags": ["Emergency"],
-    "drugOrderTypeUuid": "131168f4-15f5-102d-96e4-000c29c2a5d7"
+    "drugOrderTypeUuid": "131168f4-15f5-102d-96e4-000c29c2a5d7",
+    "bloodTypeAttributeTypeUuid": "65d4a066-15f5-221a-96e4-000c29c2a1dd"
   },
   "@palladium-ethiopia/esm-patient-orders-app": {
     "showReferenceNumberField": false,
