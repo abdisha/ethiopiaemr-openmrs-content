@@ -189,7 +189,7 @@
   },
   "@palladium-ethiopia/esm-patient-orders-app": {
     "showReferenceNumberField": false,
-    "orderEncounterType": "7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3",
+    "orderEncounterType": "39da3525-afe4-45ff-8977-c53b7b359158",
     "extensionSlots": {
       "order-basket-slot": {
         "configure": {

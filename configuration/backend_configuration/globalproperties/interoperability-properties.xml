@@ -5,8 +5,8 @@
             <value>https://app.openfn.org/i/e1efbe93-8784-4a16-8f56-fcff42b9c4cc</value>
         </globalProperty>
         <globalProperty>
-            <property>ethiopiaemrcustommodule.drugOrderEncounterTYpeUuid</property>
-            <value>7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3</value>
+            <property>ethiopiaemrcustommodule.orderEncounterTypeUuid</property>
+            <value>39da3525-afe4-45ff-8977-c53b7b359158</value>
         </globalProperty>
          <globalProperty>
             <property>ethiopiaemrcustommodule.eaptsPrescriptionSyncEndpoint</property>
