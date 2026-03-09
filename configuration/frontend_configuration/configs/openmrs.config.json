@@ -733,9 +733,9 @@
     }
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#183D1A",
-    "Brand color #2": "#1D491F",
-    "Brand color #3": " #2C6D2F",
+    "Brand color #1": "#1D78CB",
+    "Brand color #2": "#1D78CB",
+    "Brand color #3": "#FE6874",
     "preferredDateLocale": {
       "en": "am",
       "en-GB": "am"
