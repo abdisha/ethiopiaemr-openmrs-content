@@ -735,7 +735,7 @@
   "@openmrs/esm-styleguide": {
     "Brand color #1": "#1D78CB",
     "Brand color #2": "#1D78CB",
-    "Brand color #3": "#FE6874",
+    "Brand color #3": "#1D78CB",
     "preferredDateLocale": {
       "en": "am",
       "en-GB": "am"
