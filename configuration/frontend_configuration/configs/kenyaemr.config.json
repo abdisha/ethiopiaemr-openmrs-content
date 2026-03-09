@@ -39,7 +39,7 @@
   },
   "@kenyaemr/esm-login-app": {
     "logo": {
-      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo.png"
+      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo-new.png"
     },
     "links": {
       "src": "/openmrs/spa/home/service-queues"
@@ -51,7 +51,7 @@
           "alt": "EthiopiaEMR"
         },
         {
-          "src": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo.png",
+          "src": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo-new.png",
           "alt": "EthiopiaEMR"
         }
       ]
@@ -101,7 +101,7 @@
     "defaultIdentifierTypes": ["24aedd37-b5be-4e08-8311-3721b8d5100d"]
   },
   "@kenyaemr/esm-version-app": {
-    "defaultLogoPath": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo.png"
+    "defaultLogoPath": "/openmrs/spa/config/assets/ethiopiaemr-package/login-logo-new.png"
   },
   "@kenyaemr/esm-facility-dashboard-app": {
     "showAirAndReportLinks": true,

@@ -289,7 +289,7 @@
     "visitAttributeTypes": [],
     "defaultFacilityUrl": "/ws/rest/v1/kenyaemr/default-facility",
     "logo": {
-      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/primary-logo.svg"
+      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/primary-logo-blue-bg.png"
     },
     "Translation overrides": {
       "en": {
@@ -418,7 +418,7 @@
   },
   "@openmrs/esm-primary-navigation-app": {
     "logo": {
-      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/primary-logo.svg"
+      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/primary-logo-blue-bg.png"
     },
     "extensionSlots": {
       "app-menu-slot": {
@@ -733,9 +733,9 @@
     }
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#1D78CB",
-    "Brand color #2": "#1D78CB",
-    "Brand color #3": "#1D78CB",
+    "Brand color #1": "#1372b6",
+    "Brand color #2": "#1372b6",
+    "Brand color #3": "#1372b6",
     "preferredDateLocale": {
       "en": "am",
       "en-GB": "am"
