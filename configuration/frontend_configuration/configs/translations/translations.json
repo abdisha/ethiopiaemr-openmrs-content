@@ -1350,7 +1350,7 @@
       }
     }
   },
-  "@openmrs/esm-ward-app": {
+  "@kenyaemr/esm-ward-app": {
     "Translation overrides": {
       "am": {
         "admissionRequestCancelled": "የመግቢያ ጥያቄ ተሰርዟል።",
@@ -1477,7 +1477,7 @@
       }
     }
   },
-  "@openmrs/esm-bed-management-app": {
+  "@kenyaemr/esm-bed-management-app": {
     "Translation overrides": {
       "am": {
         "actions": "ተግባራት",

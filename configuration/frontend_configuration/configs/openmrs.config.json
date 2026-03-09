@@ -169,9 +169,7 @@
             }
           }
         },
-        "remove": [
-          "mortuary-mark-patient-deceased-button"
-        ]
+        "remove": ["mortuary-mark-patient-deceased-button"]
       },
       "patient-banner-tags-slot": {
         "remove": ["patient-info-sha-status"]
@@ -181,9 +179,7 @@
   "@openmrs/esm-patient-chart-app": {
     "extensionSlots": {
       "patient-chart": {
-        "remove": [
-          "patient-chart-order-basket"
-        ]
+        "remove": ["patient-chart-order-basket"]
       },
       "top-of-all-patient-dashboards-slot": {
         "configure": {
@@ -199,9 +195,7 @@
         "configure": {
           "patient-vitals-info": {
             "Display conditions": {
-              "privileges": [
-                "o3: View Patient Vitals and Biometrics"
-              ]
+              "privileges": ["o3: View Patient Vitals and Biometrics"]
             }
           }
         }
@@ -724,9 +718,7 @@
           },
           "results-summary-dashboard": {
             "Display conditions": {
-              "privileges": [
-                "o3: View Patient Vitals and Biometrics"
-              ]
+              "privileges": ["o3: View Patient Vitals and Biometrics"]
             }
           }
         }
@@ -752,7 +744,7 @@
       "privileges": ["o3: Manage Stocks"]
     }
   },
-  "@openmrs/esm-ward-app": {
+  "@kenyaemr/esm-ward-app": {
     "Display conditions": {
       "privileges": ["o3: View Ward Dashboard"]
     }
