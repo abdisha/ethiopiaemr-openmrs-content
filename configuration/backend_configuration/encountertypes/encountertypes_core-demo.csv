@@ -12,3 +12,5 @@ e22e39fd-7db2-45e7-80f1-60fa0d5a4378,,Admission,"Indicates that the patient has 
 d7151f82-c1f3-4152-a605-2f9ea7414a79,,Visit Note,"Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.",,,
 d8081b52-98d9-4bca-ad16-2635b8c9338b,,Prescription Return,Encounter used to record returned prescriptions,,,
 39da3525-afe4-45ff-8977-c53b7b359158,,Order,Encounter for capturing orders,,,
+03f8ee7d-581c-4ecc-927a-3da27e4f788e,,ANC,Encounter for ANC followup for mothers/family planning,,,
+

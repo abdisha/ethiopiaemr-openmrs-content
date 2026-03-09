@@ -5,7 +5,7 @@
   "published": true,
   "uuid": "a5ff36ca-1062-43b7-8733-0f9fc68ab2a8",
   "retired": false,
-  "encounter": "ANC",
+  "encounter": "Consultation",
   "pages": [
     {
       "label": "Visit Details",
@@ -18,7 +18,7 @@
               "label": "Visit Date:",
               "type": "encounterDatetime",
               "id": "encDate",
-              "readonly": true,
+              "readonly": false,
               "questionOptions": {
                 "rendering": "date"
               },
@@ -33,7 +33,7 @@
               "label": "Provider:",
               "type": "encounterProvider",
               "id": "encProvider",
-              "readonly": true,
+              "readonly": false,
               "questionOptions": {
                 "rendering": "ui-select-extended"
               }
@@ -42,7 +42,7 @@
               "label": "Location:",
               "type": "encounterLocation",
               "id": "encLocation",
-              "readonly": true,
+              "readonly": false,
               "questionOptions": {
                 "rendering": "ui-select-extended"
               }

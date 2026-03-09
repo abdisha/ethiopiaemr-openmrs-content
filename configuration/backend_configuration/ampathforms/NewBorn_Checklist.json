@@ -28,7 +28,7 @@
                 }
               ],
               "id": "encDate",
-              "readonly": true
+              "readonly": false
             },
             {
               "label": "Provider:",
@@ -38,7 +38,7 @@
                 "rendering": "ui-select-extended"
               },
               "id": "encProvider",
-              "readonly": true
+              "readonly": false
             },
             {
               "label": "Location:",
@@ -48,7 +48,7 @@
                 "rendering": "ui-select-extended"
               },
               "id": "encLocation",
-              "readonly": true
+              "readonly": false
             }
           ]
         },

@@ -19,7 +19,7 @@
               "type": "encounterDatetime",
               "required": "true",
               "id": "encDate",
-              "readonly": true,
+              "readonly": false,
               "questionOptions": {
                 "rendering": "date"
               },
@@ -35,7 +35,7 @@
               "type": "encounterProvider",
               "required": "true",
               "id": "encProvider ",
-              "readonly": true,
+              "readonly": false,
               "questionOptions": {
                 "rendering": "ui-select-extended"
               }
@@ -45,7 +45,7 @@
               "type": "encounterLocation",
               "required": "true",
               "id": "encLocation",
-              "readonly": true,
+              "readonly": false,
               "questionOptions": {
                 "rendering": "ui-select-extended"
               }
