@@ -617,6 +617,7 @@
         }
       },
       "patient-chart-dashboard-slot": {
+        "add": ["care-panel-summary-dashboard-link"],
         "remove": [
           "ewf-homepage-dashboard-link",
           "ewf-admissions-dashboard-link",
