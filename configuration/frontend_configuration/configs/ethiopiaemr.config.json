@@ -114,7 +114,8 @@
       "sw-KE": "ETB",
       "am-ET": "ETB",
       "en-GB": "ETB"
-    }
+    },
+    "paymentAPIBaseUrl": "https://payment.palladiumethiopia.com/api"
   },
   "@palladium-ethiopia/esm-clinical-workflow-app": {
     "triageVariants": {
