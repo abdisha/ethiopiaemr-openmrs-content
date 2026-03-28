@@ -10,24 +10,12 @@ Syphilis serology panel (TPHA/RPR/VDRL),VDRL,concept-set,3
 Complete blood count,Immature Granulocyte Percentage,concept-set,1
 Complete blood count,Granulocyte count,concept-set,2
 Complete blood count,Granulocyte %,concept-set,3
-Complete blood count,Immature Platelet Fraction,concept-set,4
-Complete blood count,Nucleated Red Blood Cell Count,concept-set,5
-Complete blood count,Nucleated Red Blood Cell %,concept-set,6
-Complete blood count,Immature Reticulocyte Fraction,concept-set,7
-Complete blood count,Mean Reticulocyte Volume,concept-set,8
-Complete blood count,Reticulocyte Hemoglobin Equivalent,concept-set,9
-Complete blood count,ABSOLUTE NEUTROPHIL COUNT,concept-set,10
-Complete blood count,ABSOLUTE MONOCYTE COUNT,concept-set,11,
-Complete blood count,Monocytes (%) - microscopic exam,concept-set,12
-Complete blood count,ABSOLUTE EOSINOPHIL COUNT,concept-set,13
-Complete blood count,Eosinophils (%) - microscopic exam,concept-set,14
-Complete blood count,Basophils (%) - microscopic exam,concept-set,15
-Complete blood count,Basophils,concept-set,16
-Complete blood count,ABSOLUTE BASOPHIL COUNT,concept-set,17
-Complete blood count,Absolute reticulocyte count,concept-set,18
-Complete blood count,Immature granulocytes count (10^3/uL),concept-set,18
-Complete blood count,Reticulocytes (%),concept-set,19
-Complete blood count,Mid-cell Fraction Count,concept-set,20
+Complete blood count,"Combined % of monocytes, eosinophils and basophils",concept-set,4
+Complete blood count,Immature Platelet Fraction,concept-set,5
+Complete blood count,Nucleated Red Blood Cell Count,concept-set,6
+Complete blood count,Nucleated Red Blood Cell %,concept-set,7
+Complete blood count,Immature Reticulocyte Fraction,concept-set,8
+Complete blood count,Mean Reticulocyte Volume,concept-set,9
+Complete blood count,Reticulocyte Hemoglobin Equivalent,concept-set,10
 Urinalysis Microscopy,Urine routine and microscopy,concept-set,1
 Urinalysis Microscopy,Urine microscopy,concept-set,2
-
