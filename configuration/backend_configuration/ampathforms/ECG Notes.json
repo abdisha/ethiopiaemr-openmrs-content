@@ -1,0 +1,122 @@
+{
+  "name": "ECG Notes",
+  "description": "ECG Notes migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "3196e46e-054b-489b-8c2e-9b15a005a192",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ECG Notes",
+      "sections": [
+        {
+          "label": "ECG Notes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "ECG Details",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160845AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "ecgDetails"
+            },
+            {
+              "label": "ECG Done in",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1e860cec-fd0e-41f9-9ff3-0e01064f89ca",
+                "answers": [
+                  {
+                    "concept": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "OPD"
+                  },
+                  {
+                    "concept": "160522AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Emergency"
+                  },
+                  {
+                    "concept": "160536AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "IPD"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "ecgDoneIn"
+            },
+            {
+              "label": "ECG Done by",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "ecgDoneBy"
+            },
+            {
+              "label": "Remarks",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "remarks"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

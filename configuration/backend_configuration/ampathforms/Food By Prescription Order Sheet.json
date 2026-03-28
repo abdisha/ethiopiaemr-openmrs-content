@@ -1,0 +1,152 @@
+{
+  "name": "Food By Prescription Order Sheet",
+  "description": "Food By Prescription Order Sheet migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "f3e5a966-51b9-435d-8e4b-52ce485ddd8e",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Food By Prescription Order Sheet",
+      "sections": [
+        {
+          "label": "Prescription Orders",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "date"
+            },
+            {
+              "label": "WEIGHT",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "weight"
+            },
+            {
+              "label": "HEIGHT",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "height"
+            },
+            {
+              "label": "BMI",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "calculate": {
+                  "calculateExpression": "calcBMI(height,weight)"
+                }
+              },
+              "id": "bmi"
+            },
+            {
+              "label": "MUAC",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "muac"
+            },
+            {
+              "label": "WFL/H",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "39aeca30-cc94-4bd6-a51b-144e1185b93b"
+              },
+              "id": "wflH"
+            },
+            {
+              "label": "Dietary Assessment",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "2c66c5a5-1481-411d-b7e6-5237a9d38597"
+              },
+              "id": "dietaryAssessment"
+            },
+            {
+              "label": "Treatment Given",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "b827b25a-c631-4f2e-a53f-94b0522e68ae"
+              },
+              "id": "treatmentGiven"
+            },
+            {
+              "label": "Signature",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "28794bbc-ad22-4d8e-a8a3-8147bdfef6cd"
+              },
+              "id": "signature"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

@@ -1,0 +1,567 @@
+{
+  "name": "Breast Cancer - Intake",
+  "description": "Breast Cancer - Intake migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "7a0a898b-a31d-47b5-b4fe-73fe12eedd31",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Breast Cancer - Intake",
+      "sections": [
+        {
+          "label": "Diagnostic Workup",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Pathology",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "82e8b011-973e-4ec7-8555-df40b903c346"
+              },
+              "id": "pathologyGroup",
+              "questions": [
+                {
+                  "label": "Pathologic Diagnosis",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "966811f9-44a3-4867-a0c4-38840ffa7726",
+                    "answers": [
+                      {
+                        "concept": "8f3df107-debf-441e-af79-c451b3dda166",
+                        "label": "Other Invasive Carcinoma (Specify)"
+                      },
+                      {
+                        "concept": "157521AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Invasive Lobular Carcinoma"
+                      },
+                      {
+                        "concept": "157357AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Invasive Ductal Carcinoma"
+                      },
+                      {
+                        "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Other (Specify)"
+                      }
+                    ]
+                  },
+                  "id": "pathologicDiagnosis"
+                },
+                {
+                  "label": "Pathology Report Date",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "date",
+                    "concept": "08915429-8504-4c84-998b-134e14423564"
+                  },
+                  "id": "pathologyReportDate"
+                }
+              ]
+            },
+            {
+              "label": "Imaging Studies",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "18f58418-4d9e-4e29-a7b3-f537f4da543d"
+              },
+              "id": "imagingStudiesGroup",
+              "questions": [
+                {
+                  "label": "Imaging Assessment & Findings",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "textarea",
+                    "concept": "443e9af6-e465-4721-afda-13d088b4f715"
+                  },
+                  "id": "imagingAssessmentFindings"
+                },
+                {
+                  "label": "Study Date",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "date",
+                    "concept": "ca06a5f7-ce57-4e56-91a9-939720e26d63"
+                  },
+                  "id": "studyDate"
+                },
+                {
+                  "label": "Imaging Type",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "ea67be0b-fad4-48ed-9ffd-7cf536c13866",
+                    "answers": [
+                      {
+                        "concept": "163038AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "CT Chest/Abdo/Pelvis"
+                      },
+                      {
+                        "concept": "845AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Abdo/Pelvic USG"
+                      },
+                      {
+                        "concept": "12AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Chest X-Ray"
+                      },
+                      {
+                        "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Other (Specify)"
+                      }
+                    ]
+                  },
+                  "id": "imagingType"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Clinical Assessment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Confirmed Diagnosis Details",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "f21e29f2-4e78-4c86-9989-334a6399274f"
+              },
+              "id": "confirmedDiagnosisDetailsGroup",
+              "questions": [
+                {
+                  "label": "Lymph Nodes",
+                  "type": "obsGroup",
+                  "questionOptions": {
+                    "rendering": "group",
+                    "concept": "62904291-c985-4ef7-b384-10bd7e0e5b15"
+                  },
+                  "id": "lymphNodesGroup",
+                  "questions": [
+                    {
+                      "label": "Side",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "b4092496-0693-45f5-8aea-6262246363e1",
+                        "answers": [
+                          {
+                            "concept": "5139AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Left Side"
+                          },
+                          {
+                            "concept": "5141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Right Side"
+                          }
+                        ]
+                      },
+                      "id": "lymphNodesSide"
+                    },
+                    {
+                      "label": "Supra Clavicular",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "4aa08d7e-20ef-4f54-b68f-733a465cfd3d",
+                        "answers": [
+                          {
+                            "concept": "160403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Discrete"
+                          },
+                          {
+                            "concept": "160402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Matted"
+                          },
+                          {
+                            "concept": "160615AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Fixed"
+                          },
+                          {
+                            "concept": "bb2dfce3-9cbe-4a5b-9a87-c90f310a7184",
+                            "label": "None"
+                          }
+                        ]
+                      },
+                      "id": "supraClavicular"
+                    },
+                    {
+                      "label": "Infra Clavicular",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "9bfe8f9f-46d0-4144-a035-598fa91b912f",
+                        "answers": [
+                          {
+                            "concept": "160403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Discrete"
+                          },
+                          {
+                            "concept": "160402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Matted"
+                          },
+                          {
+                            "concept": "160615AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Fixed"
+                          },
+                          {
+                            "concept": "bb2dfce3-9cbe-4a5b-9a87-c90f310a7184",
+                            "label": "None"
+                          }
+                        ]
+                      },
+                      "id": "infraClavicular"
+                    },
+                    {
+                      "label": "Axillary",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "ba24f699-2614-4515-90c1-066c7bbfedbe",
+                        "answers": [
+                          {
+                            "concept": "160403AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Discrete"
+                          },
+                          {
+                            "concept": "160402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Matted"
+                          },
+                          {
+                            "concept": "160615AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Fixed"
+                          },
+                          {
+                            "concept": "bb2dfce3-9cbe-4a5b-9a87-c90f310a7184",
+                            "label": "None"
+                          }
+                        ]
+                      },
+                      "id": "axillary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Breast Examination",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "99b65b7d-90de-4b91-a952-4e763ed16cb7"
+              },
+              "id": "breastExaminationGroup",
+              "questions": [
+                {
+                  "label": "Side",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "3bcdf092-864b-4d5b-b705-e0be613456c8",
+                    "answers": [
+                      {
+                        "concept": "5141AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Right Side"
+                      },
+                      {
+                        "concept": "5139AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Left Side"
+                      }
+                    ]
+                  },
+                  "id": "breastSide"
+                },
+                {
+                  "label": "Mobility",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "fe86c821-3b29-44c8-bdd8-2b6e4c2d336f",
+                    "answers": [
+                      {
+                        "concept": "5643853e-0e24-4c02-8710-14f59052bbd9",
+                        "label": "Fixed"
+                      },
+                      {
+                        "concept": "2790147c-a22b-45dd-b5ed-7a59abbd0797",
+                        "label": "Mobile"
+                      }
+                    ]
+                  },
+                  "id": "mobility"
+                },
+                {
+                  "label": "Size",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "textarea",
+                    "concept": "ec85354a-1dbd-4839-80a3-d9a09138c60e"
+                  },
+                  "id": "size"
+                },
+                {
+                  "label": "Skin Involvement",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "4cf6d9a6-fd74-4978-b3db-12a50c1124c3",
+                    "answers": [
+                      {
+                        "concept": "51d70167-c82e-47f6-93e4-b285bd8cf99d",
+                        "label": "None"
+                      },
+                      {
+                        "concept": "130677AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Peau dorange"
+                      },
+                      {
+                        "concept": "112934AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Ulcer"
+                      }
+                    ]
+                  },
+                  "id": "skinInvolvement"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Staging & Plan",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Confirmed Disease Stage",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "8cc6c953-df80-4e0f-ba60-46d994b2ff03"
+              },
+              "id": "confirmedDiseaseStageGroup",
+              "questions": [
+                {
+                  "label": "Treatment Group",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "a081addf-5a28-4dde-8fc3-01368d2712b8",
+                    "answers": [
+                      {
+                        "concept": "6c7dbb78-4961-4932-901e-fdee94d2824a",
+                        "label": "Metastatic"
+                      },
+                      {
+                        "concept": "0c35cf71-9ee6-4a22-92ea-e19c002f9ed5",
+                        "label": "Locally Advanced"
+                      },
+                      {
+                        "concept": "8f59be88-2f49-4c07-9037-89e4a3b63dc9",
+                        "label": "Early"
+                      }
+                    ]
+                  },
+                  "id": "treatmentGroup"
+                },
+                {
+                  "label": "TNM Pathologic Staging",
+                  "type": "obsGroup",
+                  "questionOptions": {
+                    "rendering": "group",
+                    "concept": "a1bb1b39-0208-4054-8b79-31a48a207ecd"
+                  },
+                  "id": "tnmPathologicStagingGroup",
+                  "questions": [
+                    {
+                      "label": "Tumor Stage",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "ccf34bdc-7c31-4a45-8c3c-a7e4b4ac7ad8",
+                        "answers": [
+                          {
+                            "concept": "160797AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "T0"
+                          },
+                          {
+                            "concept": "160798AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "T1"
+                          },
+                          {
+                            "concept": "160799AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "T2"
+                          },
+                          {
+                            "concept": "160800AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "T3"
+                          },
+                          {
+                            "concept": "160801AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "T4"
+                          },
+                          {
+                            "concept": "160795AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "TX"
+                          },
+                          {
+                            "concept": "160796AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "Tis"
+                          }
+                        ]
+                      },
+                      "id": "tumorStage"
+                    },
+                    {
+                      "label": "Lymph Node Stage",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "51a7926f-a0c6-4d00-8d9a-881b794ddb7a",
+                        "answers": [
+                          {
+                            "concept": "160803AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "N0"
+                          },
+                          {
+                            "concept": "160805AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "N1"
+                          },
+                          {
+                            "concept": "160806AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "N2"
+                          },
+                          {
+                            "concept": "160807AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "N3"
+                          },
+                          {
+                            "concept": "160804AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "NX"
+                          }
+                        ]
+                      },
+                      "id": "lymphNodeStage"
+                    },
+                    {
+                      "label": "Metastatic Stage",
+                      "type": "obs",
+                      "questionOptions": {
+                        "rendering": "radio",
+                        "concept": "9a23671e-ef80-437b-b584-45bb1c632f87",
+                        "answers": [
+                          {
+                            "concept": "160815AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "M0"
+                          },
+                          {
+                            "concept": "160812AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "M1"
+                          },
+                          {
+                            "concept": "160813AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            "label": "M2"
+                          }
+                        ]
+                      },
+                      "id": "metastaticStage"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Treatment Plan",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "b9f04023-cf57-4bdd-8e0f-f9d3fdafbc1c"
+              },
+              "id": "treatmentPlanGroup",
+              "questions": [
+                {
+                  "label": "Plan Summary",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "textarea",
+                    "concept": "aefa6c30-155d-4f38-b1e1-1ad281868597"
+                  },
+                  "id": "planSummary"
+                },
+                {
+                  "label": "Treatment Intent",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "radio",
+                    "concept": "3c4a8da5-9e5d-4d32-a1b2-ca1150c816cf",
+                    "answers": [
+                      {
+                        "concept": "7949285a-a0a2-4e1a-a828-fc12c0a6a060",
+                        "label": "Palliation Only"
+                      },
+                      {
+                        "concept": "b1a5ed37-0d8b-4717-a53d-dc9f2e873e9d",
+                        "label": "Palliative Systemic"
+                      },
+                      {
+                        "concept": "160847AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "label": "Curative"
+                      }
+                    ]
+                  },
+                  "id": "treatmentIntent"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

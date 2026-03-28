@@ -1,0 +1,257 @@
+{
+  "name": "Order Sheet",
+  "description": "Order Sheet migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "8e4ca70c-97a6-4dde-b09a-f36a43830cb7",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Order Sheet",
+      "sections": [
+        {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Order Information",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date & Time",
+              "type": "obs",
+              "required": "true",
+              "id": "dateTime",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "159622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Problem list",
+              "type": "obs",
+              "required": "false",
+              "id": "problemList",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "162166AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Order",
+              "type": "obs",
+              "required": "true",
+              "id": "order",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "162169AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Patient Condition",
+              "type": "obs",
+              "required": "false",
+              "id": "patientCondition",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7fc2a8d1-4e3b-4c9f-8a2d-6b1e9f3c5d70",
+                "answers": [
+                  {
+                    "concept": "8a3b9e2c-5f4a-4d8e-9b3c-7c2f0ae4d681",
+                    "label": "Stable"
+                  },
+                  {
+                    "concept": "9b4caf3d-6a5b-4e9f-ac4d-8d3a1bf5e792",
+                    "label": "Extubated Operative Condition"
+                  },
+                  {
+                    "concept": "ac5db14e-7b6c-4faf-bd5e-9e4b2c06f813",
+                    "label": "Transferred to recovery room"
+                  },
+                  {
+                    "concept": "bd6ec25f-8c7d-50b0-ce6f-af5c3d17a924",
+                    "label": "Death on OT Table"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Activity Note",
+              "type": "obs",
+              "required": "false",
+              "id": "activityNote",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159397AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Diet",
+              "type": "obs",
+              "required": "false",
+              "id": "diet",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Investigation Notes",
+              "type": "obs",
+              "required": "false",
+              "id": "investigationNotes",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Nursing Care Plan",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Problem Number",
+              "type": "obs",
+              "required": "false",
+              "id": "problemNumber",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Description of Goals",
+              "type": "obs",
+              "required": "false",
+              "id": "descriptionOfGoals",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "162879AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Expected Outcomes Notes",
+              "type": "obs",
+              "required": "false",
+              "id": "expectedOutcomesNotes",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "ce7fd360-9d8e-61c1-df70-b06d4e28ba35"
+              },
+              "validators": []
+            },
+            {
+              "label": "Interventions",
+              "type": "obs",
+              "required": "false",
+              "id": "interventions",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "df8ae471-ae9f-72d2-e081-c17e5f39cb46"
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Provider Information",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Doctors Name",
+              "type": "obs",
+              "required": "false",
+              "id": "doctorsName",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Nurse Name",
+              "type": "obs",
+              "required": "false",
+              "id": "nurseName",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "166690AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "Discharge on",
+              "type": "obs",
+              "required": "false",
+              "id": "dischargeOn",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

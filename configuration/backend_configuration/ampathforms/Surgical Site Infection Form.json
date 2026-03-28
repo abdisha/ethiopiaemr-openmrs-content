@@ -1,0 +1,67 @@
+{
+  "name": "Surgical Site Infection Form",
+  "description": "Documentation of surgical site infection (SSI) presence, readmission, and CDC classification type.",
+  "version": "1.0",
+  "published": true,
+  "uuid": "42ff7e02-e0d7-4cdc-8aad-91a0e1ee0ceb",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Surgical Site Infection Form",
+      "sections": [
+        {
+          "label": "Surgical Site Infection Form",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "SSI surgical site infection",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "e700edb1-f3d8-41b3-b81b-379692a283a9",
+                "answers": [
+                  { "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "Yes" },
+                  { "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "No" }
+                ]
+              },
+              "id": "ssiSurgicalSiteInfection"
+            },
+            {
+              "label": "Patient re admitted for surgical site infection",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2d3cd53b-9784-4c40-a296-ed37111472c5",
+                "answers": [
+                  { "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "Yes" },
+                  { "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "No" }
+                ]
+              },
+              "id": "patientReadmittedSsi"
+            },
+            {
+              "label": "Surgical site infection type",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "164520AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  { "concept": "164218AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "Superficial incisional SSI" },
+                  { "concept": "164219AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "Deep incisional SSI" },
+                  { "concept": "164220AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "label": "Organ/space SSI" }
+                ]
+              },
+              "id": "surgicalSiteInfectionType"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

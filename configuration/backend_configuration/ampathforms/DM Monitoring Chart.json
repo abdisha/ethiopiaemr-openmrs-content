@@ -1,0 +1,90 @@
+{
+  "name": "DM Monitoring Chart",
+  "description": "Diabetes mellitus bedside or clinic monitoring flow sheet (capillary or venous glucose and related entries).",
+  "version": "1.0",
+  "published": true,
+  "uuid": "d5c080f6-0767-488a-9c95-be15146c83a8",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "DM Monitoring Chart",
+      "sections": [
+        {
+          "label": "DM Monitoring Chart",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date & Time",
+              "type": "obs",
+              "required": false,
+              "id": "dateTime",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "162869AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "RBS/FBS",
+              "type": "obs",
+              "required": false,
+              "id": "rbsFbs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Blood glucose (mg/dL). Enter random (RBS) or fasting (FBS) value per local protocol."
+            },
+            {
+              "label": "Insulin",
+              "type": "obs",
+              "required": false,
+              "id": "insulin",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "137e3642-6916-450f-8f26-c0db89419f41",
+                "rows": "2"
+              }
+            },
+            {
+              "label": "Lente",
+              "type": "obs",
+              "required": false,
+              "id": "lente",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "c76f66c9-2733-4dd8-8b01-0b070fd18c19",
+                "rows": "2"
+              }
+            },
+            {
+              "label": "Ketone",
+              "type": "obs",
+              "required": false,
+              "id": "ketone",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "aef2f02e-cd34-40ac-9aa7-c5cf78cc052e",
+                "rows": "2"
+              }
+            },
+            {
+              "label": "Signature",
+              "type": "obs",
+              "required": false,
+              "id": "signature",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "28794bbc-ad22-4d8e-a8a3-8147bdfef6cd",
+                "rows": "2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

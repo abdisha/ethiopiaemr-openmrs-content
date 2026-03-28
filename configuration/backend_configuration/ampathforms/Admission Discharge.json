@@ -1,0 +1,135 @@
+{
+  "name": "Admission Discharge",
+  "description": "Admission Discharge migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "ea36f403-c2d3-42e7-93d1-af5cf59d6f22",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Admission Discharge",
+      "sections": [
+        {
+          "label": "Admission Discharge",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Admission Diagnosis",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "2adb346d-45cb-4f27-9b72-a6c0b7f20cc8"
+              },
+              "id": "admissionDiagnosis"
+            },
+            {
+              "label": "Discharge Diagnosis",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "aeeeb4f6-f2ae-42ae-b96c-03831859a9e1"
+              },
+              "id": "dischargeDiagnosis"
+            },
+            {
+              "label": "Condition on discharge",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1695AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "162677AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Improved"
+                  },
+                  {
+                    "concept": "164165AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Referred to higher level facility"
+                  },
+                  {
+                    "concept": "160431AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Absconded"
+                  },
+                  {
+                    "concept": "1694AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Left Against Medical Advice"
+                  },
+                  {
+                    "concept": "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Died"
+                  }
+                ]
+              },
+              "id": "conditionOnDischarge"
+            },
+            {
+              "label": "Admission date",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "421719a0-eef5-4181-b55d-fff16d845314"
+              },
+              "id": "admissionDate"
+            },
+            {
+              "label": "Date of Discharge",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "161561AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "dateOfDischarge"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

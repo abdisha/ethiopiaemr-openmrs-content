@@ -1,0 +1,391 @@
+{
+  "name": "Child Nutritional Assessment Form",
+  "description": "Child Nutritional Assessment Form migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "e15d8668-d298-4981-aca0-cee40e2ccd4a",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Child Nutritional Assessment Form",
+      "sections": [
+        {
+          "label": "Admission Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Ward Patient admitted at",
+              "type": "obs",
+              "required": "false",
+              "id": "wardPatientAdmittedAt",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "49e8bb0a-9c58-436b-bcf3-9adebf401f7b"
+              }
+            },
+            {
+              "label": "Bed Number",
+              "type": "obs",
+              "required": "false",
+              "id": "bedNumber",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "f6071829-0314-2345-6789-012345abcd16"
+              }
+            },
+            {
+              "label": "Date of Admission",
+              "type": "obs",
+              "required": "false",
+              "id": "dateOfAdmission",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "421719a0-eef5-4181-b55d-fff16d845314"
+              }
+            },
+            {
+              "label": "Family marital status",
+              "type": "obs",
+              "required": "false",
+              "id": "familyMaritalStatus",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "caebce7c-201f-48d9-916e-2ff5cc1e4e86"
+              }
+            },
+            {
+              "label": "Family Occupation",
+              "type": "obs",
+              "required": "false",
+              "id": "familyOccupation",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "f7b729db-5e2b-4561-88f4-74c80d831c17"
+              }
+            },
+            {
+              "label": "Medical Diagnosis",
+              "type": "obs",
+              "required": "false",
+              "id": "medicalDiagnosis",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5809a2b3-3ca3-b23e-8567-9ef012345678"
+              }
+            },
+            {
+              "label": "Dietary Assessment- Dietary History",
+              "type": "obs",
+              "required": "false",
+              "id": "dietaryHistory",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "de3bd045-b553-40d8-a964-8dcb4aeff260"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Anthropometric Measurement",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Length/Height",
+              "type": "obs",
+              "required": "false",
+              "id": "lengthHeight",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "Weight",
+              "type": "obs",
+              "required": "false",
+              "id": "weight",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "BMI",
+              "type": "obs",
+              "required": "false",
+              "id": "bmi",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "calculate": {
+                  "calculateExpression": "calcBMI(height,weight)"
+                }
+              }
+            },
+            {
+              "label": "MUAC",
+              "type": "obs",
+              "required": "false",
+              "id": "muac",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "aae2be11-0e07-497d-8e7c-a5b74fbd7cb0"
+              }
+            },
+            {
+              "label": "Weight for Length/ Height (WFL/H)",
+              "type": "obs",
+              "required": "false",
+              "id": "weightForLengthHeight",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "04e858be-7bd2-4180-80fd-47d2fc8a0027"
+              }
+            },
+            {
+              "label": "Z-Score",
+              "type": "obs",
+              "required": "false",
+              "id": "zScore",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6f76bbf3-9880-4571-a9b9-7efb3d345be0"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Recognize malnutrition signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Edema Grade",
+              "type": "obs",
+              "required": "false",
+              "id": "edemaGrade",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "8b3c4d5e-6f70-8901-bcde-f23456789222",
+                "answers": [
+                  {
+                    "concept": "1498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Mild"
+                  },
+                  {
+                    "concept": "1499AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Moderate"
+                  },
+                  {
+                    "concept": "1500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Severe"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Presence of Dermatosis",
+              "type": "obs",
+              "required": "false",
+              "id": "presenceOfDermatosis",
+              "questionOptions": {
+                "rendering": "toggle",
+                "toggleOptions": {
+                  "labelTrue": "Yes",
+                  "labelFalse": "No"
+                },
+                "concept": "b9ded8cc-9afa-4026-abe4-7c1cb4c32d91"
+              }
+            },
+            {
+              "label": "Dermatosis Severity",
+              "type": "obs",
+              "required": "false",
+              "id": "dermatosisSeverity",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0d4e5f60-7182-901c-3456-789abcdef012",
+                "answers": [
+                  {
+                    "concept": "1498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Mild"
+                  },
+                  {
+                    "concept": "1499AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Moderate"
+                  },
+                  {
+                    "concept": "1500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Severe"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Presence of Eye malnutrition signs",
+              "type": "obs",
+              "required": "false",
+              "id": "presenceOfEyeSign",
+              "questionOptions": {
+                "rendering": "toggle",
+                "toggleOptions": {
+                  "labelTrue": "Yes",
+                  "labelFalse": "No"
+                },
+                "concept": "d0900cb0-e5b3-4f3a-84ec-77688f6603ac"
+              }
+            },
+            {
+              "label": "Specify",
+              "type": "obs",
+              "required": "false",
+              "id": "specify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "e2dfbf1b-9ad8-40e8-8333-ed03363edde6"
+              }
+            },
+            {
+              "label": "Description of Any medical complications",
+              "type": "obs",
+              "required": "false",
+              "id": "medicalComplications",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "0aa2b3c4-8d5e-678f-012a-901234567890"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Nutritional Assessment and Plan",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Nutritional Diagnosis",
+              "type": "obs",
+              "required": "false",
+              "id": "nutritionalDiagnosis",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "f26480c3-99fd-4ace-9caa-7e5affe75ca1"
+              }
+            },
+            {
+              "label": "Nutritional Intervention",
+              "type": "obs",
+              "required": "false",
+              "id": "nutritionalIntervention",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "2fe89e0f-da97-4ff6-804a-fdfe1e71df3a"
+              }
+            },
+            {
+              "label": "Nutritional Counseling",
+              "type": "obs",
+              "required": "false",
+              "id": "nutritionalCounseling",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "90ca0ec4-a4e8-4160-aacd-1cbeb34ce061"
+              }
+            },
+            {
+              "label": "Monitoring and Evaluation",
+              "type": "obs",
+              "required": "false",
+              "id": "monitoringAndEvaluation",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "dbf2f9f4-ad01-452c-a20e-79025cb5e3c6"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Nutritionist",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Name",
+              "type": "obs",
+              "required": "false",
+              "id": "nutritionistName",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "bd40c021-7492-4fd9-a2f7-5a0f4c10334e"
+              }
+            },
+            {
+              "label": "Signature",
+              "type": "obs",
+              "required": "false",
+              "id": "nutritionistSignature",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "91e6b94f-6e9d-49aa-966b-a5c65d94e77b"
+              }
+            },
+            {
+              "label": "Date Form filled in",
+              "type": "obs",
+              "required": "false",
+              "id": "dateFormFilledIn",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "5bbbe370-d3ff-4526-a63b-df5c579ca30c"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

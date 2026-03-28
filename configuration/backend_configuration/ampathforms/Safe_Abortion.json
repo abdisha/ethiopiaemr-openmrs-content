@@ -1,0 +1,276 @@
+{
+  "name": "Safe Abortion",
+  "description": "Safe Abortion form migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "1e55759a-04ca-4c6f-9d26-d7fbf1497e34",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "id": "encProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "id": "encLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Safe Abortion",
+      "sections": [
+        {
+          "label": "Patient Information",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Number of living children",
+              "type": "obs",
+              "required": "false",
+              "id": "numberOfLivingChildren",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1825AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "Accepted Family Planning methods",
+              "type": "obs",
+              "required": "false",
+              "id": "acceptedFamilyPlanning",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "374AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "190AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Condoms"
+                  },
+                  {
+                    "concept": "780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pills"
+                  },
+                  {
+                    "concept": "907AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Depo Provera"
+                  },
+                  {
+                    "concept": "5276AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Female sterilization"
+                  },
+                  {
+                    "concept": "1489AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Male sterilization"
+                  },
+                  {
+                    "concept": "1359AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Implant"
+                  },
+                  {
+                    "concept": "5279AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Intra Uterine Contraceptive Device"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Service Provider Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Listed Number",
+              "type": "obs",
+              "required": "false",
+              "id": "listedNumber",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "1fc4ebb8-5935-40ad-807e-650f4fd9fc63"
+              }
+            },
+            {
+              "label": "Referring department",
+              "type": "obs",
+              "required": "false",
+              "id": "referringDepartment",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "160478AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Pregnancy Information",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Weeks of current gestation by LMP method",
+              "type": "obs",
+              "required": "false",
+              "id": "gestationByLMP",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "Weeks of current gestation by examination",
+              "type": "obs",
+              "required": "false",
+              "id": "gestationByExamination",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "7ea41be1-d153-4182-ac7b-34a32dfce529"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Abortion Procedure",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Abortion procedure",
+              "type": "obs",
+              "required": "false",
+              "id": "abortionProcedure",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "8ecea94d-8884-4e76-bc1c-866686acf6d8",
+                "answers": [
+                  {
+                    "concept": "159728AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Manual Vacuum Aspiration"
+                  },
+                  {
+                    "concept": "d6cd423b-e6b3-4296-9f0b-ebb43428f3e2",
+                    "label": "Electric Vacuum Aspiration"
+                  },
+                  {
+                    "concept": "36b907bb-680f-492a-8eee-dc67eb341c1b",
+                    "label": "Dilation and Evacuation"
+                  },
+                  {
+                    "concept": "e03a6b8d-c209-4570-a663-7398243fb646",
+                    "label": "Medical Abortion"
+                  },
+                  {
+                    "concept": "f1965652-0d3e-48ba-9b61-6f458ff5db4d",
+                    "label": "Medical Induction"
+                  },
+                  {
+                    "concept": "fdf9bde9-3564-4a5b-99e8-495e36839229",
+                    "label": "Other abortion procedures"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Pain management given",
+              "type": "obs",
+              "required": "false",
+              "id": "painManagement",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "d082046e-91c2-4da2-bf8e-de0d65de8c5b",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Outcome and Follow-up",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Outcome of CAC/PAC",
+              "type": "obs",
+              "required": "false",
+              "id": "outcomeOfCAC",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1880f095-b88c-4b90-ae1e-3d78023d7cfe",
+                "answers": [
+                  {
+                    "concept": "160429AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  },
+                  {
+                    "concept": "67c00dc0-fd8e-4db0-bc72-7ceebe59d3ce",
+                    "label": "Leaving Against Medical Advice"
+                  },
+                  {
+                    "concept": "01223344-5467-4961-8d32-567890def123",
+                    "label": "Referred out"
+                  },
+                  {
+                    "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Death"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Remarks",
+              "type": "obs",
+              "required": "false",
+              "id": "remarks",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

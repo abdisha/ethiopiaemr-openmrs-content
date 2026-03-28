@@ -1,0 +1,602 @@
+{
+  "name": "ED FOLLOW UP SHEET",
+  "description": "ED FOLLOW UP SHEET migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "d30e470c-935b-4480-b0cd-b6d19ffe48c6",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "ED Follow up Sheet",
+      "sections": [
+        {
+          "label": "Date & Time",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "WHO_Date & Time",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "MISSING_WHO_DATE_TIME"
+              },
+              "id": "dateTime"
+            }
+          ]
+        },
+        {
+          "label": "Vital Signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Blood Pressure",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "1114AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "bloodPressure",
+              "questions": [
+                {
+                  "label": "Systolic",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0",
+                    "max": "300"
+                  },
+                  "id": "systolic",
+                  "alert": {
+                    "alertWhenExpression": "myValue && (myValue >= 140 || myValue < 90)",
+                    "message": "Systolic BP is out of range (Normal range 90-139 mmHg)"
+                  }
+                },
+                {
+                  "label": "Diastolic", 
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0",
+                    "max": "200"
+                  },
+                  "id": "diastolic",
+                  "alert": {
+                    "alertWhenExpression": "myValue && (myValue >= 90 || myValue < 60)",
+                    "message": "Diastolic BP is out of range (Normal range 60-89 mmHg)"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Mean Arterial Pressure",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "MISSING_MEAN_ARTERIAL_PRESSURE",
+                "min": "0",
+                "max": "200"
+              },
+              "id": "meanArterialPressure"
+            },
+            {
+              "label": "Pulse rate",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "200"
+              },
+              "id": "pulseRate",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+                "message": "Pulse Rate is out of range (Normal range 60-100)"
+              }
+            },
+            {
+              "label": "Respiratory Rate",
+              "type": "obs", 
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "60"
+              },
+              "id": "respiratoryRate",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 25 || myValue < 12)",
+                "message": "Respiratory Rate is out of range (Normal range 12-24 breaths/min)"
+              }
+            },
+            {
+              "label": "ER, Temperature",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "25",
+                "max": "43"
+              },
+              "id": "temperature",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "message": "Temperature is out of range (Normal range 35-37.5°C)"
+              }
+            },
+            {
+              "label": "Oxygen Saturation",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number", 
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "100"
+              },
+              "id": "oxygenSaturation",
+              "alert": {
+                "alertWhenExpression": "myValue && myValue < 90",
+                "message": "Oxygen Saturation is critically low (Normal range >90%)"
+              }
+            },
+            {
+              "label": "RBS",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "500"
+              },
+              "id": "rbs"
+            }
+          ]
+        },
+        {
+          "label": "Fluid Balance Follow up Record",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "12 AM - 6AM Local Time",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "MISSING_FLUID_BALANCE_12AM_6AM"
+              },
+              "id": "fluidBalance12AM6AM",
+              "questions": [
+                {
+                  "label": "Infusion",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "1765AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0"
+                  },
+                  "id": "infusion1"
+                },
+                {
+                  "label": "Enteral",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_ENTERAL",
+                    "min": "0"
+                  },
+                  "id": "enteral1"
+                },
+                {
+                  "label": "Blood Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_BLOOD_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "bloodOutput1"
+                },
+                {
+                  "label": "Total Fluid Input",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_INPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidInput1"
+                },
+                {
+                  "label": "Amount Urine output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "161929AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0"
+                  },
+                  "id": "urineOutput1"
+                },
+                {
+                  "label": "Drain Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_DRAIN_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "drainOutput1"
+                },
+                {
+                  "label": "Stool Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_STOOL_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "stoolOutput1"
+                },
+                {
+                  "label": "Total Fluid Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidOutput1"
+                },
+                {
+                  "label": "Total fluid Balance",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "MISSING_TOTAL_FLUID_BALANCE"
+                  },
+                  "id": "totalFluidBalance1"
+                },
+                {
+                  "label": "Nurse Name and Signature",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  "id": "nurseName1"
+                }
+              ]
+            },
+            {
+              "label": "6 AM - 12PM Local Time",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "MISSING_FLUID_BALANCE_6AM_12PM"
+              },
+              "id": "fluidBalance6AM12PM",
+              "questions": [
+                {
+                  "label": "Infusion",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_INFUSION",
+                    "min": "0"
+                  },
+                  "id": "infusion2"
+                },
+                {
+                  "label": "Enteral",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_ENTERAL",
+                    "min": "0"
+                  },
+                  "id": "enteral2"
+                },
+                {
+                  "label": "Blood Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_BLOOD_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "bloodOutput2"
+                },
+                {
+                  "label": "Total Fluid Input",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_INPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidInput2"
+                },
+                {
+                  "label": "Amount Urine output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "161929AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0"
+                  },
+                  "id": "urineOutput2"
+                },
+                {
+                  "label": "Drain Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_DRAIN_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "drainOutput2"
+                },
+                {
+                  "label": "Stool Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_STOOL_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "stoolOutput2"
+                },
+                {
+                  "label": "Total Fluid Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidOutput2"
+                },
+                {
+                  "label": "Total fluid Balance",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "MISSING_TOTAL_FLUID_BALANCE"
+                  },
+                  "id": "totalFluidBalance2"
+                },
+                {
+                  "label": "Nurse Name and Signature",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  "id": "nurseName2"
+                }
+              ]
+            },
+            {
+              "label": "12 PM - 12AM Local Time",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "MISSING_FLUID_BALANCE_12PM_12AM"
+              },
+              "id": "fluidBalance12PM12AM",
+              "questions": [
+                {
+                  "label": "Infusion",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_INFUSION",
+                    "min": "0"
+                  },
+                  "id": "infusion3"
+                },
+                {
+                  "label": "Enteral",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_ENTERAL",
+                    "min": "0"
+                  },
+                  "id": "enteral3"
+                },
+                {
+                  "label": "Blood Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_BLOOD_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "bloodOutput3"
+                },
+                {
+                  "label": "Total Fluid Input",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_INPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidInput3"
+                },
+                {
+                  "label": "Amount Urine output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "161929AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0"
+                  },
+                  "id": "urineOutput3"
+                },
+                {
+                  "label": "Drain Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_DRAIN_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "drainOutput3"
+                },
+                {
+                  "label": "Stool Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_STOOL_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "stoolOutput3"
+                },
+                {
+                  "label": "Total Fluid Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidOutput3"
+                },
+                {
+                  "label": "Total fluid Balance",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "MISSING_TOTAL_FLUID_BALANCE"
+                  },
+                  "id": "totalFluidBalance3"
+                },
+                {
+                  "label": "Nurse Name and Signature",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  "id": "nurseName3"
+                }
+              ]
+            },
+            {
+              "label": "24 hours",
+              "type": "obsGroup",
+              "questionOptions": {
+                "rendering": "group",
+                "concept": "MISSING_FLUID_BALANCE_24_HOURS"
+              },
+              "id": "fluidBalance24Hours",
+              "questions": [
+                {
+                  "label": "Infusion",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_INFUSION",
+                    "min": "0"
+                  },
+                  "id": "infusion4"
+                },
+                {
+                  "label": "Enteral",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_ENTERAL",
+                    "min": "0"
+                  },
+                  "id": "enteral4"
+                },
+                {
+                  "label": "Blood Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_BLOOD_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "bloodOutput4"
+                },
+                {
+                  "label": "Total Fluid Input",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_INPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidInput4"
+                },
+                {
+                  "label": "Amount Urine output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "161929AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "min": "0"
+                  },
+                  "id": "urineOutput4"
+                },
+                {
+                  "label": "Drain Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_DRAIN_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "drainOutput4"
+                },
+                {
+                  "label": "Stool Output Amount",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_STOOL_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "stoolOutput4"
+                },
+                {
+                  "label": "Total Fluid Output",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "number",
+                    "concept": "MISSING_TOTAL_FLUID_OUTPUT",
+                    "min": "0"
+                  },
+                  "id": "totalFluidOutput4"
+                },
+                {
+                  "label": "Total fluid Balance",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "MISSING_TOTAL_FLUID_BALANCE"
+                  },
+                  "id": "totalFluidBalance4"
+                },
+                {
+                  "label": "Nurse Name and Signature",
+                  "type": "obs",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  "id": "nurseName4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
