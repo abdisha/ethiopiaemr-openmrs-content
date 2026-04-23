@@ -771,5 +771,30 @@
   },
   "@openmrs/esm-patient-attachments-app": {
     "maxFileSize": 5
+  },
+  "@openmrs/esm-patient-orders-app": {
+    "orderTypeEncounterTypeMap": [
+      {
+        "encounterTypeUuid": "a86c239a-d6f2-48c9-942f-ce76b32aa5b1",
+        "orderBasketGrouping": "imaging"
+      },
+      {
+        "encounterTypeUuid": "ea074b9a-1ed4-453a-8ed8-d7eda96414fc",
+        "orderBasketGrouping": "procedures"
+      },
+      {
+        "orderBasketGrouping": "medications",
+        "encounterTypeUuid": "39da3525-afe4-45ff-8977-c53b7b359158"
+      },
+      {
+        "orderBasketGrouping": "52a447d3-a64a-11e3-9aeb-50e549534c5e",
+        "encounterTypeUuid": "55e2d641-3adb-4624-9eec-d6f82656590b"
+      }
+    ],
+    "extensionSlots": {
+      "visit-context-header-slot": {
+        "remove": ["patient-diagnosis"]
+      }
+    }
   }
 }
