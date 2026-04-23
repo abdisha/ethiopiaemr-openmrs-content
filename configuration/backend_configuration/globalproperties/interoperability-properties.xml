@@ -12,5 +12,13 @@
             <property>ethiopiaemrcustommodule.eaptsPrescriptionSyncEndpoint</property>
             <value>https://app.openfn.org/i/e35f4df2-cf11-476f-8dd1-a00bd926796f</value>
         </globalProperty>
+          <globalProperty>
+            <property>ethiopiaemr-labonfhir.lisIdentifierSystem.url</property>
+            <value>https://id.moh.gov.et/health-id</value>
+        </globalProperty>
+         <globalProperty>
+            <property>ethiopiaemr-labonfhir.openmrsPatientIdentifier.uuid</property>
+            <value>cce42242-9e55-40a6-8739-1e6be1369bbe</value>
+        </globalProperty>
     </globalProperties>
 </config>
