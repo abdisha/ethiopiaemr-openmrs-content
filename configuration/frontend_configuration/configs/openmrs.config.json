@@ -259,7 +259,7 @@
         "remove": ["past-visits-detail-overview"]
       },
       "patient-actions-slot": {
-        "remove": ["start-visit-button"]
+        "remove": ["start-visit-button", "mortuary-mark-patient-deceased-button"]
       },
       "extra-visit-attribute-slot": {
         "remove": ["billing-check-in-form"]
