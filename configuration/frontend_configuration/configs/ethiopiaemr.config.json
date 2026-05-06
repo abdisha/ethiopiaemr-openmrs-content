@@ -6,37 +6,37 @@
         "configure": {
           "payments-points-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Payment Point"]
+              "privileges": ["ethiopiaemr: Billing: View Payment Point"]
             }
           },
           "payment-mode-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Payment Mode"]
+              "privileges": ["ethiopiaemr: Billing: View Payment Mode"]
             }
           },
           "bill-deposit-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Deposit"]
+              "privileges": ["ethiopiaemr: Billing: View Deposit"]
             }
           },
           "billable-exemptions-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Exemptions Schema"]
+              "privileges": ["ethiopiaemr: Billing: View Exemptions Schema"]
             }
           },
           "clinical-charges-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Charge Items"]
+              "privileges": ["ethiopiaemr: Billing: View Charge Items"]
             }
           },
           "payment-history-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Payment History"]
+              "privileges": ["ethiopiaemr: Billing: View Payment History"]
             }
           },
           "patient-billing-dashboard-link": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: View Bill Manager"]
+              "privileges": ["ethiopiaemr: Billing: View Bill Manager"]
             }
           }
         }
@@ -45,12 +45,12 @@
         "configure": {
           "waive-bill-action-button": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: Waive Bill"]
+              "privileges": ["ethiopiaemr: Billing: Waive Bill"]
             }
           },
           "delete-bill-action-button": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: Delete Bill"]
+              "privileges": ["ethiopiaemr: Billing: Delete Bill"]
             }
           }
         }
@@ -59,17 +59,17 @@
         "configure": {
           "refund-line-item": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: Refund Line Item"]
+              "privileges": ["ethiopiaemr: Billing: Refund Line Item"]
             }
           },
           "edit-line-item": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: Edit Bill Item"]
+              "privileges": ["ethiopiaemr: Billing: Edit Bill Item"]
             }
           },
           "cancel-line-item": {
             "Display conditions": {
-              "privileges": ["ethioemr: Billing: Cancel Bill Item"]
+              "privileges": ["ethiopiaemr: Billing: Cancel Bill Item"]
             }
           }
         }
