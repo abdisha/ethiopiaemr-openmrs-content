@@ -1,0 +1,33 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c5f8d" stop-opacity="1" />
+      <stop offset="100%" stop-color="#1e4a6f" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base -->
+  <rect width="800" height="800" fill="url(#bg2)" />
+  
+  <!-- Ethiopian flag-inspired accent - abstract curved bands -->
+  <path d="M 0 200 Q 200 180 400 200 T 800 200 L 800 260 Q 600 240 400 260 T 0 260 Z" 
+        fill="#4caf50" opacity="0.15" />
+  <path d="M 0 260 Q 200 240 400 260 T 800 260 L 800 320 Q 600 300 400 320 T 0 320 Z" 
+        fill="#ffd700" opacity="0.12" />
+  <path d="M 0 320 Q 200 300 400 320 T 800 320 L 800 380 Q 600 360 400 380 T 0 380 Z" 
+        fill="#e53935" opacity="0.1" />
+  
+  <!-- Abstract heartbeat/medical line -->
+  <path d="M 0 500 L 150 500 L 200 450 L 250 550 L 300 500 L 450 500 L 500 480 L 550 520 L 600 500 L 800 500" 
+        stroke="#ffffff" stroke-width="3" fill="none" opacity="0.15" />
+  
+  <!-- Geometric circles suggesting connectivity -->
+  <circle cx="150" cy="600" r="60" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.1" />
+  <circle cx="300" cy="650" r="40" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.12" />
+  <circle cx="650" cy="150" r="80" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.08" />
+  
+  <!-- Data dots -->
+  <circle cx="150" cy="600" r="8" fill="#4caf50" opacity="0.3" />
+  <circle cx="300" cy="650" r="6" fill="#ffd700" opacity="0.3" />
+  <circle cx="650" cy="150" r="10" fill="#e53935" opacity="0.25" />
+</svg>
