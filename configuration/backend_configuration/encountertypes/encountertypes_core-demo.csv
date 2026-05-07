@@ -11,9 +11,11 @@ e22e39fd-7db2-45e7-80f1-60fa0d5a4378,,Admission,"Indicates that the patient has 
 3a5425e3-22bd-4a0a-83f2-6f849e22ad11,,DKA Follow-up,Indicates that the patient has been followed up for diabetic ketoacidosis.,,,
 d7151f82-c1f3-4152-a605-2f9ea7414a79,,Visit Note,"Encounter where a full or abbreviated examination is done, usually leading to a presumptive or confirmed diagnosis, recorded by the examining clinician.",,,
 d8081b52-98d9-4bca-ad16-2635b8c9338b,,Prescription Return,Encounter used to record returned prescriptions,,,
-39da3525-afe4-45ff-8977-c53b7b359158,,Drug Order,Encounter for capturing drug orders,,,
-55e2d641-3adb-4624-9eec-d6f82656590b,,Lab Order,Encounter for capturing laboratory orders,,,
+39da3525-afe4-45ff-8977-c53b7b359158,,Order,Encounter for capturing orders,,,
+e1406e88-e9a9-11e8-9f32-f2801f1b9fd1,,Lab Order,Encounter for capturing laboratory orders,,,
 a86c239a-d6f2-48c9-942f-ce76b32aa5b1,,Imaging Order,Encounter for capturing imaging orders,,,
 ea074b9a-1ed4-453a-8ed8-d7eda96414fc,,Procedure Order,Encounter for capturing procedure orders,,,
 03f8ee7d-581c-4ecc-927a-3da27e4f788e,,ANC,Encounter for ANC followup for mothers/family planning,,,
+7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3,,Drug Order,Encounter for capturing drug orders,,,
+
 
