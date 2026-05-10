@@ -210,6 +210,9 @@
       "patient-highlights-bar-slot": {
         "remove": ["patient-flag-tags"]
       },
+      "patient-chart-medications-dashboard-slot": {
+        "remove": ["medications-details-widget"]
+      },
       "patient-chart-summary-dashboard-slot": {
         "remove": ["biometrics-overview-widget", "vitals-overview-widget"],
         "add": ["allergies-details-widget", "immunization-overview-widget"],
