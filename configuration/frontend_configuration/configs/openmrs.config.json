@@ -630,7 +630,6 @@
           "ewf-laboratory-dashboard-link",
           "ewf-pharmacy-dashboard-link",
           "ewf-procedures-dashboard-link",
-          "ewf-radiology-and-imaging-dashboard-link",
           "hiv-care-and-treatment-dashboard-link"
         ],
         "configure": {
