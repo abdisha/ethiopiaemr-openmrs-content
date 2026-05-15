@@ -1,5 +1,5 @@
 {
-  "name": "Congestive Heart Failure Progress",
+  "name": "Congestive Heart Failure – Progress",
   "description": "Congestive Heart Failure – Progress form migrated from Bahmni",
   "version": "1.0",
   "published": true,
@@ -27,7 +27,8 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "readonly": false
             },
             {
               "label": "Provider:",
@@ -35,8 +36,10 @@
               "required": "true",
               "id": "encProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             },
             {
               "label": "Location:",
@@ -44,8 +47,15 @@
               "required": "true",
               "id": "encLocation",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
+              },
+              "readonly": false
             }
           ]
         }

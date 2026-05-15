@@ -37,7 +37,8 @@
               "id": "encProvider",
               "readonly": false,
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               }
             },
             {
@@ -47,7 +48,13 @@
               "id": "encLocation",
               "readonly": false,
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
               }
             }
           ]
@@ -72,7 +79,6 @@
                 "calculate": {
                   "calculateExpression": "today()"
                 }
-
               },
               "validators": [
                 {

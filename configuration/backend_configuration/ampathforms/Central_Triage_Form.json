@@ -35,7 +35,8 @@
               "type": "encounterProvider",
               "required": "true",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "id": "encProvider",
               "readonly": false
@@ -229,6 +230,55 @@
                   "calculateExpression": "calcBMI(height,weight)"
                 },
                 "step": "0.01"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Disability",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Disability category",
+              "type": "obs",
+              "id": "disabilityStatus",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "a1ee71ae-0a4d-4944-83fe-d8e067e4f7a0",
+                "answers": [
+                  {
+                    "concept": "7019aea1-fb85-4bcd-9c55-b2ca8d7bb282",
+                    "label": "Vision loss"
+                  },
+                  {
+                    "concept": "9adf601a-95f9-4598-8ec1-32463494f316",
+                    "label": "Hearing loss"
+                  },
+                  {
+                    "concept": "831a4037-2511-4c35-b483-2579aefb9675",
+                    "label": "Mobility impairment"
+                  },
+                  {
+                    "concept": "12fd5e41-59f8-4a55-8a36-3d3ceb401006",
+                    "label": "No disability"
+                  },
+                  {
+                    "concept": "94c5cf7f-68d9-49a9-afe0-8f5574bc5f78",
+                    "label": "Others"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Specify other disability",
+              "type": "obs",
+              "id": "disabilityStatusOtherSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5be7e120-cca3-4f5d-a9a3-66626b498c94"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(disabilityStatus) || disabilityStatus !== '94c5cf7f-68d9-49a9-afe0-8f5574bc5f78'"
               }
             }
           ]

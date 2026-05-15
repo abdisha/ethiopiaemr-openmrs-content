@@ -35,9 +35,10 @@
               "type": "encounterProvider",
               "required": "true",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
-              "id": "encProvider ",
+              "id": "encProvider",
               "readonly": false
             },
             {
@@ -527,46 +528,6 @@
                 "concept": "6a900112-2334-0126-4560-ea0123456789"
               },
               "id": "pastMedicalIllness"
-            }
-          ]
-        },
-        {
-          "label": "Triage Assessment",
-          "isExpanded": "true",
-          "hide": {
-            "hideWhenExpression": "isEmpty(emergencyTriageCategory) || emergencyTriageCategory !== '33445548-3f35-4d32-b45a-432ebfe475c0'"
-          },
-          "questions": [
-            {
-              "label": "Assessment",
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "70566778-8990-6782-0126-4f5678abcde0",
-                "answers": [
-                  {
-                    "concept": "25899001-1223-9015-3459-9456789abcde",
-                    "label": "Red"
-                  },
-                  {
-                    "concept": "47011223-3445-1237-5671-b6789abcdef0",
-                    "label": "Orange"
-                  },
-                  {
-                    "concept": "60900112-2334-0126-4560-4f0123456789",
-                    "label": "Yellow"
-                  },
-                  {
-                    "concept": "66566778-8990-6782-0126-a5678a012345",
-                    "label": "Green"
-                  },
-                  {
-                    "concept": "68788990-0112-8904-2348-c78a01234567",
-                    "label": "Black"
-                  }
-                ]
-              },
-              "id": "assessment"
             }
           ]
         },

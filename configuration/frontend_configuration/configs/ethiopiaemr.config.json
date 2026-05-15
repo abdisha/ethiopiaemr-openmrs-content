@@ -118,46 +118,50 @@
     "paymentAPIBaseUrl": "https://payment.palladiumethiopia.com/api"
   },
   "@palladium-ethiopia/esm-clinical-workflow-app": {
-    "triageVariants": {
-      "central": {
+    "triageDefinitions": [
+      {
+        "id": "adult",
         "formUuid": "ff723d59-0650-4b84-858d-c1045b690683",
-        "name": "Central Triage Form",
-        "displayName": "Central Triage",
+        "name": "Adult Triage Form",
+        "displayName": "Adult Triage",
         "enabled": true,
         "order": 0,
-        "privilege": "Central Triage Access",
-        "patientTypes": {
-          "adult": {
-            "displayName": "Adult",
-            "formUuid": "ff723d59-0650-4b84-858d-c1045b690683",
-            "formName": "Central Triage - Adult"
-          },
-          "pediatric": {
-            "displayName": "Pediatric",
-            "formUuid": "070e7d10-c6b8-4540-9718-5908738039c3",
-            "formName": "Central Triage - Pediatric"
-          },
-          "gynecology": {
-            "displayName": "Gynecology",
-            "formUuid": "1df88856-d54e-43e9-8ed2-dafde77c6081",
-            "formName": "Central Triage - Gynecology"
-          }
-        }
+        "privilege": "Adult Triage Access"
       },
-      "emergency": {
+      {
+        "id": "pediatric",
+        "formUuid": "070e7d10-c6b8-4540-9718-5908738039c3",
+        "name": "Pediatrics Emergency Triage Form",
+        "displayName": "Pediatric Triage",
+        "enabled": true,
+        "order": 1,
+        "privilege": "Pediatric Triage Access"
+      },
+      {
+        "id": "emergency",
         "formUuid": "4ff622f8-212e-4f0f-b6a6-1aa19d776ffb",
         "name": "Emergency Triage Form",
         "displayName": "Emergency Triage",
         "enabled": true,
-        "order": 1,
-        "privilege": "Emergency Triage Access"
+        "order": 2,
+        "privilege": "Emergency Triage Access",
+        "routePath": "emergency-triage"
+      },
+      {
+        "id": "gynecological",
+        "formUuid": "1df88856-d54e-43e9-8ed2-dafde77c6081",
+        "name": "GYN Triage Form",
+        "displayName": "Gynecological Triage",
+        "enabled": true,
+        "order": 3,
+        "privilege": "Gynecological Triage Access"
       }
-    },
+    ],
     "visitTypeUuid": "3371a4d4-f66f-4454-a86d-92c7b3da990c",
     "identifierSourceUuid": "fb034aac-2353-4940-abe2-7bc94e7c1e71",
     "facilityCode": "HOSP",
     "defaultIdentifierTypeUuid": "dfacd928-0370-4315-99d7-6ec1c9f7ae76",
-    "disabilityStatusAttributeTypeUuid": "54d4a066-15f5-102d-96e4-000c29c2a5d7",
+    "disabilityStatusAttributeTypeUuid": "6a08ef73-6101-42c8-b538-3a2816ede907",
     "healthIdLookupUrl": "openmrs/ws/rest/v1/ethiopiaemrcustommodule/mpi/patient",
     "healthIdIdentifierTypeUuid": "cce42242-9e55-40a6-8739-1e6be1369bbe",
     "emergencyLocationTags": ["Emergency"],
@@ -171,7 +175,7 @@
       }
     }
   },
-  "@palladium-ethiopia/esm-patient-orders-app": {
+  "@openmrs/esm-patient-orders-app": {
     "showReferenceNumberField": false,
     "orderEncounterType": "39da3525-afe4-45ff-8977-c53b7b359158",
     "extensionSlots": {

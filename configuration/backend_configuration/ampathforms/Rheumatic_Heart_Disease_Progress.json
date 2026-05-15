@@ -1,5 +1,5 @@
 {
-  "name": "Rheumatic Heart Disease Progress",
+  "name": "Rheumatic Heart Disease – Progress",
   "description": "Rheumatic Heart Disease – Progress form (structure aligned to CHF Progress; Bahmni source structure not found in repo)",
   "version": "1.0",
   "published": true,
@@ -27,7 +27,8 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "readonly": false
             },
             {
               "label": "Provider:",
@@ -35,8 +36,10 @@
               "required": "true",
               "id": "encProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             },
             {
               "label": "Location:",
@@ -44,8 +47,15 @@
               "required": "true",
               "id": "encLocation",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
+              },
+              "readonly": false
             }
           ]
         }

@@ -27,7 +27,8 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "readonly": false
             },
             {
               "label": "Provider:",
@@ -35,8 +36,10 @@
               "required": "true",
               "id": "encProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             },
             {
               "label": "Location:",
@@ -44,8 +47,15 @@
               "required": "true",
               "id": "encLocation",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
+              },
+              "readonly": false
             }
           ]
         }
@@ -240,9 +250,9 @@
                   {
                     "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Unknown"
-                  } ]
+                  }
+                ]
               }
-            
             },
             {
               "label": "Menstrual Bleeding Pattern",
@@ -314,7 +324,8 @@
                   {
                     "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "No"
-                  }]
+                  }
+                ]
               }
             },
             {
@@ -515,6 +526,9 @@
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "3ebc8229-fd09-42fe-91c2-38144bb43d6d"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(resultBreastExam) || resultBreastExam !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -545,6 +559,9 @@
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "0563554c-2618-4f5b-86a7-734c7236ada2"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(resultPelvicExam) || resultPelvicExam !== '1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -602,6 +619,9 @@
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(scjCompletelySeen) || scjCompletelySeen !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -620,7 +640,7 @@
                   {
                     "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "No"
-                  } 
+                  }
                 ]
               }
             },
@@ -630,7 +650,7 @@
               "required": "false",
               "id": "stiTreatmentProvided",
               "questionOptions": {
-                "rendering": "text", 
+                "rendering": "text",
                 "concept": "2cbc2a1c-8177-4eb5-aaa8-ab254ca45362"
               },
               "hide": {
@@ -894,6 +914,9 @@
                     "label": "High grade SIL"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(colposcopyExam) || colposcopyExam !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -924,6 +947,9 @@
               "questionOptions": {
                 "rendering": "date",
                 "concept": "e1ef71ce-a8f8-405c-b7f7-65bb52b27487"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(biopsySampleCollected) || biopsySampleCollected !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -934,6 +960,9 @@
               "questionOptions": {
                 "rendering": "date",
                 "concept": "d251614c-819e-418f-b23d-cffa600b3483"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(biopsySampleCollected) || biopsySampleCollected !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -970,6 +999,9 @@
                     "label": "Others"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(biopsySampleCollected) || biopsySampleCollected !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -1132,6 +1164,9 @@
               "questionOptions": {
                 "rendering": "text",
                 "concept": "ea1d64b6-9924-43bd-b674-a7e481e35f0e"
+              },
+              "hide": {
+                "hideWhenExpression": "isEmpty(reasonForReferral) || reasonForReferral !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]

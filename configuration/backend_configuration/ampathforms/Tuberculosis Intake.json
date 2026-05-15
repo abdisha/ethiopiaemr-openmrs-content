@@ -35,7 +35,8 @@
               "type": "encounterProvider",
               "required": "true",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "id": "encProvider",
               "readonly": false
@@ -45,7 +46,13 @@
               "type": "encounterLocation",
               "required": "true",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
               },
               "id": "encLocation",
               "readonly": false

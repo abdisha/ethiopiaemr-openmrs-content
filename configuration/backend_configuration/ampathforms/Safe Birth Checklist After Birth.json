@@ -1,6 +1,6 @@
 {
   "name": "Safe Birth Checklist, After Birth",
-  "description": "Safe Birth Checklist, After Birth migrated from Bahmni",
+  "description": "Safe birth checklist: immediate post-birth and pre-discharge items (concepts from project master; groups replaced with sections).",
   "version": "1.0",
   "published": true,
   "uuid": "25b77241-fc42-4a77-86a0-3148d9b8952a",
@@ -27,7 +27,8 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "readonly": false
             },
             {
               "label": "Provider:",
@@ -35,8 +36,10 @@
               "required": "true",
               "id": "encProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             },
             {
               "label": "Location:",
@@ -44,8 +47,15 @@
               "required": "true",
               "id": "encLocation",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
+              },
+              "readonly": false
             }
           ]
         }
@@ -55,276 +65,247 @@
       "label": "Safe Birth Checklist, After Birth",
       "sections": [
         {
-          "label": "Safe Birth Checklist, After Birth",
+          "label": "Soon after birth",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Safe Child Birth Checklist After Birth, Soon After Birth",
-              "type": "obsGroup",
+              "label": "Does baby need to start antibiotics",
+              "type": "obs",
+              "required": false,
+              "id": "babyNeedAntibiotics",
               "questionOptions": {
-                "rendering": "group",
-                "concept": "b1f0f900-24f5-48d6-897b-78ae76c3de47"
-              },
-              "id": "soonAfterBirthGroup",
-              "questions": [
-                {
-                  "label": "Does Baby need to start antibiotics",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "8526f708-5960-7890-1234-567890abcd12",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes, Given"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
+                "rendering": "radio",
+                "concept": "8526f708-5960-7890-1234-567890abcd12",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes, given"
                   },
-                  "id": "babyNeedAntibiotics"
-                },
-                {
-                  "label": "Does Baby need referral?",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "fa19d295-73cc-4aa5-beb7-f317aa08ce2b",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
-                  },
-                  "id": "babyNeedReferral"
-                },
-                {
-                  "label": "Does Baby need special care and monitoring?",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "7c46f49b-c2ed-4ab4-b51f-7b4a433c8767",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes, Special Care Arranged"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
-                  },
-                  "id": "babyNeedSpecialCare"
-                },
-                {
-                  "label": "Does Baby need to start antiretroviral medicine?",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "41526374-5869-7890-1234-567890456789",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes, Given"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
-                  },
-                  "id": "babyNeedArv"
-                },
-                {
-                  "label": "Safe childbirth checklist, after birth Newborn",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "checkbox",
-                    "concept": "f6990226-37ff-4916-b163-d48133c35546",
-                    "answers": [
-                      {
-                        "concept": "6293c4d5-2637-4567-8901-234567abcd10",
-                        "label": "Placed baby in skin-to-skin contact and started breastfeeding within 1 hr (If mother and baby are okay)"
-                      },
-                      {
-                        "concept": "4293c4d5-2637-4567-8901-234567abcd08",
-                        "label": "Vit K given 1 mg IM on anterio-mid thigh"
-                      },
-                      {
-                        "concept": "5293c4d5-2637-4567-8901-234567abcd09",
-                        "label": "TTC eye ointment given in both eyes"
-                      },
-                      {
-                        "concept": "72b48c81-39d3-455c-9a99-469bf2bf0079",
-                        "label": "Weighed and recorded"
-                      },
-                      {
-                        "concept": "cd0a543e-43db-4ed9-9c16-0764a313062a",
-                        "label": "Give BCG and OPV before discharge"
-                      },
-                      {
-                        "concept": "b2f1a62a-8479-458c-b4f9-6c52b869973d",
-                        "label": "Confirm that mother/ companion will call for help if danger signs are present"
-                      }
-                    ]
-                  },
-                  "id": "afterBirthNewbornChecklist"
-                }
-              ]
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
             },
             {
-              "label": "Safe birth checklist, Before Discharge",
-              "type": "obsGroup",
+              "label": "Does baby need referral?",
+              "type": "obs",
+              "required": false,
+              "id": "babyNeedReferral",
               "questionOptions": {
-                "rendering": "group",
-                "concept": "a35e4c36-5ffb-49a2-a3d2-b05c82daec39"
-              },
-              "id": "beforeDischargeGroup",
-              "questions": [
-                {
-                  "label": "Is mother's bleeding controlled?",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "6304d5e6-3748-5678-9012-345678abcd10",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
+                "rendering": "radio",
+                "concept": "fa19d295-73cc-4aa5-beb7-f317aa08ce2b",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
                   },
-                  "id": "motherBleedingControlled"
-                },
-                {
-                  "label": "Does Mother need to start antibiotic",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "7415e6f7-4859-6789-0123-456789abcd11",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes, IV Started"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Does baby need special care and monitoring?",
+              "type": "obs",
+              "required": false,
+              "id": "babyNeedSpecialCare",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7c46f49b-c2ed-4ab4-b51f-7b4a433c8767",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes, special care arranged"
                   },
-                  "id": "motherNeedAntibiotic"
-                },
-                {
-                  "label": "Does Baby need to start antibiotics",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "fade50fe-daac-4eea-9fa7-9a2aa895b156",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes, Given"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Does baby need to start antiretroviral medicine?",
+              "type": "obs",
+              "required": false,
+              "id": "babyNeedArv",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "41526374-5869-7890-1234-567890456789",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes, given"
                   },
-                  "id": "dischargeBabyNeedAntibiotics"
-                },
-                {
-                  "label": "Family Planning options discussed and offered to mother",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "1859203c-8293-0123-4567-890123abcd15",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Newborn care after birth (check all that apply)",
+              "type": "obs",
+              "required": false,
+              "id": "afterBirthNewbornChecklist",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "f6990226-37ff-4916-b163-d48133c35546",
+                "answers": [
+                  {
+                    "concept": "6293c4d5-2637-4567-8901-234567abcd10",
+                    "label": "Placed baby in skin-to-skin contact and started breastfeeding within 1 hr (if mother and baby are okay)"
                   },
-                  "id": "familyPlanningDiscussedBeforeDischarge"
-                },
-                {
-                  "label": "Confirm that mother/companion will call for help after discharge if danger signs",
-                  "type": "obs",
-                  "questionOptions": {
-                    "rendering": "radio",
-                    "concept": "1ab37156-26a7-4662-9c68-e3bc56d10bc4",
-                    "answers": [
-                      {
-                        "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes"
-                      },
-                      {
-                        "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
-                      }
-                    ]
+                  {
+                    "concept": "4293c4d5-2637-4567-8901-234567abcd08",
+                    "label": "Vit K given 1 mg IM on anterior-mid thigh"
                   },
-                  "id": "dangerSignsHelpSeekingAfterDischarge"
-                },
-                {
-                  "label": "Healthcare provider",
-                  "type": "obsGroup",
-                  "questionOptions": {
-                    "rendering": "group",
-                    "concept": "4c6f1d03-5143-4264-b255-27bf97d680d0"
+                  {
+                    "concept": "5293c4d5-2637-4567-8901-234567abcd09",
+                    "label": "TTC eye ointment given in both eyes"
                   },
-                  "id": "healthcareProviderGroup",
-                  "questions": [
-                    {
-                      "label": "Name",
-                      "type": "obsGroup",
-                      "questionOptions": {
-                        "rendering": "group",
-                        "concept": "85acc6cb-5355-4a8b-bfbb-70d897d4d6ad"
-                      },
-                      "id": "providerNameGroup",
-                      "questions": [
-                        {
-                          "label": "Date",
-                          "type": "obs",
-                          "questionOptions": {
-                            "rendering": "date",
-                            "concept": "5bbbe370-d3ff-4526-a63b-df5c579ca30c"
-                          },
-                          "id": "providerDate"
-                        },
-                        {
-                          "label": "Signature",
-                          "type": "obs",
-                          "questionOptions": {
-                            "rendering": "textarea",
-                            "concept": "28794bbc-ad22-4d8e-a8a3-8147bdfef6cd"
-                          },
-                          "id": "providerSignature"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+                  {
+                    "concept": "72b48c81-39d3-455c-9a99-469bf2bf0079",
+                    "label": "Weighed and recorded"
+                  },
+                  {
+                    "concept": "cd0a543e-43db-4ed9-9c16-0764a313062a",
+                    "label": "Give BCG and OPV before discharge"
+                  },
+                  {
+                    "concept": "b2f1a62a-8479-458c-b4f9-6c52b869973d",
+                    "label": "Confirm that mother/companion will call for help if danger signs are present"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Before discharge",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Is mother's bleeding controlled?",
+              "type": "obs",
+              "required": false,
+              "id": "motherBleedingControlled",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "6304d5e6-3748-5678-9012-345678abcd10",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Does mother need to start antibiotic?",
+              "type": "obs",
+              "required": false,
+              "id": "motherNeedAntibiotic",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7415e6f7-4859-6789-0123-456789abcd11",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes, IV started"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Does baby need to start antibiotics",
+              "type": "obs",
+              "required": false,
+              "id": "dischargeBabyNeedAntibiotics",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "fade50fe-daac-4eea-9fa7-9a2aa895b156",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes, given"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Family planning options discussed and offered to mother",
+              "type": "obs",
+              "required": false,
+              "id": "familyPlanningDiscussedBeforeDischarge",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1859203c-8293-0123-4567-890123abcd15",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Confirm that mother/companion will call for help after discharge if danger signs",
+              "type": "obs",
+              "required": false,
+              "id": "dangerSignsHelpSeekingAfterDischarge",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1ab37156-26a7-4662-9c68-e3bc56d10bc4",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Healthcare provider attestation",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Signature",
+              "type": "obs",
+              "required": false,
+              "id": "providerSignature",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "28794bbc-ad22-4d8e-a8a3-8147bdfef6cd",
+                "rows": "2"
+              }
             }
           ]
         }

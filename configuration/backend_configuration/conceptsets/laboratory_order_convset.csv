@@ -146,6 +146,7 @@ Laboratory Order,HPV for type 16/18,concept-set,144,,1
 Laboratory Order,Iodized CA,concept-set,145,,1
 Laboratory Order,Pleural fluid AFB,concept-set,146,,1
 Laboratory Order,Urine blood (dipstick),concept-set,147,,1
-
-
+Laboratory Order,HBsAg Rapid Diagnostic Test,concept-set,148,,1
+Laboratory Order,HAV Diagnostic Test,concept-set,149,,1
+Laboratory Order,HCV Diagnostic Test,concept-set,150,,1
 

@@ -8,6 +8,60 @@
   "encounter": "Consultation",
   "pages": [
     {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "readonly": false,
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "id": "encProvider",
+              "readonly": false
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
+              },
+              "id": "encLocation",
+              "readonly": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "label": "Psychiatry History",
       "sections": [
         {
@@ -287,7 +341,7 @@
               "id": "appearance",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "c41b9db2-f917-48dd-9a22-e38df11468ca",
+                "concept": "6f708192-a314-2345-f678-90123456bcde",
                 "rows": "2"
               }
             },
@@ -309,7 +363,7 @@
               "id": "emotionalExpression",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "e4be9398-44c3-488a-8c6f-5ae333bdeb1f",
+                "concept": "b10fd204-bcc1-487f-9f2e-0382474311e8",
                 "rows": "2"
               }
             }
@@ -387,7 +441,7 @@
               "id": "orientation",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "07d68f22-67ae-4010-99ad-6b9b44b2a174",
+                "concept": "9690a50f-d351-46d4-b6da-d7b0709c323c",
                 "rows": "2"
               }
             },
@@ -420,7 +474,7 @@
               "id": "abstractReasoning",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "18b17542-8167-4d2e-87af-d60cab88f4e5",
+                "concept": "026c8186-9422-4f98-961a-44edd6971ea9",
                 "rows": "2"
               }
             },

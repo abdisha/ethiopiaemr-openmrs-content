@@ -115,9 +115,7 @@
         "remove": ["pick-lab-request-action"]
       },
       "inprogress-tests-actions-slot": {
-        "remove": [
-          "launch-malaria-results-workspace"
-        ]
+        "remove": ["launch-malaria-results-workspace"]
       }
     },
     "Display conditions": {
@@ -267,7 +265,11 @@
         "remove": ["past-visits-detail-overview"]
       },
       "patient-actions-slot": {
-        "remove": ["start-visit-button", "mortuary-mark-patient-deceased-button", "custom-start-visit-overflow-menu-item"]
+        "remove": [
+          "start-visit-button",
+          "mortuary-mark-patient-deceased-button",
+          "custom-start-visit-overflow-menu-item"
+        ]
       },
       "extra-visit-attribute-slot": {
         "remove": ["billing-check-in-form"]
@@ -290,6 +292,7 @@
         }
       }
     },
+    "encounterEditableDuration": 30,
     "showExtraVisitAttributesSlot": true,
     "showServiceQueueFields": true,
     "showUpcomingAppointments": true,
@@ -471,9 +474,25 @@
           "triage-dashboard-link",
           "mch-dashboard-link",
           "mortuary-dashboard-link",
-          "consultation-dashboard-link"
+          "consultation-dashboard-link",
+          "adult-triage-dashboard-link",
+          "pediatric-triage-dashboard-link",
+          "emergency-triage-dashboard-link",
+          "gynecological-triage-dashboard-link",
+          "adult-triage-dashboard",
+          "pediatric-triage-dashboard",
+          "emergency-triage-dashboard",
+          "gynecological-triage-dashboard"
         ],
         "add": [],
+        "order": [
+          "clinical-workflow-triage-hp-link-adult",
+          "clinical-workflow-triage-hp-link-pediatric",
+          "clinical-workflow-triage-hp-link-emergency",
+          "clinical-workflow-triage-hp-link-gynecological",
+          "ewf-mru-dashboard-link",
+          "patient-scoreboard-link"
+        ],
         "configure": {
           "home-widget-db-link": {
             "Display conditions": {
@@ -587,12 +606,22 @@
               "privileges": ["o3: View Claims Management Dashboard"]
             }
           },
-          "central-triage-dashboard-link": {
+          "clinical-workflow-triage-hp-link-adult": {
             "Display conditions": {
               "privileges": ["ethiopiaemr: Triage: View Triage"]
             }
           },
-          "emergency-triage-dashboard-link": {
+          "clinical-workflow-triage-hp-link-pediatric": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: Triage: View Triage"]
+            }
+          },
+          "clinical-workflow-triage-hp-link-emergency": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: Triage: View Triage"]
+            }
+          },
+          "clinical-workflow-triage-hp-link-gynecological": {
             "Display conditions": {
               "privileges": ["ethiopiaemr: Triage: View Triage"]
             }
@@ -628,13 +657,12 @@
         "add": ["care-panel-summary-dashboard-link"],
         "remove": [
           "ewf-homepage-dashboard-link",
-          "ewf-admissions-dashboard-link",
           "ewf-clinical-encounter-link",
           "ewf-laboratory-dashboard-link",
           "ewf-pharmacy-dashboard-link",
           "ewf-procedures-dashboard-link",
-          "ewf-radiology-and-imaging-dashboard-link",
-          "hiv-care-and-treatment-dashboard-link"
+          "hiv-care-and-treatment-dashboard-link",
+          "ewf-preauth-dashboard-link"
         ],
         "configure": {
           "allergies-summary-dashboard": {

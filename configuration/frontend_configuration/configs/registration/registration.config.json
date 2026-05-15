@@ -1,6 +1,7 @@
 {
   "@palladium-ethiopia/esm-patient-registration-app": {
-    "defaultPatientIdentifierTypes": [],
+    "defaultPatientIdentifierTypes": ["cce42242-9e55-40a6-8739-1e6be1369bbe"],
+    "healthIdIdentifierTypeUuid": "cce42242-9e55-40a6-8739-1e6be1369bbe",
     "sections": [
       "demographics",
       "contact",
