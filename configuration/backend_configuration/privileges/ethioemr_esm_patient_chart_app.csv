@@ -1,0 +1,12 @@
+Uuid,Privilege name,Description
+,o3: View Visit Notes,View Visit Notes
+,o3: Add Visit Notes,Add Visit Notes
+,o3: Edit Visit Notes,Edit Visit Notes
+,o3: Delete Visit Notes,Delete Visit Notes
+,o3: View Encounters,View Encounters
+,o3: Delete Encounters,Delete Encounters
+,o3: Edit Encounters,Edit Encounters
+,o3: Delete Visit,Delete Visit
+,o3: Edit Visit,Edit Visit
+,o3: View Queue Screen Dashboard,Allows the user to view Queue Screen
+,o3: View Patient Vitals and Biometrics,View the patient chart vitals and biometrics dashboard

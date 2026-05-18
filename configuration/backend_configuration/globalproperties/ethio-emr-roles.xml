@@ -1,0 +1,24 @@
+<config>
+    <globalProperties>
+        <globalProperty>
+            <property>ethiopiaemr.userRole.config</property>
+            <value><![CDATA[
+[
+  {
+    "category": "Ethiopia EMR Roles",
+    "roles": [
+      "API Privileges",
+      "API Privileges (View and Edit)",
+      "ethiopiaemr: Finance Officer",
+      "ethiopiaemr: MRU",
+      "ethiopiaemr: Liaison Officer",
+      "ethiopiaemr: Nurse",
+      "ethiopiaemr: Physician",
+      "ethiopiaemr: Triage Nurse"
+    ]
+  }
+]
+            ]]></value>
+        </globalProperty>
+    </globalProperties>
+</config>

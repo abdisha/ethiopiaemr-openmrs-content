@@ -1,0 +1,10 @@
+Uuid,Privilege name,Description
+,ethiopiaemr: Transfer Patient,Transfer Patient
+,ethiopiaemr: View Patient Scoreboard,Patient Scoreboard
+,ethiopiaemr: MRU: Add Patient,Add Patient in MRU
+,ethiopiaemr: MRU: Edit Patient,Edit Patient in MRU
+,ethiopiaemr: MRU: Edit Billing Information,Edit Billing Information in MRU
+,ethiopiaemr: MRU: View MRU,View MRU
+,ethiopiaemr: Triage: View Triage,View Triage
+,ethiopiaemr: Triage: Add Triage Form,Add Triage Form
+,ethiopiaemr: Triage: Register Patient,Register Patient
