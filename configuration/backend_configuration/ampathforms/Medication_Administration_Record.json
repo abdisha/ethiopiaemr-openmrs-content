@@ -36,7 +36,8 @@
               "required": "true",
               "id": "encProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "readonly": false
             },
@@ -176,9 +177,11 @@
                       "id": "nurseName",
                       "questionOptions": {
                         "rendering": "ui-select-extended",
-                        "concept": "166692AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                        "concept": "166692AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "isSearchable": true
                       },
-                      "validators": []
+                      "validators": [],
+                      "readonly": false
                     },
                     {
                       "label": "Date and Time",

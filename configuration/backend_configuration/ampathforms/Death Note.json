@@ -36,7 +36,8 @@
               "required": "true",
               "id": "encProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "readonly": false
             },
@@ -145,25 +146,6 @@
                 "concept": "d0b1c2d3-4e5f-6789-8abc-def012345680"
               },
               "id": "briefAccountHospitalCourse"
-            },
-            {
-              "label": "Medico Legal / Police case",
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "d0b1c2d3-4e5f-6789-8abc-def012345681",
-                "answers": [
-                  {
-                    "concept": "d0b1c2d3-4e5f-6789-8abc-def012345682",
-                    "label": "Police Case"
-                  },
-                  {
-                    "concept": "d0b1c2d3-4e5f-6789-8abc-def012345683",
-                    "label": "Medico Legal"
-                  }
-                ]
-              },
-              "id": "medicoLegalPoliceCase"
             },
             {
               "label": "Family / Next-of-kin aware of death",

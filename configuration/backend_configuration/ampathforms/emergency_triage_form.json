@@ -37,7 +37,8 @@
               "id": "encProvider",
               "readonly": false,
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               }
             },
             {
@@ -111,37 +112,6 @@
               ],
               "hide": {
                 "hideWhenExpression": ""
-              }
-            },
-            {
-              "label": "Medico Legal Case",
-              "type": "obs",
-              "id": "medicoLegalCase",
-              "questionOptions": {
-                "concept": "1716AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "concept": "86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Road Traffic Injury"
-                  },
-                  {
-                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Others"
-                  }
-                ]
-              }
-            },
-            {
-              "label": "If Others, specify:",
-              "type": "obs",
-              "id": "medicoLegalCaseOtherSpecify",
-              "questionOptions": {
-                "concept": "160686AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "text"
-              },
-              "hide": {
-                "hideWhenExpression": "isEmpty(medicoLegalCase) || medicoLegalCase !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]

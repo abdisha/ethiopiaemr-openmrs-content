@@ -35,7 +35,8 @@
               "type": "encounterProvider",
               "required": "true",
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "id": "encProvider",
               "readonly": false
@@ -156,8 +157,10 @@
               "required": false,
               "id": "physicianWhoConfirmedDeath",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             },
             {
               "label": "Treating Physician Name",
@@ -165,8 +168,10 @@
               "required": false,
               "id": "treatingPhysicianName",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         }

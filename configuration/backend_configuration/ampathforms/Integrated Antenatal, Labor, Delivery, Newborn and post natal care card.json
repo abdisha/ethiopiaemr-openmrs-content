@@ -36,7 +36,8 @@
               "id": "encProvider",
               "readonly": false,
               "questionOptions": {
-                "rendering": "ui-select-extended"
+                "rendering": "ui-select-extended",
+                "isSearchable": true
               },
               "required": "true"
             },
@@ -1818,8 +1819,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -2427,8 +2430,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider2ndv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -3018,8 +3023,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider3rdv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -3578,8 +3585,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider4thv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -4148,8 +4157,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider5thv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -4733,8 +4744,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider6thv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -5299,8 +5312,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider7thvv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         },
@@ -5884,8 +5899,10 @@
               "type": "encounterProvider",
               "id": "idNameofHealthCareProvider8thvv",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         }
