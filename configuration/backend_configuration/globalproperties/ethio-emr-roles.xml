@@ -7,14 +7,13 @@
   {
     "category": "Ethiopia EMR Roles",
     "roles": [
-      "API Privileges",
-      "API Privileges (View and Edit)",
       "ethiopiaemr: Finance Officer",
       "ethiopiaemr: MRU",
       "ethiopiaemr: Liaison Officer",
       "ethiopiaemr: Nurse",
       "ethiopiaemr: Physician",
-      "ethiopiaemr: Triage Nurse"
+      "ethiopiaemr: Triage Nurse",
+      "ethiopiaemr: Laboratory Personnel"
     ]
   }
 ]

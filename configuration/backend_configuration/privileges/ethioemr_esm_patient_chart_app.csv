@@ -10,3 +10,4 @@ Uuid,Privilege name,Description
 ,o3: Edit Visit,Edit Visit
 ,o3: View Queue Screen Dashboard,Allows the user to view Queue Screen
 ,o3: View Patient Vitals and Biometrics,View the patient chart vitals and biometrics dashboard
+,o3: View Patient Forms,o3: View Patient Forms
