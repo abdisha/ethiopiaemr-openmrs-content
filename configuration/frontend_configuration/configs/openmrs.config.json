@@ -115,7 +115,19 @@
         "remove": ["pick-lab-request-action"]
       },
       "inprogress-tests-actions-slot": {
-        "remove": ["launch-malaria-results-workspace"]
+        "remove": ["launch-malaria-results-workspace"],
+        "configure": {
+          "add-lab-request-results-action": {
+            "Display conditions": {
+              "privileges": ["o3: Add Lab Request Results"]
+            }
+          },
+          "reject-lab-request-worklist-action": {
+            "Display conditions": {
+              "privileges": ["o3: Reject Lab Request"]
+            }
+          }
+        }
       }
     },
     "Display conditions": {
@@ -649,6 +661,11 @@
           "pharmacy-homepage-dashboard-link": {
             "Display conditions": {
               "privileges": ["o3: Pharmacy"]
+            }
+          },
+          "ward-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: View Ward Dashboard"]
             }
           }
         }
