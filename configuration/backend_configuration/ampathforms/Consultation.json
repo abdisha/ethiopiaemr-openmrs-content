@@ -1,0 +1,174 @@
+{
+  "name": "Consultation",
+  "uuid": "6d1da2cc-c846-4c89-b154-32811057751d",
+  "version": "1",
+  "description": "Inter-department consultation form used when one clinician requests consultation from another department.",
+  "processor": "EncounterFormProcessor",
+  "encounterType": "4723cf17-ff74-43d7-ad36-829e555fbc60",
+  "published": true,
+  "retired": false,
+  "referencedForms": [],
+  "pages": [
+    {
+      "label": "Consultation",
+      "sections": [
+        {
+          "label": "Consulting",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "cf3a0425-051e-4dfc-8598-b2af8d35cba3"
+              },
+              "id": "consultingDepartment",
+              "label": "Consulting Department",
+              "required": true
+            },
+            {
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "concept": "c3b0fd57-2b40-4f4a-ad8b-0b9fe63563c0",
+                "isSearchable": false
+              },
+              "id": "consultingPhysician",
+              "label": "Consulting Physician"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "ae3435ab-fc9d-4032-931b-67494c0a7004"
+              },
+              "id": "erWard",
+              "label": "ER/Ward"
+            },
+            {
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "concept": "d7245ba1-35f3-4b10-b04f-38a812fad033",
+                "isSearchable": true
+              },
+              "id": "consultedDepartment",
+              "label": "Consulted Department",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "25eb4da9-0904-441f-b9b8-69ec7307a417",
+                "answers": [
+                  {
+                    "concept": "8e4f3c2a-1b5d-4e6f-9a0b-1c2d3e4f5a6b",
+                    "label": "Urgent"
+                  },
+                  {
+                    "concept": "9f5e4d3c-2b6e-5f7a-0b1c-2d3e4f5a6b7c",
+                    "label": "Routine"
+                  }
+                ]
+              },
+              "id": "typeOfConsultation",
+              "label": "Type of Consultation",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "a2bf2521-1635-4b72-9bca-ca581ef8752c"
+              },
+              "id": "reasonForConsultation",
+              "label": "Reason For Consultation",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "23942b19-f729-4622-b73a-29e0ffc7448b"
+              },
+              "id": "pertinentInvestigation",
+              "label": "Pertinent Investigation"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "b986ec9e-da79-423e-80be-5875b87228ff"
+              },
+              "id": "briefHistory",
+              "label": "Brief History"
+            }
+          ]
+        },
+        {
+          "label": "Consultation response",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "28441853-da6d-450f-b88a-9205d4654783"
+              },
+              "id": "briefFinding",
+              "label": "Brief Finding"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "36566305-0931-47d0-9de7-488c0ef4bef5"
+              },
+              "id": "recommendation",
+              "label": "Recommendation"
+            },
+            {
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "concept": "20a11418-e24f-434f-bfab-3ecebecef094"
+              },
+              "id": "consultedPhysician",
+              "label": "Consulted Physician"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0ac233e1-3654-4afb-9436-8c7dd9eb0069",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "id": "markAsCompleted",
+              "label": "Mark as Completed"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "4619ace7-4a24-408e-b6c7-c8c9215b34eb"
+              },
+              "id": "timeEvaluated",
+              "label": "Time Evaluated",
+              "datePickerFormat": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
