@@ -42,7 +42,8 @@
       "src": "/openmrs/spa/config/assets/ethiopiaemr-package/tenaehr-logo-horizontal.png"
     },
     "links": {
-      "src": "/openmrs/spa/home/service-queues"
+      "loginSuccess": "${openmrsSpaBase}/home/patient-scoreboard",
+      "src": "/openmrs/spa/home/patient-scoreboard"
     },
     "footer": {
       "additionalLogos": [

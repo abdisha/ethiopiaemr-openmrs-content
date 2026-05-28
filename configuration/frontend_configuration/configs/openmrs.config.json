@@ -479,7 +479,8 @@
   },
   "@openmrs/esm-primary-navigation-app": {
     "logo": {
-      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/tenaehr-logo-blue-bg.png"
+      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/tenaehr-logo-blue-bg.png",
+      "link": "${openmrsSpaBase}/home/patient-scoreboard"
     },
     "extensionSlots": {
       "app-menu-slot": {
