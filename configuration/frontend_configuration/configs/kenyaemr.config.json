@@ -117,6 +117,7 @@
         "add": ["add-patient-to-ward-siderail-button"]
       }
     },
+    "admissionRequestFormUuid": "5e725bad-750e-4d31-b4bc-cab4c9ea63ff",
     "Display conditions": {
       "privileges": ["o3: View Ward Dashboard"]
     }
