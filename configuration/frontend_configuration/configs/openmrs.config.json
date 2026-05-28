@@ -155,9 +155,7 @@
   },
   "@openmrs/esm-patient-search-app": {
     "excludePatientIdentifierCodeTypes": {
-      "uuids": [
-        "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
-      ]
+      "uuids": ["dfacd928-0370-4315-99d7-6ec1c9f7ae76"]
     }
   },
   "@openmrs/esm-patient-banner-app": {
@@ -171,9 +169,7 @@
       "privileges": ["o3: View Patient Banner"]
     },
     "excludePatientIdentifierCodeTypes": {
-      "uuids": [
-        "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
-      ]
+      "uuids": ["dfacd928-0370-4315-99d7-6ec1c9f7ae76"]
     },
     "extensionSlots": {
       "patient-actions-slot": {
@@ -255,7 +251,11 @@
         "remove": ["medications-details-widget"]
       },
       "patient-chart-summary-dashboard-slot": {
-        "remove": ["biometrics-overview-widget", "vitals-overview-widget"],
+        "remove": [
+          "biometrics-overview-widget",
+          "vitals-overview-widget",
+          "patient-summary-dashboard"
+        ],
         "add": ["allergies-details-widget", "immunization-overview-widget"],
         "configure": {
           "allergies-details-widget": {
@@ -331,6 +331,13 @@
             "Display conditions": {
               "privileges": ["o3: Delete Visit"]
             }
+          }
+        }
+      },
+      "patient-chart-dashboard-slot": {
+        "configure": {
+          "charts-summary-dashboard": {
+            "layoutMode": "anchored"
           }
         }
       }
