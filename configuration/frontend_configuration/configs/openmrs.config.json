@@ -705,6 +705,11 @@
             "Display conditions": {
               "privileges": ["o3: View Ward Dashboard"]
             }
+          },
+          "ot-dashboard-left-panel-link": {
+            "Display conditions": {
+              "privileges": ["o3: View Operation Theater Dashboard"]
+            }
           }
         }
       },
