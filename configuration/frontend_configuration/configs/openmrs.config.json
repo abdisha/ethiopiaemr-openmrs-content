@@ -208,9 +208,6 @@
       "patient-highlights-bar-slot": {
         "remove": ["patient-flag-tags"]
       },
-      "patient-chart-medications-dashboard-slot": {
-        "remove": ["medications-details-widget"]
-      },
       "patient-chart-summary-dashboard-slot": {
         "remove": ["biometrics-overview-widget", "vitals-overview-widget"],
         "add": ["allergies-details-widget", "immunization-overview-widget"],
@@ -397,10 +394,6 @@
       "labOrderableConcepts": ["9a6f10d6-7fc5-4fb7-9428-24ef7b8d01f7"],
       "careSettingUuid": "6f0c9a92-6f24-11e3-af88-005056821db0"
     }
-  },
-  "@openmrs/esm-patient-medications-app": {
-    "maxDispenseDurationInDays": 365,
-    "requireIndication": false
   },
   "@openmrs/esm-patient-notes-app": {
     "visitNoteConfig": {
