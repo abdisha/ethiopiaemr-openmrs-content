@@ -179,7 +179,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "EDDDate"
