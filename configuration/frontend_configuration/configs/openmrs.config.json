@@ -514,7 +514,6 @@
       "homepage-dashboard-slot": {
         "remove": [
           "reports-homepage-dashboard-link",
-          "clinical-appointments-dashboard-link",
           "patient-services-dashboard-nav-group",
           "linkage-services-dashboard-nav-group",
           "diagnostics-dashboard-nav-group",
@@ -536,6 +535,7 @@
         ],
         "add": [],
         "order": [
+          "clinical-appointments-dashboard-link",
           "clinical-workflow-triage-hp-link-adult",
           "clinical-workflow-triage-hp-link-pediatric",
           "clinical-workflow-triage-hp-link-emergency",
