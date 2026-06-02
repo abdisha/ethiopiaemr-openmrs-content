@@ -180,25 +180,15 @@
     "orderEncounterType": "39da3525-afe4-45ff-8977-c53b7b359158",
     "extensionSlots": {
       "order-basket-slot": {
+        "remove": [
+          "lab-order-panel",
+          "imaging-order-panel",
+          "procedures-order-panel"
+        ],
         "configure": {
           "drug-order-panel": {
             "Display conditions": {
               "privileges": ["o3: View Medication Order Form"]
-            }
-          },
-          "lab-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Test Order Form"]
-            }
-          },
-          "procedures-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Procedure Order"]
-            }
-          },
-          "imaging-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Imaging Order Form"]
             }
           },
           "medical-supply-order-panel": {
