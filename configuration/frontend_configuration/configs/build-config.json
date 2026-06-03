@@ -49,7 +49,8 @@
   "configUrls": [
     "${openmrsSpaBase}/kenyaemr.config.json",
     "${openmrsSpaBase}/openmrs.config.json",
-    "${openmrsSpaBase}/patient-chart-am.json"
+    "${openmrsSpaBase}/patient-chart-am.json",
+    "${openmrsSpaBase}/ethiopiaemr.config.json"
   ],
   "importmap": "/openmrs/spa/importmap.json"
 }
