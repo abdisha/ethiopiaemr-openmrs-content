@@ -175,6 +175,16 @@
       }
     }
   },
+  "@palladium-ethiopia/esm-order-catalog-ethio-app": {
+    "orderCatalogEnabled": false,
+    "allOrderablesConceptUuid": "a1b2c3d4-e5f6-4789-a012-3456789abcde",
+    "orderCatalogDisplayLocale": "en",
+    "orderEncounterType": "39da3525-afe4-45ff-8977-c53b7b359158",
+    "labOrderTypeUuid": "52a447d3-a64a-11e3-9aeb-50e549534c5e",
+    "radiologyOrderTypeUuid": "b4a7c280-369e-4d12-9ce8-18e36783fed6",
+    "procedureOrderTypeUuid": "b4a7c280-369e-4d12-9ce8-18e36783fed6",
+    "careSettingUuid": "6f0c9a92-6f24-11e3-af88-005056821db0"
+  },
   "@palladium-ethiopia/esm-patient-medications-app": {
     "maxDispenseDurationInDays": 365,
     "requireIndication": false,
@@ -205,14 +215,14 @@
               "privileges": ["o3: View Test Order Form"]
             }
           },
-          "procedures-order-panel": {
-            "Display conditions": {
-              "privileges": ["o3: View Procedure Order"]
-            }
-          },
           "imaging-order-panel": {
             "Display conditions": {
               "privileges": ["o3: View Imaging Order Form"]
+            }
+          },
+          "procedures-order-panel": {
+            "Display conditions": {
+              "privileges": ["o3: View Procedure Order"]
             }
           },
           "medical-supply-order-panel": {
