@@ -652,22 +652,22 @@
           },
           "clinical-workflow-triage-hp-link-adult": {
             "Display conditions": {
-              "privileges": ["ethiopiaemr: Triage: View Triage"]
+              "privileges": ["ethiopiaemr: Triage: View Adult Triage Dashboard"]
             }
           },
           "clinical-workflow-triage-hp-link-pediatric": {
             "Display conditions": {
-              "privileges": ["ethiopiaemr: Triage: View Triage"]
+              "privileges": ["ethiopiaemr: Triage: View Pediatric Triage Dashboard"]
             }
           },
           "clinical-workflow-triage-hp-link-emergency": {
             "Display conditions": {
-              "privileges": ["ethiopiaemr: Triage: View Triage"]
+              "privileges": ["ethiopiaemr: Triage: View Emergency Triage Dashboard"]
             }
           },
           "clinical-workflow-triage-hp-link-gynecological": {
             "Display conditions": {
-              "privileges": ["ethiopiaemr: Triage: View Triage"]
+              "privileges": ["ethiopiaemr: Triage: View Gynecological Triage Dashboard"]
             }
           },
           "ewf-mru-dashboard-link": {
@@ -816,6 +816,26 @@
           "results-summary-dashboard": {
             "Display conditions": {
               "privileges": ["o3: View Patient Vitals and Biometrics"]
+            }
+          },
+          "diagnoses-summary-dashboard": {
+            "Display conditions": {
+              "privileges": ["o3: View Patient Chart Diagnoses"]
+            }
+          },
+          "ewf-radiology-and-imaging-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: View Patient Chart Radiology and Imaging"]
+            }
+          },
+          "ewf-procedures-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: View Patient Chart Procedures"]
+            }
+          },
+          "ewf-admissions-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: View Patient Chart Admissions"]
             }
           }
         }

@@ -83,7 +83,25 @@
       "Reports",
       "Referrals"
     ],
-    "instanceName": "TenaEHR"
+    "instanceName": "TenaEHR",
+    "extensionSlots": {
+      "navbar-items-slot": {
+        "add": [],
+        "remove": [],
+        "configure": {
+          "ethiopiaemr-etl-admin-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: View ETL Dashboard"]
+            }
+          },
+          "ethiopiaemr-reports-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: View Reports Dashboard"]
+            }
+        }
+      }
+    }
+  }
   },
   "@kenyaemr/esm-imaging-orders-app": {
     "extensionSlots": {
