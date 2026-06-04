@@ -337,6 +337,13 @@
             "layoutMode": "anchored"
           }
         }
+      },
+      "patient-chart-immunizations-dashboard-slot": {
+        "order": [
+          "immunization-detailed-history-card",
+          "immunization-register-action-button",
+          "immunization-details-widget"
+        ]
       }
     },
     "encounterEditableDuration": 30,
