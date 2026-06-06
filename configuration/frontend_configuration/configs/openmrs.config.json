@@ -38,7 +38,7 @@
         {
           "id": "transfer-status",
           "columnType": "extension",
-          "header": "Transfer"
+          "header": "Linkage"
         },
         {
           "id": "room-assignment",
