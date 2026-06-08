@@ -134,6 +134,14 @@
     "extensionSlots": {
       "default-ward": {
         "add": ["add-patient-to-ward-siderail-button"]
+      },
+      "inpatient-dashboard-tabs-slot": {
+        "add": [
+          "ipd-medication-administration"
+        ],
+        "remove": [
+          "in-patient-treatment-chart"
+        ]
       }
     },
     "admissionRequestFormUuid": "5e725bad-750e-4d31-b4bc-cab4c9ea63ff",
