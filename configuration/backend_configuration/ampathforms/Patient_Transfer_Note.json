@@ -10,10 +10,10 @@
   "referencedForms": [],
   "pages": [
     {
-      "label": "Transfer Details",
+      "label": "Linkage Details",
       "sections": [
         {
-          "label": "Transfer Information",
+          "label": "Linkage Information",
           "isExpanded": "true",
           "questions": [
             {
@@ -97,8 +97,8 @@
               "required": "true"
             },
             {
-              "id": "transferNote",
-              "label": "Transfer Note",
+              "id": "linkageNote",
+              "label": "Linkage Note",
               "type": "obs",
               "questionOptions": {
                 "concept": "f4162fe3-f7e3-4062-9bb3-aa1a4b1044a5",
