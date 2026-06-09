@@ -236,5 +236,9 @@
   },
   "@palladium-ethiopia/esm-appointments-admin-app": {
     "appointmentServiceAdminPrivilege": "app:appointments:manageServiceAvailability"
+  },
+  "@palladium-ethiopia/esm-appointments-quota-app": {
+    "enabled": true,
+    "warnThresholdPercent": 80
   }
 }
