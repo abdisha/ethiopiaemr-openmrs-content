@@ -106,6 +106,21 @@
                 "rows": 4
               },
               "required": "true"
+            },
+            {
+              "id": "linkLocation",
+              "label": "Link To",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                },
+                "concept": "e7fafac8-1490-4370-b47e-1c6baeae9cf7"
+              }
             }
           ]
         }
