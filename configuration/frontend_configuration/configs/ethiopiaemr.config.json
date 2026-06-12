@@ -166,6 +166,8 @@
     "disabilityStatusAttributeTypeUuid": "6a08ef73-6101-42c8-b538-3a2816ede907",
     "healthIdLookupUrl": "openmrs/ws/rest/v1/ethiopiaemrcustommodule/mpi/patient",
     "healthIdIdentifierTypeUuid": "cce42242-9e55-40a6-8739-1e6be1369bbe",
+    "mrnNumberLength": 6,
+    "mrnIdentifierTypeUuid": "f3a8b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
     "emergencyLocationTags": ["Emergency"],
     "drugOrderTypeUuid": "131168f4-15f5-102d-96e4-000c29c2a5d7",
     "bloodTypeAttributeTypeUuid": "65d4a066-15f5-221a-96e4-000c29c2a1dd",
