@@ -2420,7 +2420,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate2ndv"
@@ -3013,7 +3013,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate3rdv"
@@ -3051,7 +3051,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": false
+                  "allowFutureDates": true
                 }
               ]
             },
@@ -3575,7 +3575,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate4thv"
@@ -4147,7 +4147,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate5thv"
@@ -4725,7 +4725,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate6thv"
@@ -5302,7 +5302,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate7thvv"
@@ -5880,7 +5880,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ],
               "id": "idappointmentnextdate8thvv"
