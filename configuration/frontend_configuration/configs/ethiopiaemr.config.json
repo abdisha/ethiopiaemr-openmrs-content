@@ -254,5 +254,8 @@
   "@palladium-ethiopia/esm-appointments-quota-app": {
     "enabled": true,
     "warnThresholdPercent": 80
+  },
+  "@palladium-ethiopia/esm-reports-app": {
+    "hiddenDatasets": ["immRegisterExcel", "ancRegisterExcel"]
   }
 }
