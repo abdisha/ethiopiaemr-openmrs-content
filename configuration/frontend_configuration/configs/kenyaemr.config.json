@@ -2,29 +2,7 @@
   "@kenyaemr/esm-bed-management-app": {
     "patientListForAdmissionUrl": "/ws/rest/v1/kenyaemr/sql?q=bedManagement.sqlGet.patientListForAdmission",
     "admissionLocationTagUuid": "0815e0b2-1182-4157-9340-bee371ea41e4"
-  },
-  "@kenyaemr/esm-login-app": {
-    "logo": {
-      "src": "/openmrs/spa/config/assets/ethiopiaemr-package/tenaehr-logo-horizontal.png"
-    },
-    "links": {
-      "loginSuccess": "${openmrsSpaBase}/home/patient-scoreboard",
-      "src": "/openmrs/spa/home/patient-scoreboard"
-    },
-    "footer": {
-      "additionalLogos": [
-        {
-          "src": "/openmrs/spa/config/assets/ethiopiaemr-package/ethiopia_moh_logo.png",
-          "alt": "TenaEHR"
-        },
-        {
-          "src": "/openmrs/spa/config/assets/ethiopiaemr-package/tenaehr-logo-horizontal.png",
-          "alt": "TenaEHR"
-        }
-      ]
-    },
-    "backgroundImage": "/openmrs/spa/config/assets/ethiopiaemr-package/login-background.png"
-  },
+  }, 
  "@kenyaemr/esm-stock-management-app": {
     "autoPopulateResponsiblePerson": true,
     "stockTakeReasonUUID": "b1267598-6048-4146-af84-98716b88a25a",

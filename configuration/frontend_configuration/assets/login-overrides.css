@@ -1,0 +1,94 @@
+/* the whole footer becomes the capsule */
+[class*='-esm-login__footer__footer'] {
+  position: absolute !important;
+  left: 2rem !important;
+  bottom: 1.75rem !important;
+  width: auto !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 1rem !important;
+  padding: 0.55rem 1.4rem 0.55rem 0.75rem !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 999px !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* MoH logo on a white chip, first in the pill (flex order beats DOM order) */
+[class*='-esm-login__footer__logosContainer'] {
+  order: 1;
+  max-height: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  justify-content: flex-start !important;
+}
+
+[class*='-esm-login__footer__logosContainer'] img {
+  height: 2.1rem !important;
+  width: auto !important;
+  max-width: none !important;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+}
+
+/* strip the Carbon tile chrome; hairline divider drawn via ::before */
+[class*='-esm-login__footer__poweredByTile'] {
+  order: 2;
+  display: flex !important;
+  align-items: center;
+  gap: 1rem;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+[class*='-esm-login__footer__poweredByTile']::before {
+  content: '';
+  width: 1px;
+  height: 1.6rem;
+  background: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+/* hide the marketing subtext and "Learn more" link */
+[class*='-esm-login__footer__poweredByTile'] [class*='poweredBySubtext'],
+[class*='-esm-login__footer__poweredByTile'] [class*='learnMoreButton'] {
+  display: none !important;
+}
+
+[class*='-esm-login__footer__poweredByTile'] [class*='poweredByText']:not([class*='poweredBySubtext']) {
+  font-size: 0 !important;
+  margin: 0 !important;
+}
+
+[class*='-esm-login__footer__poweredByTile']
+  [class*='poweredByText']:not([class*='poweredBySubtext'])::after {
+  content: 'Powered by';
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+[class*='-esm-login__footer__poweredByTile'] svg[class*='poweredByLogo'] {
+  height: 1.7rem !important;
+  width: auto !important;
+  max-width: none !important;
+  filter: brightness(0) invert(1);
+}
+
+@media only screen and (max-width: 480px) {
+  [class*='-esm-login__footer__footer'] {
+    left: 50% !important;
+    bottom: 1rem !important;
+    transform: translateX(-50%);
+  }
+}
