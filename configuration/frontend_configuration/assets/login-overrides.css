@@ -1,5 +1,14 @@
+/* cover the navbar slot so background fills 100vh */
+body, html {
+  background-color: #003B76;
+}
+
+[class*='esm-login__login__container'] {
+  min-height: 100vh !important;
+}
+
 /* the whole footer becomes the capsule */
-[class*='-esm-login__footer__footer'] {
+[class*='esm-login__footer__footer'] {
   position: absolute !important;
   left: 2rem !important;
   bottom: 1.75rem !important;
@@ -19,7 +28,7 @@
 }
 
 /* MoH logo on a white chip, first in the pill (flex order beats DOM order) */
-[class*='-esm-login__footer__logosContainer'] {
+[class*='esm-login__footer__logosContainer'] {
   order: 1;
   max-height: none !important;
   filter: none !important;
@@ -27,7 +36,7 @@
   justify-content: flex-start !important;
 }
 
-[class*='-esm-login__footer__logosContainer'] img {
+[class*='esm-login__footer__logosContainer'] img {
   height: 2.1rem !important;
   width: auto !important;
   max-width: none !important;
@@ -37,7 +46,7 @@
 }
 
 /* strip the Carbon tile chrome; hairline divider drawn via ::before */
-[class*='-esm-login__footer__poweredByTile'] {
+[class*='esm-login__footer__poweredByTile'] {
   order: 2;
   display: flex !important;
   align-items: center;
@@ -51,7 +60,7 @@
   box-shadow: none !important;
 }
 
-[class*='-esm-login__footer__poweredByTile']::before {
+[class*='esm-login__footer__poweredByTile']::before {
   content: '';
   width: 1px;
   height: 1.6rem;
@@ -60,25 +69,24 @@
 }
 
 /* hide the marketing subtext and "Learn more" link */
-[class*='-esm-login__footer__poweredByTile'] [class*='poweredBySubtext'],
-[class*='-esm-login__footer__poweredByTile'] [class*='learnMoreButton'] {
+[class*='esm-login__footer__poweredByTile'] [class*='poweredBySubtext'],
+[class*='esm-login__footer__poweredByTile'] [class*='learnMoreButton'] {
   display: none !important;
 }
 
-[class*='-esm-login__footer__poweredByTile'] [class*='poweredByText']:not([class*='poweredBySubtext']) {
+[class*='esm-login__footer__poweredByTile'] [class*='poweredByText']:not([class*='poweredBySubtext']) {
   font-size: 0 !important;
   margin: 0 !important;
 }
 
-[class*='-esm-login__footer__poweredByTile']
+[class*='esm-login__footer__poweredByTile']
   [class*='poweredByText']:not([class*='poweredBySubtext'])::after {
   content: 'Powered by';
   font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.75);
 }
 
-
-[class*='-esm-login__footer__poweredByTile'] svg[class*='poweredByLogo'] {
+[class*='esm-login__footer__poweredByTile'] svg[class*='poweredByLogo'] {
   height: 1.7rem !important;
   width: auto !important;
   max-width: none !important;
@@ -86,7 +94,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  [class*='-esm-login__footer__footer'] {
+  [class*='esm-login__footer__footer'] {
     left: 50% !important;
     bottom: 1rem !important;
     transform: translateX(-50%);
