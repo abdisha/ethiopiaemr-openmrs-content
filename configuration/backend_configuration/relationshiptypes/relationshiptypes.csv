@@ -1,0 +1,5 @@
+Uuid,Void/Retire,Name,Description,Weight,Preferred,A is to b,B is to a
+61538867-175a-405b-96d8-d02c83917002,,Emergency Contact/Patient,Emergency Contact information,0,,Emergency Contact,Patient
+5aed38e5-98de-4289-9700-872c2caeb0f0,,Spouse/Spouse,Relationship between husband and wife,0,,Spouse,Spouse
+a857445f-6035-4d87-ad54-66ec4929fac0,,Friend/Friend,Relationship to friend,0,,Friend,Friend
+5617d4ee-8c09-43c9-88a7-ec1ba5b83690,,Elicited Contact/Patient,Elicited Contact Information,,,Elicited Contact,Patient
